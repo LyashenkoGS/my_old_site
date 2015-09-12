@@ -12,7 +12,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="C:\OPENSHIFT_TOMCAT7\my\target/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/my/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="my/web/Web" />
     </root>
