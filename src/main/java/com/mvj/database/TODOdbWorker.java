@@ -11,8 +11,7 @@ public class TODOdbWorker implements TODOManager {
     private static final String PASSWORD = "root";
 
     private static final String INSERT_NEW = "insert into dbtodo (todo, name) values (?,?)";
-
-    private Connection connection;
+    private static final String DEL = "delete from dbtodo where todo=?";
 
     @Override
     public Map<String, String> getTODO() {
@@ -26,7 +25,7 @@ public class TODOdbWorker implements TODOManager {
             ResultSet resultSet = statement.executeQuery(query);
 
             while (resultSet.next()) {
-                map.put(resultSet.getString("name"), resultSet.getString("todo"));
+                map.put(resultSet.getString("todo"), resultSet.getString("name"));
             }
 
         } catch (SQLException e) {
@@ -38,17 +37,36 @@ public class TODOdbWorker implements TODOManager {
     @Override
     public void addTODO(String todo, String name) {
         try (Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
-             Statement statement = connection.createStatement()) {
-
-            PreparedStatement preparedStatement = connection.prepareStatement(INSERT_NEW);
+             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_NEW)) {
 
             preparedStatement.setString(1, todo);
             preparedStatement.setString(2, name);
+
+            preparedStatement.executeUpdate();
+
+            System.out.println("add to data base");
 
 
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+    }
+
+    @Override
+    public void deleteTODO(String todo) {
+        try (Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+             PreparedStatement preparedStatement = connection.prepareStatement(DEL)) {
+
+            //preparedStatement.executeQuery();
+            preparedStatement.setString(1, todo);
+
+            preparedStatement.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
     }
     }
 

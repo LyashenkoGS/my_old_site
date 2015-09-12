@@ -7,4 +7,6 @@ public interface TODOManager {
     Map<String,String> getTODO();
 
     void addTODO(String todo, String name);
+
+    void deleteTODO(String key);
 }

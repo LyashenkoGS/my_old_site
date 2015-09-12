@@ -25,14 +25,14 @@ public class TODOdbWorkerTest {
     @Test
     public void testAddTODO() throws Exception {
         TODOdbWorker todOdbWorker = new TODOdbWorker();
-        todOdbWorker.addTODO("zieg", "heil");
+        todOdbWorker.addTODO("zieg1", "heil1");
 
         try (Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
              Statement statement = connection.createStatement()) {
 
-            ResultSet resultSet = statement.executeQuery("select * from dbtodo");
-            assertEquals("zieg", resultSet.getString(2));
-            assertEquals("heil", resultSet.getString(3));
+            ResultSet resultSet = statement.executeQuery("select * from tablesmvj.dbtodo");
+            assertEquals("zieg1", resultSet.getString(2));
+            assertEquals("he21321321321312312312il1", resultSet.getString(3));
             }
         catch (SQLException e) {
             e.printStackTrace();
