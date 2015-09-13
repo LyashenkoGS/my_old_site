@@ -1,3 +1,4 @@
-HelloWorld.class
+com\mvj\database\mainr.class
+servlets\HelloWorld.class
 com\mvj\database\TODOManager.class
 com\mvj\database\TODOdbWorker.class

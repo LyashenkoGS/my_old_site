@@ -8,12 +8,12 @@
 
     <servlet>
         <servlet-name>HelloWorld</servlet-name>
-        <servlet-class>HelloWorld</servlet-class>
+        <servlet-class>servlets.HelloWorld</servlet-class>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>HelloWorld</servlet-name>
-        <url-pattern>/HelloWorld</url-pattern>
+        <url-pattern>/s</url-pattern>
     </servlet-mapping>
          
 </web-app>

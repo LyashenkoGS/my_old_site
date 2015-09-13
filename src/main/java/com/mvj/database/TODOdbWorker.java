@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class TODOdbWorker implements TODOManager {
 
-    private static final String URL = "jdbc:mysql://localhost:3306/tablesmvj";
+    private static final String URL = "jdbc:mysql://192.168.0.2:3306/tablesmvj";
     private static final String USERNAME = "root";
     private static final String PASSWORD = "root";
 

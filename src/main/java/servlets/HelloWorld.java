@@ -1,4 +1,6 @@
-// Import required java libraries
+package servlets;// Import required java libraries
+import com.mvj.database.TODOdbWorker;
+
 import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
@@ -31,12 +33,16 @@ public class HelloWorld extends HttpServlet {
         mockMap.put("Kill Kennedy","ScarFace");
         mockMap.put("Fuck the girl from the next door","Doctor Hause");
 
-        for (Map.Entry<String, String> entry : mockMap.entrySet()) {
-            String key = entry.getKey().toString();;
-            String value = entry.getValue();
-            System.out.println("key, " + key + " value " + value );
-            out.println(key + ":" + value+"</br>");
-        }
+        TODOdbWorker worker = new TODOdbWorker();
+
+;
+       // System.out.println/
+out.println(worker.getTODO().getClass());
+        out.println(worker.getTODO());
+
+
+
+
     }
 
     public void destroy()
