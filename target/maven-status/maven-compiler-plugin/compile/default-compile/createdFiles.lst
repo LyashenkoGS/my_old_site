@@ -1,1 +1,3 @@
 HelloWorld.class
+com\mvj\database\TODOManager.class
+com\mvj\database\TODOdbWorker.class
