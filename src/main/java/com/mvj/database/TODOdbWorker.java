@@ -17,6 +17,11 @@ public class TODOdbWorker implements TODOManager {
     public Map<String, String> getTODO() {
         Map<String, String> map = new HashMap<String, String>();
 
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
         String query = "select * from dbtodo";
 
         try (Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
