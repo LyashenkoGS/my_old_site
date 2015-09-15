@@ -9,15 +9,15 @@ pageEncoding="UTF-8"%>
     <title>VirtualJava</title>
 
     <!--Material design bootstrap-->
-    <link href="resources/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="/resources/bootstrap.css" rel="stylesheet" type="text/css">
 
-    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="<c:url value='http://code.jquery.com/jquery-2.1.4.min.js' />"></script>
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="<c:url value='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'/>"></script>
 
     <!--Custom style sheet-->
-    <link href="resources/custom_style.css" rel="stylesheet" type="text/css">
+    <link href="/resources/custom_style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -51,8 +51,7 @@ pageEncoding="UTF-8"%>
 
 
 
-    <p>тут будет пиздатое интерактивное меню на канвасе в виде дерева с необходимыми джуну технологиями .Пока - просто
-        кот.</p>
+    <p>тут будет пиздатое интерактивное меню на канвасе в виде дерева с необходимыми джуну технологиями </p>
 
     <div class="panel panel-default">
         <div class="panel-body">
@@ -69,8 +68,8 @@ pageEncoding="UTF-8"%>
                     <a href="https://bootswatch.com/darkly/">https://bootswatch.com/darkly/</a>
                 </li>
                 <li>Здесь ,возможно, стоит написать что-то еще...</li>
-                <li><a href="id_rsa.pub"> публичный ключ </a></li>
-                <li><a href="id_rsa"> приватный ключ </a></li>
+                <li><a href="../../id_rsa.pub"> публичный ключ </a></li>
+                <li><a href="../../id_rsa"> приватный ключ </a></li>
                 <li>
                     Git URL: ssh://55edf4792d527192a300014a@my-visualjava.rhcloud.com/~/git/my.git/
                 </li>
@@ -93,6 +92,13 @@ pageEncoding="UTF-8"%>
                         href="http://visualgo.net/">http://visualgo.net/</a></li>
                 <li>сайт должен быть минималистичным, интуитивно понятным и подозрительно похожим на <a
                         href="http://www.google.com.ua/design/spec/material-design/introduction.html">http://www.google.com.ua/design/spec/material-design/introduction.html</a>
+                </li>
+
+                <li> бекенд подозрительно похож на
+                    <a href="https://github.com/spring-projects/spring-petclinic">https://github.com/spring-projects/spring-petclinic></a>
+                </li>
+
+                <a href="http://www.google.com.ua/design/spec/material-design/introduction.html">http://www.google.com.ua/design/spec/material-design/introduction.html</a>
                 </li>
                 <li>освоить популярные web технологии и основы веб-дизайна\верстки</li>
                 <li>сформировать матерую комманду девелоперов</li>
