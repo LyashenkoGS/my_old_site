@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de0ec025-00e7-4977-9d0e-82d7194c6dd5" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\OPENSHIFT_TOMCAT7\my\target\ROOT.war" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/ROOT.war" afterPath="$PROJECT_DIR$/webapps/ROOT.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlet/IndexServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlet/IndexServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my/WEB-INF/classes/servlet/IndexServlet.class" afterPath="$PROJECT_DIR$/target/my/WEB-INF/classes/servlet/IndexServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mvj/database/SQLConnection.class" afterPath="$PROJECT_DIR$/target/classes/com/mvj/database/SQLConnection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my/WEB-INF/classes/com/mvj/database/SQLConnection.class" afterPath="$PROJECT_DIR$/target/my/WEB-INF/classes/com/mvj/database/SQLConnection.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mvj/database/TODOdbWorker.class" afterPath="$PROJECT_DIR$/target/classes/com/mvj/database/TODOdbWorker.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my/WEB-INF/classes/com/mvj/database/TODOdbWorker.class" afterPath="$PROJECT_DIR$/target/my/WEB-INF/classes/com/mvj/database/TODOdbWorker.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/mvj/database/TODOdbWorkerTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/mvj/database/TODOdbWorkerTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/my/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mvj/database/mainr.class" afterPath="$PROJECT_DIR$/target/classes/com/mvj/database/mainr.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my/WEB-INF/classes/com/mvj/database/mainr.class" afterPath="$PROJECT_DIR$/target/my/WEB-INF/classes/com/mvj/database/mainr.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlet/IndexServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlet/IndexServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mvj/database/SQLConnection.java" afterPath="$PROJECT_DIR$/src/main/java/com/mvj/database/SQLConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/my_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/my_war.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/my_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/my_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mvj/database/TODOdbWorker.java" afterPath="$PROJECT_DIR$/src/main/java/com/mvj/database/TODOdbWorker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mvj/database/mainr.java" afterPath="$PROJECT_DIR$/src/main/java/com/mvj/database/mainr.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="my.iws" />
@@ -36,20 +38,83 @@
     <favorites_list name="my" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="SQLConnection.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mvj/database/SQLConnection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.79761904">
-              <caret line="68" column="63" selection-start-line="68" selection-start-column="63" selection-end-line="68" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.44115573">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="SQLConnection.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/mvj/database/SQLConnection.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="mainr.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/mvj/database/mainr.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.41129032">
+                  <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="44" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="IndexServlet.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/servlet/IndexServlet.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="40" column="54" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="TODOdbWorker.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/mvj/database/TODOdbWorker.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+                  <folding>
+                    <marker date="1442387969727" expanded="true" signature="386:428" placeholder="insert into ..." />
+                    <marker date="1442387969727" expanded="true" signature="470:499" placeholder="delete from ..." />
+                    <marker date="1442387969727" expanded="true" signature="948:962" placeholder="select * fro..dbtodo..." />
+                    <marker date="1442387969727" expanded="true" signature="948:966" placeholder="select * fro..todo..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -78,15 +143,15 @@
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/Hello.java" />
         <option value="$PROJECT_DIR$/src/main/java/IndexServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mvj/database/mainr.java" />
         <option value="$PROJECT_DIR$/src/main/java/HelloWorld.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/IndexServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mvj/database/TODOdbWorker.java" />
         <option value="$PROJECT_DIR$/.openshift/config/web.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/home.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mvj/database/mainr.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mvj/database/TODOdbWorker.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlet/IndexServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/mvj/database/SQLConnection.java" />
@@ -202,10 +267,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="1358" />
+    <option name="y" value="-198" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -308,9 +373,9 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -383,6 +448,54 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -427,7 +540,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="maven&#9;ACTION&#9;Maven.ShowSettings&#10;in&#9;FILE&#9;file://C:/OPENSHIFT_TOMCAT7/my/src/main/java/servlet/IndexServlet.java&#10;web&#9;FILE&#9;file://C:/OPENSHIFT_TOMCAT7/my/src/main/webapp/WEB-INF/web.xml" />
+    <property name="SearchEverywhereHistoryKey" value="ho&#9;FILE&#9;file://C:/OPENSHIFT_TOMCAT7/my/src/main/webapp/WEB-INF/jsp/home.jsp&#10;in&#9;FILE&#9;file://C:/OPENSHIFT_TOMCAT7/my/src/main/java/servlet/IndexServlet.java&#10;web&#9;FILE&#9;file://C:/OPENSHIFT_TOMCAT7/my/src/main/webapp/WEB-INF/web.xml&#10;maven&#9;ACTION&#9;Maven.ShowSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -444,7 +557,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SQLConnection">
+  <component name="RunManager" selected="Tomcat Server.Unnamed">
     <configuration default="false" name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1090,8 +1203,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.SQLConnection" />
-        <item index="1" class="java.lang.String" itemvalue="Application.mainr" />
+        <item index="0" class="java.lang.String" itemvalue="Application.mainr" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SQLConnection" />
         <item index="2" class="java.lang.String" itemvalue="Application.Hello" />
       </list>
     </recent_temporary>
@@ -1142,7 +1255,9 @@
       <workItem from="1442371801493" duration="2920000" />
       <workItem from="1442382204164" duration="1470000" />
       <workItem from="1442383718767" duration="1497000" />
-      <workItem from="1442385272438" duration="210000" />
+      <workItem from="1442385272438" duration="1798000" />
+      <workItem from="1442387195800" duration="1202000" />
+      <workItem from="1442388450696" duration="192000" />
     </task>
     <task id="LOCAL-00001" summary="-fix css issue in jsp's&#10;-fix mapping&#10;-add some text to conception&#10;-improve folders structure">
       <created>1442373400080</created>
@@ -1150,11 +1265,17 @@
       <option name="project" value="LOCAL" />
       <updated>1442373400080</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="-finish mySql connection to openshift cartridge">
+      <created>1442385571828</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1442385571828</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60466000" />
+    <option name="totallyTimeSpent" value="63448000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1166,8 +1287,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="1358" y="-198" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1180,15 +1301,15 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40522876" sideWeight="0.56732225" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43300653" sideWeight="0.7549168" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43290043" sideWeight="0.7549168" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33496732" sideWeight="0.46369138" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.49092284" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5232745" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.48789713" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16263238" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40522876" sideWeight="0.43267778" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1705757" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.267316" sideWeight="0.43267778" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35947713" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1215,7 +1336,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="-fix css issue in jsp's&#10;-fix mapping&#10;-add some text to conception&#10;-improve folders structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="-fix css issue in jsp's&#10;-fix mapping&#10;-add some text to conception&#10;-improve folders structure" />
+    <MESSAGE value="-finish mySql connection to openshift cartridge" />
+    <option name="LAST_COMMIT_MESSAGE" value="-finish mySql connection to openshift cartridge" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1226,6 +1348,74 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/IndexServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="54" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mvj/database/TODOdbWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1442387969727" expanded="true" signature="386:428" placeholder="insert into ..." />
+            <marker date="1442387969727" expanded="true" signature="470:499" placeholder="delete from ..." />
+            <marker date="1442387969727" expanded="true" signature="948:962" placeholder="select * fro..dbtodo..." />
+            <marker date="1442387969727" expanded="true" signature="948:966" placeholder="select * fro..todo..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mvj/database/SQLConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/IndexServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="74" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mvj/database/TODOdbWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1442387969727" expanded="true" signature="386:428" placeholder="insert into ..." />
+            <marker date="1442387969727" expanded="true" signature="470:499" placeholder="delete from ..." />
+            <marker date="1442387969727" expanded="true" signature="948:962" placeholder="select * fro..dbtodo..." />
+            <marker date="1442387969727" expanded="true" signature="948:966" placeholder="select * fro..todo..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mvj/database/SQLConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1453,13 +1643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mvj/database/mainr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35142118">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24056605">
@@ -1471,13 +1654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44103774">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mvj/database/TODOdbWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2806604">
-          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1502,27 +1678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51085144">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/IndexServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15178572">
@@ -1538,13 +1693,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mvj/database/mainr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="54" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/IndexServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mvj/database/SQLConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79761904">
-          <caret line="68" column="63" selection-start-line="68" selection-start-column="63" selection-end-line="68" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mvj/database/TODOdbWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding>
+            <marker date="1442387969727" expanded="true" signature="386:428" placeholder="insert into ..." />
+            <marker date="1442387969727" expanded="true" signature="470:499" placeholder="delete from ..." />
+            <marker date="1442387969727" expanded="true" signature="948:962" placeholder="select * fro..dbtodo..." />
+            <marker date="1442387969727" expanded="true" signature="948:966" placeholder="select * fro..todo..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41129032">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>

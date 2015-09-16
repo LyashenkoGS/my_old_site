@@ -38,7 +38,7 @@ pageEncoding="UTF-8"%>
                     <th>TODO</th>
                     <th>Исполнитель</th>
                 </tr>
-                <c:forEach items="${todo}" var="entry" varStatus="status">
+                <c:forEach items="${todo}" var="entry">
                     <tr>
                         <td>${entry.key}</td>
                         <td>${entry.value}</td>

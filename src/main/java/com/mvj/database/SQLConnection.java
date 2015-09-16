@@ -17,19 +17,18 @@ public class SQLConnection {
     private static Session session = null;
 
     public static void main(String[] args) throws SQLException {
-        SQLConnection sqlConnection = new SQLConnection();
-        sqlConnection.connectToServer("test");
+        portForvatdingOverSsh();
     }
 
     private static void connectToServer(String dataBaseName) throws SQLException {
-        connectSSH();
+        portForvatdingOverSsh();
         connectToDataBase(dataBaseName);
     }
 
-    private static void connectSSH() throws SQLException {
+    public static void portForvatdingOverSsh() throws SQLException {
         String sshHost = "my-visualjava.rhcloud.com";
         String sshuser = "55edf4792d527192a300014a";
-        String SshKeyFilepath = "src/main/webapp/id_rsa";
+        String SshKeyFilepath = "C:/Users/LyashenkoGS/.ssh/id_rsa";
 
         int localPort = 8742; // any free port can be used
         String remoteHost = "127.9.81.2";

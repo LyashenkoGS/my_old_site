@@ -20,11 +20,11 @@ public class IndexServlet extends HttpServlet {
 
 
         request.setAttribute("demoNames", mockMap);
-//        TODOdbWorker worker = new TODOdbWorker();
-//        Map todoMap =worker.getTODO();
-//        System.out.println(todoMap);
-//
-//        request.setAttribute("todo", todoMap);
+       TODOdbWorker worker = new TODOdbWorker();
+        Map todoMap =worker.getTODO();
+        System.out.println(todoMap);
+
+        request.setAttribute("todo", todoMap);
 
         RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/home.jsp");
         rd.forward(request, response);

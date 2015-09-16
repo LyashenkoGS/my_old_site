@@ -6,15 +6,21 @@ import java.util.Map;
 
 public class TODOdbWorker implements TODOManager {
 
-    private static final String URL = "jdbc:mysql://192.168.0.2:3306/tablesmvj";
-    private static final String USERNAME = "root";
-    private static final String PASSWORD = "root";
+    private static final String URL = "jdbc:mysql://127.0.0.1:8742/test";
+    private static final String USERNAME = "adminiwG1ZaB";
+    private static final String PASSWORD = "v3ykjhlpBE9q";
 
-    private static final String INSERT_NEW = "insert into dbtodo (todo, name) values (?,?)";
-    private static final String DEL = "delete from dbtodo where todo=?";
+    private static final String INSERT_NEW = "insert into todo (todo, name) values (?,?)";
+    private static final String DEL = "delete from todo where todo=?";
 
     @Override
     public Map<String, String> getTODO() {
+
+        try {
+            SQLConnection.portForvatdingOverSsh();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         Map<String, String> map = new HashMap<String, String>();
 
         try {
@@ -22,7 +28,7 @@ public class TODOdbWorker implements TODOManager {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        String query = "select * from dbtodo";
+        String query = "select * from todo";
 
         try (Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
              Statement statement = connection.createStatement()) {

@@ -6,7 +6,7 @@ package com.mvj.database;
 public class mainr {
     public static void main(String[] args) {
         TODOdbWorker todOdbWorker = new TODOdbWorker();
-        System.out.println(todOdbWorker.getTODO().getClass());
+        System.out.println(todOdbWorker.getTODO());
         //todOdbWorker.addTODO("xui", "pizda");
       //  todOdbWorker.deleteTODO("xui");
         //todOdbWorker.addTODO("xui75", "12pizda");
