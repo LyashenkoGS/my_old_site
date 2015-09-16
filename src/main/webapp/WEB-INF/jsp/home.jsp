@@ -18,6 +18,11 @@ pageEncoding="UTF-8"%>
 
     <!--Custom style sheet-->
     <link href="/resources/custom_style.css" rel="stylesheet" type="text/css">
+    <style>
+        a {
+            text-decoration: none; /* Отменяем подчеркивание у ссылки */
+        }
+    </style>
 </head>
 
 <body>
@@ -60,10 +65,35 @@ pageEncoding="UTF-8"%>
         </div>
     </div>
 
-
-
-
-    <p>тут будет пиздатое интерактивное меню на канвасе в виде дерева с необходимыми джуну технологиями </p>
+    <table class="table table-striped table-hover ">
+        <thead>
+        <caption><h1>Menu</h1></caption>
+        <thead bgcolor="#99FFFF" align="center">
+        <tr class="success">
+            <th class = cell-1><h1>Java</h1></th>
+            <th class = "cell-1"><h1>Web</h1></th>
+            <th class = "cell-1"><h1>Frameworks</h1></th>
+        </tr>
+        </thead>
+        </thead>
+        <tbody>
+        <tr class="active">
+            <td class = "column-1"><div> <a href = ""><h1><img src = "/resources/img/17.jpg" width="40" height="40" align="left">Collection API</h1></a></div></td>
+            <td class = "column-1"><div><a></a><a href = ""><h1><img src = "/resources/img/http.jpg" width="40" height="40" align="left">HTTP протокол</h1></a></div></td>
+            <td class = "column-1"><div><a href= ""><h1><h1><img src = "/resources/img/hiber.png" width="40" height="40" align="left">Hibernate</h1></a></div></td>
+        </tr>
+        <tr class="active">
+            <td class = "column-1"><h1><div><a href = ""><h1><img src = "/resources/img/jdbc.jpg" width="40" height="40" align="left">JDBC</h1></a></div></h1></td>
+            <td class = "column-1"><div><a href = ""><h1><img src = "/resources/img/html.png" width="40" height="40" align="left">HTML/CSS</h1></a></div></td>
+            <td class = "column-1"><a href = ""><h1><h1><img src = "/resources/img/spring.png" width="40" height="40" align="left">Spring</h1></a></div></td>
+        </tr>
+        <tr class="active">
+            <td class = "column-1"><h1><div><a><h1><img src = "/resources/img/17.jpg" width="40" height="40" align="left">String</h1></a></div></h1></td>
+            <td class = "column-1"><div><a href = ""><h1><h1><img src = "/resources/img/17.jpg" width="40" height="40" align="left">Servlet API</h1></a></div></td>
+            <td class = "column-1"><div><a href = ""><h1><h1><img src = "/resources/img/junit.jpg" width="40" height="40" align="left">Junit</h1></a></div></td>
+        </tr>
+        </tbody>
+    </table>
 
     <div class="panel panel-default">
         <div class="panel-body">

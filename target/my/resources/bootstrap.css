@@ -92,7 +92,7 @@ sub {
   bottom: -0.25em;
 }
 img {
-  border: 0;
+  /*border: 0;*/
 }
 svg:not(:root) {
   overflow: hidden;
@@ -7083,4 +7083,19 @@ a.list-group-item-danger.active:focus {
 }
 .panel-default > .panel-heading {
   background-color: #464545;
+}
+.column-1 {
+  text-align: center;
+}
+.column-2 {
+  text-align: center;
+}
+.column-3 {
+  text-align: center;
+}
+.cell-1 {
+  text-align: center;
+}
+a {
+  text-decoration: none;
 }

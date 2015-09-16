@@ -4,8 +4,12 @@
 .sub-title{
     text-align: center;
 }
+
 body{
     background-color: black;
     color: aliceblue;
 }
 
+a:hover {
+    text-decoration: none;
+}
