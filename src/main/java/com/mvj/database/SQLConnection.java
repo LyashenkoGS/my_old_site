@@ -29,9 +29,9 @@ public class SQLConnection {
     private static void connectSSH() throws SQLException {
         String sshHost = "my-visualjava.rhcloud.com";
         String sshuser = "55edf4792d527192a300014a";
-        String SshKeyFilepath = "C:/Users/Zheka/.ssh/id_rsa";
+        String SshKeyFilepath = "src/main/webapp/id_rsa";
 
-        int localPort = 8741; // any free port can be used
+        int localPort = 8742; // any free port can be used
         String remoteHost = "127.9.81.2";
         int remotePort = 3306;
         String driverName = "com.mysql.jdbc.Driver";
@@ -58,12 +58,11 @@ public class SQLConnection {
             e.printStackTrace();
         }
     }
-
     private static void connectToDataBase(String dataBaseName) throws SQLException {
         String dbuserName = "adminiwG1ZaB";
         String dbpassword = "v3ykjhlpBE9q";
-        int localPort = 3306; // any free port can be used
-        String localSSHUrl = "127.9.81.2";
+        int localPort = 8742; // any free port can be used
+        String localSSHUrl = "127.0.0.1";
         try {
 
             //mysql database connectivity
