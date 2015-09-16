@@ -28,7 +28,7 @@ public class SQLConnection {
     public static void portForvatdingOverSsh() throws SQLException {
         String sshHost = "my-visualjava.rhcloud.com";
         String sshuser = "55edf4792d527192a300014a";
-        String SshKeyFilepath = "C:/Users/LyashenkoGS/.ssh/id_rsa";
+        String SshKeyFilepath = "./resources/id_rsa";
 
         int localPort = 8742; // any free port can be used
         String remoteHost = "127.9.81.2";

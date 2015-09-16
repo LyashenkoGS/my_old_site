@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class TODOdbWorker implements TODOManager {
 
-    private static final String URL = "jdbc:mysql://127.0.0.1:8742/test";
+    private static final String URL = "jdbc:mysql://127.9.81.2:3306/test";
     private static final String USERNAME = "adminiwG1ZaB";
     private static final String PASSWORD = "v3ykjhlpBE9q";
 
@@ -16,11 +16,6 @@ public class TODOdbWorker implements TODOManager {
     @Override
     public Map<String, String> getTODO() {
 
-        try {
-            SQLConnection.portForvatdingOverSsh();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
         Map<String, String> map = new HashMap<String, String>();
 
         try {
