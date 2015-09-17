@@ -45,6 +45,18 @@ pageEncoding="UTF-8"%>
                     </tr>
                 </c:forEach>
             </table>
+
+            <form method="post" ACTION="addTodo">
+                <input type="text" name="TODO" placeholder="TODO">
+                <input type="text" name="name" placeholder="Исполнитель">
+                <input type="submit" value="ADD TODO">
+            </form>
+
+
+            <form method="post" ACTION="delTodo">
+                <input type="text" name="TODO" placeholder="TODO">
+                <input type="submit" value="DEL TODO">
+            </form>
         </div>
     </div>
 
