@@ -1,0 +1,8 @@
+com\mvj\database\TODOdbWorker.class
+com\mvj\database\TODOManager.class
+servlet\delTodo.class
+servlet\UpdateServlet.class
+com\mvj\database\TodoClass.class
+com\mvj\database\JdbcConfiguration.class
+servlet\AddTodoServlet.class
+servlet\IndexServlet.class

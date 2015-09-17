@@ -1,21 +1,23 @@
 package com.mvj.database;
 
 import java.sql.*;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
 import static com.mvj.database.JdbcConfiguration.*;
 import static java.sql.DriverManager.getConnection;
 
 public class TODOdbWorker implements TODOManager {
 
-    private static final String INSERT_NEW = "insert into todo (todo, name) values (?,?)";
-    private static final String DEL = "delete from todo where todo=?";
+    public static void main(String[] args) {
+        TODOdbWorker todOdbWorker = new TODOdbWorker();
+        System.out.println(todOdbWorker.getTODO());
+    }
 
     @Override
-    public Map<String, String> getTODO() {
+    public List<TodoClass> getTODO() {
 
-        Map<String, String> map = new HashMap<String, String>();
+        List<TodoClass> todoClass = new ArrayList<>();
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -32,13 +34,17 @@ public class TODOdbWorker implements TODOManager {
             ResultSet resultSet = statement.executeQuery(query);
 
             while (resultSet.next()) {
-                map.put(resultSet.getString("todo"), resultSet.getString("name"));
+                TodoClass aClass = new TodoClass();
+                aClass.setId(resultSet.getString("id"));
+                aClass.setTodo(resultSet.getString("todo"));
+                aClass.setName(resultSet.getString("name"));
+                todoClass.add(aClass);
             }
 
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return map;
+        return todoClass;
     }
 
     @Override
@@ -59,11 +65,11 @@ public class TODOdbWorker implements TODOManager {
     }
 
     @Override
-    public void deleteTODO(String todo) {
+    public void deleteTODO(String id) {
         try (Connection connection = getConnection(URL, USERNAME, PASSWORD);
              PreparedStatement preparedStatement = connection.prepareStatement(DEL)) {
 
-            preparedStatement.setString(1, todo);
+            preparedStatement.setString(1, id);
 
             preparedStatement.executeUpdate();
 

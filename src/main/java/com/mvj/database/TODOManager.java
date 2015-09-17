@@ -1,10 +1,10 @@
 package com.mvj.database;
 
-import java.util.Map;
+import java.util.List;
 
 public interface TODOManager {
 
-    Map<String,String> getTODO();
+    List<TodoClass> getTODO();
 
     void addTODO(String todo, String name);
 

@@ -1,6 +1,7 @@
 package servlet;
 
 import com.mvj.database.TODOdbWorker;
+import com.mvj.database.TodoClass;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -8,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Map;
+import java.util.List;
 
 /**
  * Created by LyashenkoGS on 9/16/2015.
@@ -21,10 +22,10 @@ public class delTodo extends HttpServlet {
 
         TODOdbWorker worker = new TODOdbWorker();
 
-        worker.deleteTODO(request.getParameter("TODO"));
-        System.out.println((String) request.getParameter("TODO"));
+        worker.deleteTODO(request.getParameter("ID"));
+        System.out.println((String) request.getParameter("ID"));
         System.out.println("del todo servlet have been invoked");
-        Map todoMap = worker.getTODO();
+        List<TodoClass> todoMap = worker.getTODO();
         System.out.println(todoMap);
 
         request.setAttribute("todo", todoMap);

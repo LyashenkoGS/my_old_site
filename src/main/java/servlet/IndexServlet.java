@@ -1,6 +1,7 @@
 package servlet;
 
 import com.mvj.database.TODOdbWorker;
+import com.mvj.database.TodoClass;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -9,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 public class IndexServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -25,7 +27,7 @@ public class IndexServlet extends HttpServlet {
 
         request.setAttribute("demoNames", mockMap);
        TODOdbWorker worker = new TODOdbWorker();
-        Map todoMap =worker.getTODO();
+        List<TodoClass> todoMap =worker.getTODO();
         System.out.println(todoMap);
 
         request.setAttribute("todo", todoMap);
