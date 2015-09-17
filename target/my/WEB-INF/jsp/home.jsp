@@ -38,7 +38,7 @@
             <h3 class="panel-title">TODO</h3>
         </div>
         <div class="panel-body">
-            <table border="1" cellpadding="5">
+            <table width="70%">
                 <tr>
                     <th>ID</th>
                     <th>TODO</th>
@@ -52,12 +52,15 @@
                     </tr>
                 </c:forEach>
             </table>
+            <p>
 
             <form method="post" ACTION="addTodo">
                 <input type="text" name="TODO" placeholder="TODO">
                 <input type="text" name="name" placeholder="Исполнитель">
                 <input type="submit" value="ADD TODO">
             </form>
+            </p>
+            <p>
 
             <form method="post" ACTION="addTodo">
                 <input type="text" name="id" placeholder="ID">
@@ -65,6 +68,7 @@
                 <input type="text" name="name" placeholder="Исполнитель">
                 <input type="submit" value="UPDATE TODO">
             </form>
+            </p>
 
 
             <form method="post" ACTION="delTodo">
