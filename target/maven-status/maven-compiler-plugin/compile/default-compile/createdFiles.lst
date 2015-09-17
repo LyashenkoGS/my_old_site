@@ -1,5 +1,8 @@
-com\mvj\database\mainr.class
-servlet\IndexServlet.class
-com\mvj\database\TODOManager.class
 com\mvj\database\TODOdbWorker.class
+com\mvj\database\TODOManager.class
 com\mvj\database\SQLConnection.class
+servlet\delTodo.class
+servlet\UpdateServlet.class
+com\mvj\database\mainr.class
+servlet\AddTodoServlet.class
+servlet\IndexServlet.class

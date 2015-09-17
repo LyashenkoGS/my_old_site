@@ -57,6 +57,13 @@ pageEncoding="UTF-8"%>
                 <input type="submit" value="ADD TODO">
             </form>
 
+            <form method="post" ACTION="addTodo">
+                <input type="text" name="id" placeholder="ID">
+                <input type="text" name="TODO" placeholder="TODO">
+                <input type="text" name="name" placeholder="Исполнитель">
+                <input type="submit" value="UPDATE TODO">
+            </form>
+
 
             <form method="post" ACTION="delTodo">
                 <input type="text" name="TODO" placeholder="TODO">

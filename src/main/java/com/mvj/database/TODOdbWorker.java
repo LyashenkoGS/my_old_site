@@ -56,7 +56,6 @@ public class TODOdbWorker implements TODOManager {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
     }
 
     @Override
@@ -72,9 +71,28 @@ public class TODOdbWorker implements TODOManager {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
 
+    @Override
+    public void updateTODO(String id, String todo, String name) {
+
+        String update = "UPDATE todo SET todo = ?, name = ? WHERE id = " + id + "";
+
+        try (Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+             PreparedStatement preparedStatement = connection.prepareStatement(update)) {
+
+            preparedStatement.setString(1, todo);
+            preparedStatement.setString(2, name);
+
+            preparedStatement.executeUpdate();
+
+            System.out.println("Update data base");
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
-    }
+}
 
 
 
