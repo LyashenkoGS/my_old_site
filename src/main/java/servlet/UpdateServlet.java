@@ -26,7 +26,7 @@ public class UpdateServlet extends HttpServlet {
         worker.updateTODO((String) request.getParameter("id"), (String) request.getParameter("TODO"), (String) request.getParameter("name"));
         System.out.println((String) request.getParameter("TODO"));
         System.out.println((String) request.getParameter("name"));
-        System.out.println("add todo servlet have been invoked");
+        System.out.println("Update servlet have been invoked");
         Map todoMap = worker.getTODO();
         System.out.println(todoMap);
 

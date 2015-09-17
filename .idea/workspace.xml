@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de0ec025-00e7-4977-9d0e-82d7194c6dd5" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\my-visualJava\my\src\main\java\com\mvj\database\SQLConnection.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\my-visualJava\my\target\classes\com\mvj\database\SQLConnection.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\my-visualJava\my\target\maven-archiver\pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="E:\my-visualJava\my\target\maven-status\maven-compiler-plugin\compile\default-compile\createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="E:\my-visualJava\my\target\maven-status\maven-compiler-plugin\compile\default-compile\inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="E:\my-visualJava\my\target\maven-status\maven-compiler-plugin\testCompile\default-testCompile\createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="E:\my-visualJava\my\target\maven-status\maven-compiler-plugin\testCompile\default-testCompile\inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="E:\my-visualJava\my\target\my\WEB-INF\classes\com\mvj\database\SQLConnection.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlet/AddTodoServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlet/AddTodoServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my/WEB-INF/classes/servlet/AddTodoServlet.class" afterPath="$PROJECT_DIR$/target/my/WEB-INF/classes/servlet/AddTodoServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlet/IndexServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlet/IndexServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my/WEB-INF/classes/servlet/IndexServlet.class" afterPath="$PROJECT_DIR$/target/my/WEB-INF/classes/servlet/IndexServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ROOT.war" afterPath="$PROJECT_DIR$/target/ROOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/ROOT.war" afterPath="$PROJECT_DIR$/webapps/ROOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mvj/database/TODOdbWorker.class" afterPath="$PROJECT_DIR$/target/classes/com/mvj/database/TODOdbWorker.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my/WEB-INF/classes/com/mvj/database/TODOdbWorker.class" afterPath="$PROJECT_DIR$/target/my/WEB-INF/classes/com/mvj/database/TODOdbWorker.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlet/UpdateServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlet/UpdateServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my/WEB-INF/classes/servlet/UpdateServlet.class" afterPath="$PROJECT_DIR$/target/my/WEB-INF/classes/servlet/UpdateServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlet/delTodo.class" afterPath="$PROJECT_DIR$/target/classes/servlet/delTodo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my/WEB-INF/classes/servlet/delTodo.class" afterPath="$PROJECT_DIR$/target/my/WEB-INF/classes/servlet/delTodo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlet/AddTodoServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlet/AddTodoServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlet/IndexServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlet/IndexServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mvj/database/TODOdbWorker.java" afterPath="$PROJECT_DIR$/src/main/java/com/mvj/database/TODOdbWorker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlet/UpdateServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlet/UpdateServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlet/delTodo.java" afterPath="$PROJECT_DIR$/src/main/java/servlet/delTodo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="my.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,15 +65,25 @@
       <file leaf-file-name="TODOdbWorker.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mvj/database/TODOdbWorker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.051987767">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.9357798">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1442508969388" expanded="true" signature="426:468" placeholder="insert into ..." />
-                <marker date="1442508969388" expanded="true" signature="510:539" placeholder="delete from ..." />
-                <marker date="1442508969388" expanded="true" signature="845:863" placeholder="select * fro..todo..." />
-                <marker date="1442508969388" expanded="true" signature="2518:2564" placeholder="UPDATE todo ..." />
+                <marker date="1442509702398" expanded="true" signature="298:340" placeholder="insert into ..." />
+                <marker date="1442509702398" expanded="true" signature="382:411" placeholder="delete from ..." />
+                <marker date="1442509702398" expanded="true" signature="717:735" placeholder="select * fro..todo..." />
+                <marker date="1442509702398" expanded="true" signature="2348:2394" placeholder="UPDATE todo ..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JdbcConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mvj/database/JdbcConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -199,6 +184,7 @@
         <option value="$PROJECT_DIR$/src/main/java/servlet/AddTodoServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlet/UpdateServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mvj/database/TODOdbWorker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mvj/database/JdbcConfiguration.java" />
       </list>
     </option>
   </component>
@@ -1217,7 +1203,7 @@
       <workItem from="1442504319068" duration="502000" />
       <workItem from="1442505447290" duration="237000" />
       <workItem from="1442505798279" duration="464000" />
-      <workItem from="1442506477232" duration="2583000" />
+      <workItem from="1442506477232" duration="3254000" />
     </task>
     <task id="LOCAL-00001" summary="-fix css issue in jsp's&#10;-fix mapping&#10;-add some text to conception&#10;-improve folders structure">
       <created>1442373400080</created>
@@ -1253,7 +1239,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89996000" />
+    <option name="totallyTimeSpent" value="90667000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1286,8 +1272,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14069591" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.48789713" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15279879" sideWeight="0.49429038" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41993463" sideWeight="0.42662632" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21406959" sideWeight="0.49429038" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41993463" sideWeight="0.42662632" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35947713" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1712,16 +1698,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mvj/database/JdbcConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mvj/database/TODOdbWorker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.051987767">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.9357798">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1442508969388" expanded="true" signature="426:468" placeholder="insert into ..." />
-            <marker date="1442508969388" expanded="true" signature="510:539" placeholder="delete from ..." />
-            <marker date="1442508969388" expanded="true" signature="845:863" placeholder="select * fro..todo..." />
-            <marker date="1442508969388" expanded="true" signature="2518:2564" placeholder="UPDATE todo ..." />
+            <marker date="1442509702398" expanded="true" signature="298:340" placeholder="insert into ..." />
+            <marker date="1442509702398" expanded="true" signature="382:411" placeholder="delete from ..." />
+            <marker date="1442509702398" expanded="true" signature="717:735" placeholder="select * fro..todo..." />
+            <marker date="1442509702398" expanded="true" signature="2348:2394" placeholder="UPDATE todo ..." />
           </folding>
         </state>
       </provider>
