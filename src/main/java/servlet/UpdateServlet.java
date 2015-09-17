@@ -17,6 +17,10 @@ import java.util.Map;
 @WebServlet(name = "UpdateServlet")
 public class UpdateServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
+
         TODOdbWorker worker = new TODOdbWorker();
 
         worker.updateTODO((String) request.getParameter("id"), (String) request.getParameter("TODO"), (String) request.getParameter("name"));

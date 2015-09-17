@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class TODOdbWorker implements TODOManager {
 
-    private static final String URL = "jdbc:mysql://127.9.81.2:3306/test";
+    private static final String URL = "jdbc:mysql://127.9.81.2:3306/test?useUnicode=yes&characterEncoding=UTF-8";
     private static final String USERNAME = "adminiwG1ZaB";
     private static final String PASSWORD = "v3ykjhlpBE9q";
 
@@ -27,6 +27,8 @@ public class TODOdbWorker implements TODOManager {
 
         try (Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
              Statement statement = connection.createStatement()) {
+            statement.executeQuery("SET NAMES 'UTF8'");
+            statement.executeQuery("SET CHARACTER SET 'UTF8'");
 
             ResultSet resultSet = statement.executeQuery(query);
 
@@ -52,7 +54,6 @@ public class TODOdbWorker implements TODOManager {
 
             System.out.println("add to data base");
 
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -63,7 +64,6 @@ public class TODOdbWorker implements TODOManager {
         try (Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
              PreparedStatement preparedStatement = connection.prepareStatement(DEL)) {
 
-            //preparedStatement.executeQuery();
             preparedStatement.setString(1, todo);
 
             preparedStatement.executeUpdate();

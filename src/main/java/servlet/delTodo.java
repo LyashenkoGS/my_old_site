@@ -15,6 +15,10 @@ import java.util.Map;
  */
 public class delTodo extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
+
         TODOdbWorker worker = new TODOdbWorker();
 
         worker.deleteTODO(request.getParameter("TODO"));
