@@ -1,4 +1,4 @@
-package servlet;
+package com.servlet;
 
 import com.database.TODOdbWorker;
 import com.database.TodoClass;

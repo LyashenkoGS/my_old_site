@@ -9,7 +9,7 @@
     <display-name>Visual Java project</display-name>
     <servlet>
         <servlet-name>index</servlet-name>
-        <servlet-class>servlet.IndexServlet</servlet-class>
+        <servlet-class>com.servlet.IndexServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
@@ -18,7 +18,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>addTodo</servlet-name>
-        <servlet-class>servlet.AddTodoServlet</servlet-class>
+        <servlet-class>com.servlet.AddTodoServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>addTodo</servlet-name>
@@ -27,7 +27,7 @@
     
     <servlet>
         <servlet-name>delTodo</servlet-name>
-        <servlet-class>servlet.delTodo</servlet-class>
+        <servlet-class>com.servlet.delTodo</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>delTodo</servlet-name>
