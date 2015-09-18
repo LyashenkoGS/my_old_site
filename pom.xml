@@ -78,7 +78,12 @@
                 folder. -->
             <!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
             <id>openshift</id>
+            <properties>
+                <downloadSources>true</downloadSources>
+                <downloadJavadocs>true</downloadJavadocs>
+            </properties>
             <build>
+
                 <finalName>my</finalName>
                 <pluginManagement>
                     <plugins>
@@ -94,18 +99,19 @@
                 </pluginManagement>
                 <plugins>
                     <plugin>
-                    <groupId>org.apache.tomcat.maven</groupId>
-                    <artifactId>tomcat7-maven-plugin</artifactId>
-                    <version>2.2</version>
-                    <configuration>
-                        <update>true</update>
-                        <url>http://localhost:8080/manager/text</url>
-                        <username>admin</username>
-                        <password>admin</password>
-                        <warFile>webapps/ROOT.war</warFile>
-                    </configuration>
-                </plugin>
+                        <groupId>org.apache.tomcat.maven</groupId>
+                        <artifactId>tomcat7-maven-plugin</artifactId>
+                        <version>2.2</version>
+                        <configuration>
+                            <update>true</update>
+                            <url>http://localhost:8080/manager/text</url>
+                            <username>admin</username>
+                            <password>admin</password>
+                            <warFile>webapps/ROOT.war</warFile>
+                        </configuration>
+                    </plugin>
                 </plugins>
+
             </build>
         </profile>
 

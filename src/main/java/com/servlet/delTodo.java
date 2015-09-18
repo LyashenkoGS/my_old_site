@@ -1,7 +1,7 @@
-package servlet;
+package com.servlet;
 
-import com.mvj.database.TODOdbWorker;
-import com.mvj.database.TodoClass;
+import com.database.TODOdbWorker;
+import com.database.TodoClass;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * Created by LyashenkoGS on 9/16/2015.
  */
-public class AddTodoServlet extends HttpServlet {
+public class delTodo extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         request.setCharacterEncoding("UTF-8");
@@ -22,10 +22,9 @@ public class AddTodoServlet extends HttpServlet {
 
         TODOdbWorker worker = new TODOdbWorker();
 
-        worker.addTODO((String) request.getParameter("TODO"), (String) request.getParameter("name"));
-        System.out.println((String) request.getParameter("TODO"));
-        System.out.println((String) request.getParameter("name"));
-        System.out.println("add todo servlet have been invoked");
+        worker.deleteTODO(request.getParameter("ID"));
+        System.out.println((String) request.getParameter("ID"));
+        System.out.println("del todo servlet have been invoked");
         List<TodoClass> todoMap = worker.getTODO();
         System.out.println(todoMap);
 

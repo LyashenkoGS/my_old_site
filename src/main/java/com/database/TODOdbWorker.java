@@ -1,10 +1,9 @@
-package com.mvj.database;
+package com.database;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.mvj.database.JdbcConfiguration.*;
 import static java.sql.DriverManager.getConnection;
 
 public class TODOdbWorker implements TODOManager {
@@ -19,14 +18,16 @@ public class TODOdbWorker implements TODOManager {
 
         List<TodoClass> todoClass = new ArrayList<>();
 
+        //load mySql driver
         try {
             Class.forName("com.mysql.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+
         String query = "select * from todo";
 
-        try (Connection connection = getConnection(URL, USERNAME, PASSWORD);
+        try (Connection connection = getConnection(JdbcConfiguration.URL, JdbcConfiguration.USERNAME, JdbcConfiguration.PASSWORD);
              Statement statement = connection.createStatement()) {
             statement.executeQuery("SET NAMES 'UTF8'");
             statement.executeQuery("SET CHARACTER SET 'UTF8'");
@@ -49,8 +50,8 @@ public class TODOdbWorker implements TODOManager {
 
     @Override
     public void addTODO(String todo, String name) {
-        try (Connection connection = getConnection(URL, USERNAME, PASSWORD);
-             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_NEW)) {
+        try (Connection connection = getConnection(JdbcConfiguration.URL, JdbcConfiguration.USERNAME, JdbcConfiguration.PASSWORD);
+             PreparedStatement preparedStatement = connection.prepareStatement(JdbcConfiguration.INSERT_NEW)) {
 
             preparedStatement.setString(1, todo);
             preparedStatement.setString(2, name);
@@ -66,8 +67,8 @@ public class TODOdbWorker implements TODOManager {
 
     @Override
     public void deleteTODO(String id) {
-        try (Connection connection = getConnection(URL, USERNAME, PASSWORD);
-             PreparedStatement preparedStatement = connection.prepareStatement(DEL)) {
+        try (Connection connection = getConnection(JdbcConfiguration.URL, JdbcConfiguration.USERNAME, JdbcConfiguration.PASSWORD);
+             PreparedStatement preparedStatement = connection.prepareStatement(JdbcConfiguration.DEL)) {
 
             preparedStatement.setString(1, id);
 
@@ -83,7 +84,7 @@ public class TODOdbWorker implements TODOManager {
 
         String update = "UPDATE todo SET todo = ?, name = ? WHERE id = " + id + "";
 
-        try (Connection connection = getConnection(URL, USERNAME, PASSWORD);
+        try (Connection connection = getConnection(JdbcConfiguration.URL, JdbcConfiguration.USERNAME, JdbcConfiguration.PASSWORD);
              PreparedStatement preparedStatement = connection.prepareStatement(update)) {
 
             preparedStatement.setString(1, todo);

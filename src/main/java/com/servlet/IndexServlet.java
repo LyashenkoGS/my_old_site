@@ -1,7 +1,7 @@
 package servlet;
 
-import com.mvj.database.TODOdbWorker;
-import com.mvj.database.TodoClass;
+import com.database.TODOdbWorker;
+import com.database.TodoClass;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

@@ -38,7 +38,7 @@
             <h3 class="panel-title">TODO</h3>
         </div>
         <div class="panel-body">
-            <table border="1" cellpadding="5">
+            <table>
                 <tr>
                     <th>ID</th>
                     <th>TODO</th>

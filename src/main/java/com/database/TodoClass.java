@@ -1,4 +1,4 @@
-package com.mvj.database;
+package com.database;
 
 /**
  * Created by Zheka on 17.09.2015.

@@ -1,4 +1,4 @@
-package com.mvj.database;
+package com.database;
 
 import java.util.List;
 
