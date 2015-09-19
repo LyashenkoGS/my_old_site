@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de0ec025-00e7-4977-9d0e-82d7194c6dd5" name="Default" comment="-CRUD operations with todo table, except update yet)&#10; -must have setted pord forwarding and shh tunel&#10;">
-      <change type="DELETED" beforePath="C:\OPENSHIFT_TOMCAT7\my\target\classes\com\mvj\database\JdbcConfiguration.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\OPENSHIFT_TOMCAT7\my\target\classes\com\mvj\database\TodoClass.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\OPENSHIFT_TOMCAT7\my\target\test-classes\com\mvj\database\TODOdbWorkerTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/database/TODOdbWorkerIntegrationTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/database/TODOdbWorkerIntegrationTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/database/TODOdbWorkerIntegrationTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/database/TODOdbWorkerIntegrationTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+    <list default="true" id="de0ec025-00e7-4977-9d0e-82d7194c6dd5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/database/JdbcConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/com/database/JdbcConfiguration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/database/TODOdbWorker.java" afterPath="$PROJECT_DIR$/src/main/java/com/database/TODOdbWorker.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="my.iws" />
@@ -46,11 +37,34 @@
       <file leaf-file-name="TODOdbWorkerIntegrationTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/database/TODOdbWorkerIntegrationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.80051816">
-              <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
+            <state vertical-scroll-proportion="-0.50934577">
+              <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
               <folding>
                 <marker date="1442625271729" expanded="true" signature="2037:2083" placeholder="SELECT id FR..todo..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TODOdbWorker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/database/TODOdbWorker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="53" column="101" selection-start-line="53" selection-start-column="101" selection-end-line="53" selection-end-column="101" />
+              <folding>
+                <marker date="1442628065942" expanded="true" signature="676:694" placeholder="select * fro..todo..." />
+                <marker date="1442628065942" expanded="true" signature="2744:2790" placeholder="UPDATE todo ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JdbcConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/database/JdbcConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="67" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -112,10 +126,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mvj/database/TODOdbWorker.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mvj/database/JdbcConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/database/main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/database/TODOdbWorker.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/database/TODOdbWorkerIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/database/TODOdbWorker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/database/JdbcConfiguration.java" />
       </list>
     </option>
   </component>
@@ -378,7 +393,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="te&#9;FILE&#9;file://C:/OPENSHIFT_TOMCAT7/my/src/test/java/com/database/TODOdbWorkerIntegrationTest.java&#10;h&#9;FILE&#9;file://C:/OPENSHIFT_TOMCAT7/my/src/main/webapp/WEB-INF/jsp/home.jsp&#10;pom&#9;FILE&#9;file://C:/OPENSHIFT_TOMCAT7/my/pom.xml&#10;web&#9;FILE&#9;file://C:/OPENSHIFT_TOMCAT7/my/src/main/webapp/WEB-INF/web.xml&#10;ho&#9;FILE&#9;file://C:/OPENSHIFT_TOMCAT7/my/src/main/webapp/WEB-INF/jsp/home.jsp&#10;in&#9;FILE&#9;file://C:/OPENSHIFT_TOMCAT7/my/src/main/java/servlet/IndexServlet.java&#10;maven&#9;ACTION&#9;Maven.ShowSettings" />
+    <property name="SearchEverywhereHistoryKey" value="inte&#9;PSI&#9;JAVA://com.database.TODOdbWorkerIntegrationTest&#10;te&#9;FILE&#9;file://C:/OPENSHIFT_TOMCAT7/my/src/test/java/com/database/TODOdbWorkerIntegrationTest.java&#10;h&#9;FILE&#9;file://C:/OPENSHIFT_TOMCAT7/my/src/main/webapp/WEB-INF/jsp/home.jsp&#10;pom&#9;FILE&#9;file://C:/OPENSHIFT_TOMCAT7/my/pom.xml&#10;web&#9;FILE&#9;file://C:/OPENSHIFT_TOMCAT7/my/src/main/webapp/WEB-INF/web.xml&#10;ho&#9;FILE&#9;file://C:/OPENSHIFT_TOMCAT7/my/src/main/webapp/WEB-INF/jsp/home.jsp&#10;in&#9;FILE&#9;file://C:/OPENSHIFT_TOMCAT7/my/src/main/java/servlet/IndexServlet.java&#10;maven&#9;ACTION&#9;Maven.ShowSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1096,7 +1111,7 @@
       <workItem from="1442525971085" duration="1485000" />
       <workItem from="1442605751043" duration="1389000" />
       <workItem from="1442607963121" duration="661000" />
-      <workItem from="1442611962303" duration="13548000" />
+      <workItem from="1442611962303" duration="14942000" />
     </task>
     <task id="LOCAL-00001" summary="-fix css issue in jsp's&#10;-fix mapping&#10;-add some text to conception&#10;-improve folders structure">
       <created>1442373400080</created>
@@ -1128,11 +1143,17 @@
       <option name="project" value="LOCAL" />
       <updated>1442461715317</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="-add &#10;">
+      <created>1442627436844</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1442627436844</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113651000" />
+    <option name="totallyTimeSpent" value="115045000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1150,7 +1171,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32352942" sideWeight="0.5378465" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32352942" sideWeight="0.5378465" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32792208" sideWeight="0.4978678" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290469" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1164,11 +1185,11 @@
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19818456" sideWeight="0.50570965" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.49092284" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2980333" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17927383" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.48789713" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3207262" sideWeight="0.49429038" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10741301" sideWeight="0.49429038" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39869282" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25490198" sideWeight="0.42662632" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25490198" sideWeight="0.42662632" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35947713" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1230,7 +1251,8 @@
     <MESSAGE value="-first stage of getTodo() implementation&#10;" />
     <MESSAGE value="-delete port forwarding&#10;" />
     <MESSAGE value="-CRUD operations with todo table, except update yet)&#10; -must have setted pord forwarding and shh tunel&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="-CRUD operations with todo table, except update yet)&#10; -must have setted pord forwarding and shh tunel&#10;" />
+    <MESSAGE value="-add &#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="-add &#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1265,8 +1287,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1442614298436" expanded="true" signature="-1:-1" placeholder="select * fro..todo..." />
-            <marker date="1442614298436" expanded="true" signature="-1:-1" placeholder="UPDATE todo ..." />
+            <marker date="1442628065942" expanded="true" signature="676:694" placeholder="select * fro..todo..." />
+            <marker date="1442628065942" expanded="true" signature="2744:2790" placeholder="UPDATE todo ..." />
           </folding>
         </state>
       </provider>
@@ -1581,17 +1603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/database/TODOdbWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="97" column="32" selection-start-line="97" selection-start-column="32" selection-end-line="97" selection-end-column="32" />
-          <folding>
-            <marker date="1442614298436" expanded="true" signature="-1:-1" placeholder="select * fro..todo..." />
-            <marker date="1442614298436" expanded="true" signature="-1:-1" placeholder="UPDATE todo ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/database/TodoClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3529412">
@@ -1619,10 +1630,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/database/JdbcConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="67" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/database/TODOdbWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="101" selection-start-line="53" selection-start-column="101" selection-end-line="53" selection-end-column="101" />
+          <folding>
+            <marker date="1442628065942" expanded="true" signature="676:694" placeholder="select * fro..todo..." />
+            <marker date="1442628065942" expanded="true" signature="2744:2790" placeholder="UPDATE todo ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/database/TODOdbWorkerIntegrationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80051816">
-          <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
+        <state vertical-scroll-proportion="-0.50934577">
+          <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
           <folding>
             <marker date="1442625271729" expanded="true" signature="2037:2083" placeholder="SELECT id FR..todo..." />
           </folding>

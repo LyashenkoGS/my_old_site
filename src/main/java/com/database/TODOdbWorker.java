@@ -55,7 +55,7 @@ public class TODOdbWorker implements TODOManager {
 
             preparedStatement.setString(1, todo);
             preparedStatement.setString(2, name);
-
+            preparedStatement.setBoolean(3,false);
             preparedStatement.executeUpdate();
 
             System.out.println("add to data base");

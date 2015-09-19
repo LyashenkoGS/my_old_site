@@ -17,7 +17,7 @@ public class JdbcConfiguration {
     * Queary JDBC
     * */
 
-    public static final String INSERT_NEW = "insert into todo (todo, name) values (?,?)";
+    public static final String INSERT_NEW = "insert into todo (todo, name,isdone) values (?,?,?)";
     public static final String DEL = "delete from todo where id=?";
 
 }
