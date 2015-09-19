@@ -1,8 +1,8 @@
-E:\my-visualJava\my\src\main\java\com\mvj\database\TODOdbWorker.java
-E:\my-visualJava\my\src\main\java\servlet\UpdateServlet.java
-E:\my-visualJava\my\src\main\java\servlet\AddTodoServlet.java
-E:\my-visualJava\my\src\main\java\servlet\IndexServlet.java
-E:\my-visualJava\my\src\main\java\com\mvj\database\JdbcConfiguration.java
-E:\my-visualJava\my\src\main\java\com\mvj\database\TODOManager.java
-E:\my-visualJava\my\src\main\java\com\mvj\database\TodoClass.java
-E:\my-visualJava\my\src\main\java\servlet\delTodo.java
+C:\OPENSHIFT_TOMCAT7\my\src\main\java\com\database\TODOManager.java
+C:\OPENSHIFT_TOMCAT7\my\src\main\java\com\servlet\AddTodoServlet.java
+C:\OPENSHIFT_TOMCAT7\my\src\main\java\com\servlet\IndexServlet.java
+C:\OPENSHIFT_TOMCAT7\my\src\main\java\com\database\TodoClass.java
+C:\OPENSHIFT_TOMCAT7\my\src\main\java\com\database\JdbcConfiguration.java
+C:\OPENSHIFT_TOMCAT7\my\src\main\java\com\database\TODOdbWorker.java
+C:\OPENSHIFT_TOMCAT7\my\src\main\java\com\servlet\delTodo.java
+C:\OPENSHIFT_TOMCAT7\my\src\main\java\com\servlet\UpdateServlet.java
