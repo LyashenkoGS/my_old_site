@@ -1,0 +1,4 @@
+com\servlet\UpdateServlet.class
+com\servlet\delTodo.class
+com\servlet\IndexServlet.class
+com\servlet\AddTodoServlet.class
