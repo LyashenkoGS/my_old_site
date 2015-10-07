@@ -16,7 +16,8 @@ import java.util.List;
  * Created by LyashenkoGS on 9/16/2015.
  */
 
-@WebServlet(name = "delTodo")
+@WebServlet(name = "delTodo",
+            value="/delTodo")
 public class delTodo extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

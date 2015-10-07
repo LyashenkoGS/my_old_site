@@ -15,7 +15,8 @@ import java.util.List;
 /**
  * Created by Zheka on 17.09.2015.
  */
-@WebServlet(name = "UpdateServlet")
+@WebServlet(name = "updateTodo",
+value="/updateTodo")
 public class UpdateServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

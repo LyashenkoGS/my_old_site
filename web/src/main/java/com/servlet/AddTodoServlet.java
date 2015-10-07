@@ -16,7 +16,8 @@ import java.util.List;
  * Created by LyashenkoGS on 9/16/2015.
  */
 
-@WebServlet(name = "addTodo")
+@WebServlet(name = "addTodo",
+            value="/addTodo")
 public class AddTodoServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

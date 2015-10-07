@@ -75,20 +75,16 @@
                 <downloadJavadocs>true</downloadJavadocs>
             </properties>
             <build>
-                <finalName>my</finalName>
-                <pluginManagement>
-                    <plugins>
-                        <plugin>
-                            <artifactId>maven-war-plugin</artifactId>
-                            <version>2.1.1</version>
-                            <configuration>
-                                <outputDirectory>webapps</outputDirectory>
-                                <warName>ROOT</warName>
-                            </configuration>
-                        </plugin>
-                    </plugins>
-                </pluginManagement>
+                <finalName>my-visualJava</finalName>
                 <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>2.12.4</version>
+                        <configuration>
+                            <skipTests>false</skipTests>
+                        </configuration>
+                    </plugin>
                     <plugin>
                         <groupId>org.apache.tomcat.maven</groupId>
                         <artifactId>tomcat7-maven-plugin</artifactId>
@@ -99,14 +95,6 @@
                             <username>admin</username>
                             <password>admin</password>
                             <warFile>webapps/ROOT.war</warFile>
-                        </configuration>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-surefire-plugin</artifactId>
-                        <version>2.12.4</version>
-                        <configuration>
-                            <skipTests>false</skipTests>
                         </configuration>
                     </plugin>
                 </plugins>

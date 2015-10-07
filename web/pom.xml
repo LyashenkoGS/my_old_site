@@ -11,6 +11,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>web</artifactId>
+    <packaging>war</packaging>
 
     <dependencies>
         <dependency>
@@ -40,4 +41,21 @@
             <version>1.2</version>
         </dependency>
     </dependencies>
+
+    <build>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>2.1.1</version>
+                    <configuration>
+                        <outputDirectory>web/webapps</outputDirectory>
+                        <warName>ROOT</warName>
+                    </configuration>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>

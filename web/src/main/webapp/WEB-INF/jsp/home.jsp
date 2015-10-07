@@ -9,7 +9,7 @@
     <title>VirtualJava</title>
 
     <!--Material design bootstrap-->
-    <link href="/resources/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="${pageContext.request.contextPath}/resources/bootstrap.css" rel="stylesheet" type="text/css">
 
     <script src="<c:url value='http://code.jquery.com/jquery-2.1.4.min.js' />"></script>
 
@@ -17,7 +17,7 @@
     <script src="<c:url value='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'/>"></script>
 
     <!--Custom style sheet-->
-    <link href="/resources/custom_style.css" rel="stylesheet" type="text/css">
+    <link href="${pageContext.request.contextPath}/resources/custom_style.css" rel="stylesheet" type="text/css">
     <style>
         a {
             text-decoration: none; /* Отменяем подчеркивание у ссылки */
@@ -62,7 +62,7 @@
             </p>
             <p>
 
-            <form method="post" ACTION="addTodo">
+            <form method="post" ACTION="updateTodo">
                 <input type="text" name="id" placeholder="ID">
                 <input type="text" name="TODO" placeholder="TODO">
                 <input type="text" name="name" placeholder="Исполнитель">
@@ -92,32 +92,32 @@
         <tbody>
         <tr class="active">
             <td class="column-1">
-                <div><a href=""><h1><img src="/resources/img/17.jpg" width="40" height="40" align="left">Collection API
+                <div><a href=""><h1><img src="${pageContext.request.contextPath}/resources/img/17.jpg" width="40" height="40" align="left">Collection API
                 </h1></a></div>
             </td>
             <td class="column-1">
-                <div><a></a><a href=""><h1><img src="/resources/img/http.jpg" width="40" height="40" align="left">HTTP
+                <div><a></a><a href=""><h1><img src="${pageContext.request.contextPath}/resources/img/http.jpg" width="40" height="40" align="left">HTTP
                     протокол</h1></a></div>
             </td>
             <td class="column-1">
                 <div><a href="">
-                    <h1><h1><img src="/resources/img/hiber.png" width="40" height="40" align="left">Hibernate</h1>
+                    <h1><h1><img src="${pageContext.request.contextPath}/resources/img/hiber.png" width="40" height="40" align="left">Hibernate</h1>
                 </a></div>
             </td>
         </tr>
         <tr class="active">
             <td class="column-1">
                 <h1>
-                    <div><a href=""><h1><img src="/resources/img/jdbc.jpg" width="40" height="40" align="left">JDBC</h1>
+                    <div><a href=""><h1><img src="${pageContext.request.contextPath}/resources/img/jdbc.jpg" width="40" height="40" align="left">JDBC</h1>
                     </a></div>
                 </h1>
             </td>
             <td class="column-1">
-                <div><a href=""><h1><img src="/resources/img/html.png" width="40" height="40" align="left">HTML/CSS</h1>
+                <div><a href=""><h1><img src="${pageContext.request.contextPath}/resources/img/html.png" width="40" height="40" align="left">HTML/CSS</h1>
                 </a></div>
             </td>
             <td class="column-1"><a href="">
-                <h1><h1><img src="/resources/img/spring.png" width="40" height="40" align="left">Spring</h1>
+                <h1><h1><img src="${pageContext.request.contextPath}/resources/img/spring.png" width="40" height="40" align="left">Spring</h1>
             </a>
 </div>
 </td>
@@ -125,17 +125,17 @@
 <tr class="active">
     <td class="column-1">
         <h1>
-            <div><a><h1><img src="/resources/img/17.jpg" width="40" height="40" align="left">String</h1></a></div>
+            <div><a><h1><img src="${pageContext.request.contextPath}/resources/img/17.jpg" width="40" height="40" align="left">String</h1></a></div>
         </h1>
     </td>
     <td class="column-1">
         <div><a href="">
-            <h1><h1><img src="/resources/img/17.jpg" width="40" height="40" align="left">Servlet API</h1>
+            <h1><h1><img src="${pageContext.request.contextPath}/resources/img/17.jpg" width="40" height="40" align="left">Servlet API</h1>
         </a></div>
     </td>
     <td class="column-1">
         <div><a href="">
-            <h1><h1><img src="/resources/img/junit.jpg" width="40" height="40" align="left">Junit</h1>
+            <h1><h1><img src="${pageContext.request.contextPath}/resources/img/junit.jpg" width="40" height="40" align="left">Junit</h1>
         </a></div>
     </td>
 </tr>

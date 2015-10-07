@@ -12,7 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "index", displayName = "Visual Java project")
+@WebServlet(name ="index",
+        value = "/index",
+        displayName = "Visual Java project")
 public class IndexServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
