@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="16.569" errors="0" skipped="0" tests="3" name="com.database.TODOdbWorkerIntegrationTest">
+<testsuite failures="0" time="16.25" errors="0" skipped="0" tests="3" name="com.database.TODOdbWorkerIntegrationTest">
   <properties>
-    <property name="idea.version" value="14.1.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_79\jre\bin"/>
     <property name="java.vm.version" value="24.79-b02"/>
@@ -12,7 +11,6 @@
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="idea.launcher.port" value="7540"/>
     <property name="user.script" value=""/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
@@ -35,20 +33,18 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="51.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="skipTests" value="true"/>
     <property name="os.version" value="6.3"/>
     <property name="user.home" value="C:\Users\LyashenkoGS"/>
     <property name="user.timezone" value="America/Los_Angeles"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.7"/>
-    <property name="idea.launcher.bin.path" value="C:\Program Files\iDEA\bin"/>
-    <property name="file.encoding" value="windows-1252"/>
+    <property name="file.encoding" value="Cp1252"/>
     <property name="user.name" value="LyashenkoGS"/>
-    <property name="java.class.path" value="C:\Program Files\Apache Software Foundation\apache-maven-3.3.3\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\iDEA\lib\idea_rt.jar"/>
+    <property name="java.class.path" value="C:\Program Files\Apache Software Foundation\apache-maven-3.3.3\boot\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_79\jre"/>
-    <property name="sun.java.command" value="com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=14.1.5 -DskipTests=true install -P downloadSources,openshift"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install tomcat7:deploy -P openshift"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -65,7 +61,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="3.592" classname="com.database.TODOdbWorkerIntegrationTest" name="connectToMySqlTestDatabase"/>
-  <testcase time="3.267" classname="com.database.TODOdbWorkerIntegrationTest" name="testGetTodo"/>
-  <testcase time="9.71" classname="com.database.TODOdbWorkerIntegrationTest" name="testTodoCrudOperations"/>
+  <testcase time="3.701" classname="com.database.TODOdbWorkerIntegrationTest" name="connectToMySqlTestDatabase"/>
+  <testcase time="3.188" classname="com.database.TODOdbWorkerIntegrationTest" name="testGetTodo"/>
+  <testcase time="9.361" classname="com.database.TODOdbWorkerIntegrationTest" name="testTodoCrudOperations"/>
 </testsuite>
