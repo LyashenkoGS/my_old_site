@@ -94,7 +94,27 @@
                             <url>http://localhost:8080/manager/text</url>
                             <username>admin</username>
                             <password>admin</password>
-                            <warFile>webapps/ROOT.war</warFile>
+
+                            <warFile>../webapps/ROOT.war</warFile>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <artifactId>maven-war-plugin</artifactId>
+                        <version>2.1.1</version>
+                        <configuration>
+                            <outputDirectory>webapps</outputDirectory>
+                            <warName>ROOT</warName>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <artifactId>maven-clean-plugin</artifactId>
+                        <version>2.6.1</version>
+                        <configuration>
+                            <filesets>
+                                <fileset>
+                                    <directory>webapps</directory>
+                                </fileset>
+                            </filesets>
                         </configuration>
                     </plugin>
                 </plugins>

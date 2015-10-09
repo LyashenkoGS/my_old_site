@@ -21,7 +21,7 @@ public class isDoneTODOServlet extends HttpServlet {
 
         TODOdbWorker worker = new TODOdbWorker();
 
-        worker.isDoneTODO((String) request.getParameter("id"));
+        worker.isDoneTODO((String)request.getParameter("id"));
 
         List<TodoClass> todoMap = worker.getTODO();
 

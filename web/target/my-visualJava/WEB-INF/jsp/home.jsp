@@ -75,6 +75,13 @@
                 <input type="text" name="ID" placeholder="Id">
                 <input type="submit" value="DEL TODO">
             </form>
+
+            <p>
+            <form method="post" ACTION="isdoneTodo">
+                <input type="int" name="id" placeholder="id">
+                <input type="submit" value="TODO IS DONE">
+            </form>
+            </p>
         </div>
     </div>
 
