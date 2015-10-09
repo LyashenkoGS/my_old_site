@@ -11,4 +11,6 @@ public interface TODOManager {
     void deleteTODO(String key);
 
     void updateTODO(String id, String todo, String name);
+
+    void isDoneTODO(String id);
 }

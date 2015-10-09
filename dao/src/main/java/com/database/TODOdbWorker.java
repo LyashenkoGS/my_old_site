@@ -98,6 +98,24 @@ public class TODOdbWorker implements TODOManager {
             e.printStackTrace();
         }
     }
+
+    @Override
+    public void isDoneTODO(String id) {
+        String update = "UPDATE todo SET isdone = ? WHERE id ="+id+"";
+
+        try (Connection connection = getConnection(JdbcConfiguration.URL, JdbcConfiguration.USERNAME, JdbcConfiguration.PASSWORD);
+             PreparedStatement preparedStatement = connection.prepareStatement(update)) {
+
+            preparedStatement.setBoolean(1, true);
+
+            preparedStatement.executeUpdate();
+
+            System.out.println("Update data base");
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }
 
 

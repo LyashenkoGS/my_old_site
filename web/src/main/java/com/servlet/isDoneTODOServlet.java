@@ -12,26 +12,23 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "updateTodo",
-value="/updateTodo")
-public class UpdateServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+@WebServlet(name = "isdoneTodo", value = "/isdoneTodo")
+public class isDoneTODOServlet extends HttpServlet {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
 
         TODOdbWorker worker = new TODOdbWorker();
 
-        worker.updateTODO(request.getParameter("id"),
-                request.getParameter("TODO"),
-                request.getParameter("name"));
+        worker.isDoneTODO((String) request.getParameter("id"));
+
         List<TodoClass> todoMap = worker.getTODO();
-        System.out.println(todoMap);
 
         request.setAttribute("todo", todoMap);
 
         RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/home.jsp");
         rd.forward(request, response);
     }
+
 }
