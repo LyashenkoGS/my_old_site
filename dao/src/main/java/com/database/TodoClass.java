@@ -8,6 +8,7 @@ public class TodoClass {
     private String id;
     private String todo;
     private String name;
+    private boolean isdone;
 
     public String getId() {
         return id;
@@ -31,5 +32,13 @@ public class TodoClass {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public boolean isIsdone() {
+        return isdone;
+    }
+
+    public void setIsdone(boolean isdone) {
+        this.isdone = isdone;
     }
 }

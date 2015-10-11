@@ -39,6 +39,7 @@ public class TODOdbWorker implements TODOManager {
                 aClass.setId(resultSet.getString("id"));
                 aClass.setTodo(resultSet.getString("todo"));
                 aClass.setName(resultSet.getString("name"));
+                aClass.setIsdone(resultSet.getBoolean("isdone"));
                 todoClass.add(aClass);
             }
 
