@@ -44,7 +44,7 @@
 
     <build>
 
-        <pluginManagement>
+        <!--<pluginManagement>
             <plugins>
                 <plugin>
                     <artifactId>maven-war-plugin</artifactId>
@@ -56,6 +56,6 @@
                 </plugin>
 
             </plugins>
-        </pluginManagement>
+        </pluginManagement>-->
     </build>
 </project>
