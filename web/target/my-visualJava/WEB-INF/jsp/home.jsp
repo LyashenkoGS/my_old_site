@@ -43,12 +43,15 @@
                     <th>ID</th>
                     <th>TODO</th>
                     <th>Исполнитель</th>
+                    <th>isdone</th>
                 </tr>
                 <c:forEach items="${todo}" var="entry">
                     <tr>
                         <td>${entry.id}</td>
                         <td>${entry.todo}</td>
                         <td>${entry.name}</td>
+                        <td>${entry.isdone}</td>
+
                     </tr>
                 </c:forEach>
             </table>
