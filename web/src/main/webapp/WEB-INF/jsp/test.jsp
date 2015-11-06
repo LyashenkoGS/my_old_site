@@ -2,13 +2,10 @@
 <html>
 <head>
     <title>test</title>
-    <link href="${pageContext.request.contextPath}/resources/custom_style.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
 <div>
-
-
     <form action="answer" method="post">
         <ol>
             <li>

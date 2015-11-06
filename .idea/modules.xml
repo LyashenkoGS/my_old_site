@@ -5,9 +5,13 @@
       <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
       <module fileurl="file://$PROJECT_DIR$/dao/src/main/dao.iml" filepath="$PROJECT_DIR$/dao/src/main/dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/dao/dao.iml" filepath="$PROJECT_DIR$/dao/dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dao/dao.iml" filepath="$PROJECT_DIR$/dao/dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dao/dao.iml" filepath="$PROJECT_DIR$/dao/dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/dao/src/test/daoTest.iml" filepath="$PROJECT_DIR$/dao/src/test/daoTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/my.iml" filepath="$PROJECT_DIR$/my.iml" />
       <module fileurl="file://$PROJECT_DIR$/web/src/main/web.iml" filepath="$PROJECT_DIR$/web/src/main/web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
       <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
     </modules>
   </component>
