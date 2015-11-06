@@ -7,22 +7,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>VirtualJava</title>
+    <%--ALL CSS, JS and OTHER RESOURCES--%>
+    <jsp:include page="jspResources.jsp"/>
 
-    <!--Material design bootstrap-->
-    <link href="${pageContext.request.contextPath}/resources/bootstrap.css" rel="stylesheet" type="text/css">
-
-    <script src="<c:url value='http://code.jquery.com/jquery-2.1.4.min.js' />"></script>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="<c:url value='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'/>"></script>
-
-    <!--Custom style sheet-->
-    <link href="${pageContext.request.contextPath}/resources/custom_style.css" rel="stylesheet" type="text/css">
-    <style>
-        a {
-            text-decoration: none; /* Отменяем подчеркивание у ссылки */
-        }
-    </style>
 </head>
 
 <body>
@@ -146,6 +133,11 @@
     <td class="column-1">
         <div><a href="">
             <h1><h1><img src="${pageContext.request.contextPath}/resources/img/junit.jpg" width="40" height="40" align="left">Junit</h1>
+        </a></div>
+    </td>
+    <td class="column-1">
+        <div><a href="/tests">
+            <h1><h1><img src="${pageContext.request.contextPath}/resources/img/junit.jpg" width="40" height="40" align="left">TestMock</h1>
         </a></div>
     </td>
 </tr>

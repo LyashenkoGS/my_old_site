@@ -7,9 +7,6 @@
           <element id="module-output" name="web" />
         </element>
         <element id="directory" name="lib">
-          <element id="archive" name="web-1.0.jar">
-            <element id="module-output" name="web" />
-          </element>
           <element id="archive" name="dao-1.0.jar">
             <element id="module-output" name="dao" />
           </element>
