@@ -1,7 +1,7 @@
 package com.servlet;
 
-import com.database.TODOdbWorker;
-import com.database.TodoClass;
+import com.rhcloud.my_visualjava.dao.todo.TodoDaoImpl;
+import com.rhcloud.my_visualjava.test.com.rhcloud.my_visualjava.todo.Todo;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -21,8 +21,8 @@ public class IndexServlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
 
-        TODOdbWorker worker = new TODOdbWorker();
-        List<TodoClass> todoMap = worker.getTODO();
+        TodoDaoImpl worker = new TodoDaoImpl();
+        List<Todo> todoMap = worker.getTODO();
         System.out.println(todoMap);
 
         request.setAttribute("todo", todoMap);

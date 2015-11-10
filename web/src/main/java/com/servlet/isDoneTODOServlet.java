@@ -1,7 +1,7 @@
 package com.servlet;
 
-import com.database.TODOdbWorker;
-import com.database.TodoClass;
+import com.rhcloud.my_visualjava.dao.todo.TodoDaoImpl;
+import com.rhcloud.my_visualjava.test.com.rhcloud.my_visualjava.todo.Todo;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -19,11 +19,11 @@ public class isDoneTODOServlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
 
-        TODOdbWorker worker = new TODOdbWorker();
+        TodoDaoImpl worker = new TodoDaoImpl();
 
         worker.isDoneTODO((String)request.getParameter("id"));
 
-        List<TodoClass> todoMap = worker.getTODO();
+        List<Todo> todoMap = worker.getTODO();
 
         request.setAttribute("todo", todoMap);
 
