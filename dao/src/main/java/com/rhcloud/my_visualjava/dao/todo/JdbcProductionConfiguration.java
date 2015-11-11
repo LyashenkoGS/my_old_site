@@ -3,7 +3,7 @@ package com.rhcloud.my_visualjava.dao.todo;
 /**
  * Created by Zheka on 17.09.2015.
  */
-public class JdbcConfiguration {
+public class JdbcProductionConfiguration {
 
     /*
     * Configure JDBC

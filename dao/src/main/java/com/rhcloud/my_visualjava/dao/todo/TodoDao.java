@@ -15,4 +15,6 @@ public interface TodoDao {
     void updateTODO(String id, String todo, String name);
 
     void isDoneTODO(String id);
+
+    void changeDefaultJdbcConfiguration(String url, String userName, String password);
 }

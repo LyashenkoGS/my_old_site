@@ -10,6 +10,17 @@ import java.util.List;
 import static java.sql.DriverManager.getConnection;
 
 public class TodoDaoImpl implements TodoDao {
+    String query = "select * from todo";
+    String url = JdbcProductionConfiguration.URL;
+    String username = JdbcProductionConfiguration.USERNAME;
+    String password = JdbcProductionConfiguration.PASSWORD;
+
+@Override
+ public void changeDefaultJdbcConfiguration(String url, String userName, String password){
+    this.url=url;
+    this.username=userName;
+    this.password=password;
+}
 
     @Override
     public List<Todo> getTODO() {
@@ -23,9 +34,10 @@ public class TodoDaoImpl implements TodoDao {
             e.printStackTrace();
         }
 
-        String query = "select * from todo";
 
-        try (Connection connection = getConnection(JdbcConfiguration.URL, JdbcConfiguration.USERNAME, JdbcConfiguration.PASSWORD);
+
+
+        try (Connection connection = getConnection(url, username, password);
              Statement statement = connection.createStatement()) {
             statement.executeQuery("SET NAMES 'UTF8'");
             statement.executeQuery("SET CHARACTER SET 'UTF8'");
@@ -49,12 +61,12 @@ public class TodoDaoImpl implements TodoDao {
 
     @Override
     public void addTODO(String todo, String name) {
-        try (Connection connection = getConnection(JdbcConfiguration.URL, JdbcConfiguration.USERNAME, JdbcConfiguration.PASSWORD);
-             PreparedStatement preparedStatement = connection.prepareStatement(JdbcConfiguration.INSERT_NEW)) {
+        try (Connection connection = getConnection(url,  username, password);
+             PreparedStatement preparedStatement = connection.prepareStatement(JdbcProductionConfiguration.INSERT_NEW)) {
 
             preparedStatement.setString(1, todo);
             preparedStatement.setString(2, name);
-            preparedStatement.setBoolean(3,false);
+            preparedStatement.setBoolean(3, false);
             preparedStatement.executeUpdate();
 
             System.out.println("add to data base");
@@ -66,8 +78,8 @@ public class TodoDaoImpl implements TodoDao {
 
     @Override
     public void deleteTODO(String id) {
-        try (Connection connection = getConnection(JdbcConfiguration.URL, JdbcConfiguration.USERNAME, JdbcConfiguration.PASSWORD);
-             PreparedStatement preparedStatement = connection.prepareStatement(JdbcConfiguration.DEL)) {
+        try (Connection connection = getConnection(url,  username, password);
+             PreparedStatement preparedStatement = connection.prepareStatement(JdbcProductionConfiguration.DEL)) {
 
             preparedStatement.setString(1, id);
 
@@ -83,7 +95,7 @@ public class TodoDaoImpl implements TodoDao {
 
         String update = "UPDATE todo SET todo = ?, name = ? WHERE id = " + id + "";
 
-        try (Connection connection = getConnection(JdbcConfiguration.URL, JdbcConfiguration.USERNAME, JdbcConfiguration.PASSWORD);
+        try (Connection connection = getConnection(url,  username, password);
              PreparedStatement preparedStatement = connection.prepareStatement(update)) {
 
             preparedStatement.setString(1, todo);
@@ -100,9 +112,9 @@ public class TodoDaoImpl implements TodoDao {
 
     @Override
     public void isDoneTODO(String id) {
-        String update = "UPDATE todo SET isdone = ? WHERE id ="+id+"";
+        String update = "UPDATE todo SET isdone = ? WHERE id =" + id + "";
 
-        try (Connection connection = getConnection(JdbcConfiguration.URL, JdbcConfiguration.USERNAME, JdbcConfiguration.PASSWORD);
+        try (Connection connection = getConnection(url,  username, password);
              PreparedStatement preparedStatement = connection.prepareStatement(update)) {
 
             preparedStatement.setBoolean(1, true);
