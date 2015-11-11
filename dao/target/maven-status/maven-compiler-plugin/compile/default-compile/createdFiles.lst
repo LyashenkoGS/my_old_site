@@ -1,0 +1,6 @@
+com\rhcloud\my_visualjava\dao\todo\JdbcProductionConfiguration.class
+com\rhcloud\my_visualjava\dao\todo\JdbcLocalhostConfiguration.class
+com\rhcloud\my_visualjava\dao\test\TestDaoImpl.class
+com\rhcloud\my_visualjava\dao\todo\TodoDao.class
+com\rhcloud\my_visualjava\dao\test\TestDao.class
+com\rhcloud\my_visualjava\dao\todo\TodoDaoImpl.class
