@@ -7,6 +7,9 @@ public class TestEntity {
     private String name;
     private Map<String, Question> questions = new HashMap<>();
 
+    /*
+    contain questions according to their names
+     */
     public Map<String, Question> getQuestions() {
         return questions;
     }
@@ -19,8 +22,11 @@ public class TestEntity {
         this.name = name;
     }
 
-/*
-Iterate over all the inputed answered questionsfinding a matched
+    public void setQuestions(Map<String, Question> questions) {
+        this.questions = questions;
+    }
+    /*
+Iterate over all the inputed answered questions looking a matched
  question and compare input answer with the right answer from Question entity
  Can throw NPE in case if didn't find appropriate question in TestEntity
  */

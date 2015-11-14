@@ -8,6 +8,7 @@ public class Question {
     private String name;
    private Set<String> answers= new HashSet<>();
     private boolean answeredRight=false;
+    private String rightAnswer;
 
     public boolean isAnsweredRight() {
         return answeredRight;
@@ -26,7 +27,6 @@ public class Question {
         this.rightAnswer = rightAnswer;
     }
 
-    private String rightAnswer;
 
     public Set<String> getAnswers() {
         return answers;

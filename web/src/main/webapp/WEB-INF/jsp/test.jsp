@@ -1,57 +1,42 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-    <title>test</title>
+    <title>tests</title>
 
 </head>
 <body>
-<div>
-    <form action="answer" method="post">
-        <ol>
-            <li>
-                <p>Some very hard question test</p>
-                <ol>
-                    <li><span>answer 1</span>
-                        <input type="checkbox">
-                    </li><li><span>answer 1</span>
-                    <input type="checkbox">
-                </li>
-                    <li><span>answer 1</span>
-                        <input type="checkbox">
+<c:forEach var="test" items="${allTests}">
+<form action="answer" method="post">
+    <div>${test.name}</div>
+    <ol>
+
+        <li>
+
+            <c:forEach var="question" items="${test.questions}">
+                <div>${question.key}</div>
+                <ul>
+                    <li>
+                        <input name="${question.key}" type="radio"
+                               value="${question.value.rightAnswer}">${question.value.rightAnswer}
                     </li>
+                    <c:forEach var="wrong_answer" items="${question.value.answers}">
+                        <li>
+                            <input name="${question.key}" type="radio" value="${wrong_answer}"> ${wrong_answer}
+                        </li>
+                    </c:forEach>
+                </ul>
 
-                </ol>
-            <li>
-                <p>Some very hard question test</p>
-                <ol>
-                    <li><span>answer 1</span>
-                        <input type="checkbox">
-                    </li><li><span>answer 1</span>
-                    <input type="checkbox">
-                </li>
-                    <li><span>answer 1</span>
-                        <input type="checkbox">
-                    </li>
+            </c:forEach>
+        </li>
 
-                </ol>
-            </li></li>
 
-            <li>
-                <p>Some very hard question test</p>
-                <ol>
-                    <li><span>answer 1</span>
-                        <input type="checkbox">
-                    </li><li><span>answer 1</span>
-                    <input type="checkbox">
-                </li>
-                    <li><span>answer 1</span>
-                        <input type="checkbox">
-                    </li>
+    </ol>
+    </c:forEach>
+    <input type="submit">
+</form>
 
-                </ol>
-            </li></ol>
-        <input type="submit">
-    </form>
 </div>
+
 </body>
 </html>
