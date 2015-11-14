@@ -20,7 +20,7 @@
     <p>студенческий проект об алгоритмах, структурах данных и программировании на java</p>
 
 
-    <div class="panel panel-info">
+    <div class="panel panel-warning">
         <div class="panel-heading">
             <h3 class="panel-title">TODO</h3>
         </div>
@@ -32,7 +32,7 @@
                     <th>Исполнитель</th>
                     <th>isdone</th>
                 </tr>
-                <c:forEach items="${todo}" var="entry">
+                <c:forEach items="${allActiveTodo}" var="entry">
                     <tr>
                         <td>${entry.id}</td>
                         <td>${entry.todo}</td>
@@ -43,9 +43,9 @@
                 </c:forEach>
             </table>
             <p>
-
-            <form method="post" ACTION="addTodo">
-                <input type="text" name="TODO" placeholder="TODO">
+                <textarea form ="addTodo" name="TODO" cols="45" rows="3" wrap="soft" placeholder="new TODO text"></textarea>
+            <form method="post" ACTION="addTodo" id="addTodo">
+              <%--  <input type="text" name="TODO" placeholder="TODO"> --%>
                 <input type="text" name="name" placeholder="Исполнитель">
                 <input type="submit" value="ADD TODO">
             </form>
@@ -73,6 +73,31 @@
             </form>
             </p>
         </div>
+    </div>
+
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">DONE TODOs</h3>
+        </div>
+        <div class="panel-body">
+            <table width="70%">
+                <tr>
+                    <th>ID</th>
+                    <th>TODO</th>
+                    <th>Исполнитель</th>
+                    <th>isdone</th>
+                </tr>
+                <c:forEach items="${allDoneTodo}" var="entry">
+                    <tr>
+                        <td>${entry.id}</td>
+                        <td>${entry.todo}</td>
+                        <td>${entry.name}</td>
+                        <td>${entry.isdone}</td>
+
+                    </tr>
+                </c:forEach>
+            </table>
+                </div>
     </div>
 
     <table class="table table-striped table-hover ">

@@ -29,7 +29,7 @@ public class delTodo extends HttpServlet {
         worker.deleteTODO(request.getParameter("ID"));
         System.out.println(request.getParameter("ID"));
         System.out.println("del todo servlet have been invoked");
-        List<Todo> todoMap = worker.getTODO();
+        List<Todo> todoMap = worker.getAllTodo();
         System.out.println(todoMap);
 
         request.setAttribute("todo", todoMap);

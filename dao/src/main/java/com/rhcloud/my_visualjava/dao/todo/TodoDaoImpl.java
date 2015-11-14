@@ -10,7 +10,6 @@ import java.util.List;
 import static java.sql.DriverManager.getConnection;
 
 public class TodoDaoImpl implements TodoDao {
-    String query = "select * from todo";
     String url = JdbcProductionConfiguration.URL;
     String username = JdbcProductionConfiguration.USERNAME;
     String password = JdbcProductionConfiguration.PASSWORD;
@@ -23,7 +22,7 @@ public class TodoDaoImpl implements TodoDao {
 }
 
     @Override
-    public List<Todo> getTODO() {
+    public List<Todo> getAllTodo() {
 
         List<Todo> todoClass = new ArrayList<>();
 
@@ -42,7 +41,7 @@ public class TodoDaoImpl implements TodoDao {
             statement.executeQuery("SET NAMES 'UTF8'");
             statement.executeQuery("SET CHARACTER SET 'UTF8'");
 
-            ResultSet resultSet = statement.executeQuery(query);
+            ResultSet resultSet = statement.executeQuery("select * from todo");
 
             while (resultSet.next()) {
                 Todo aClass = new Todo();
@@ -58,6 +57,79 @@ public class TodoDaoImpl implements TodoDao {
         }
         return todoClass;
     }
+
+    @Override
+    public List<Todo> getAllActiveTodo() {
+        List<Todo> todoClass = new ArrayList<>();
+
+        //load mySql driver
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+
+
+
+        try (Connection connection = getConnection(url, username, password);
+             Statement statement = connection.createStatement()) {
+            statement.executeQuery("SET NAMES 'UTF8'");
+            statement.executeQuery("SET CHARACTER SET 'UTF8'");
+
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM test.todo where isdone=0 ");
+
+            while (resultSet.next()) {
+                Todo aClass = new Todo();
+                aClass.setId(resultSet.getString("id"));
+                aClass.setTodo(resultSet.getString("todo"));
+                aClass.setName(resultSet.getString("name"));
+                aClass.setIsdone(resultSet.getBoolean("isdone"));
+                todoClass.add(aClass);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return todoClass;
+    }
+
+    @Override
+    public List<Todo> getAllDoneTodo() {
+        List<Todo> todoClass = new ArrayList<>();
+
+        //load mySql driver
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+
+
+
+        try (Connection connection = getConnection(url, username, password);
+             Statement statement = connection.createStatement()) {
+            statement.executeQuery("SET NAMES 'UTF8'");
+            statement.executeQuery("SET CHARACTER SET 'UTF8'");
+
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM test.todo where isdone=1 ");
+
+            while (resultSet.next()) {
+                Todo aClass = new Todo();
+                aClass.setId(resultSet.getString("id"));
+                aClass.setTodo(resultSet.getString("todo"));
+                aClass.setName(resultSet.getString("name"));
+                aClass.setIsdone(resultSet.getBoolean("isdone"));
+                todoClass.add(aClass);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return todoClass;
+    }
+
 
     @Override
     public void addTODO(String todo, String name) {

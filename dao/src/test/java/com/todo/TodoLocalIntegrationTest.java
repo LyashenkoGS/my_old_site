@@ -17,18 +17,8 @@ import static junit.framework.TestCase.assertNotNull;
 import static junit.framework.TestCase.assertTrue;
 
 
-import com.mysql.jdbc.PreparedStatement;
 import com.rhcloud.my_visualjava.dao.todo.TodoDao;
 import com.rhcloud.my_visualjava.dao.todo.TodoDaoImpl;
-import com.rhcloud.my_visualjava.test.com.rhcloud.my_visualjava.todo.Todo;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
-import java.util.List;
 
 import static java.sql.DriverManager.getConnection;
 import static junit.framework.TestCase.assertNotNull;
@@ -71,7 +61,7 @@ public class TodoLocalIntegrationTest {
 
     @Test
     public void testGetTodo() throws Exception {
-        List<Todo> todoList = worker.getTODO();
+        List<Todo> todoList = worker.getAllTodo();
         assertNotNull(todoList);
     }
 
@@ -87,7 +77,7 @@ public class TodoLocalIntegrationTest {
         //update
         String id = resultSet.getString("id");
         worker.updateTODO(id, "updatedTestTodo", "updatedTestName");
-        List<Todo> todoList = worker.getTODO();
+        List<Todo> todoList = worker.getAllTodo();
         boolean containUpdate = false;
         for (Todo todoClass : todoList) {
             if (todoClass.getName().equals("updatedTestName")) {
@@ -98,7 +88,7 @@ public class TodoLocalIntegrationTest {
         assertTrue(containUpdate);
         //delete
         worker.deleteTODO(id);
-        todoList = worker.getTODO();
+        todoList = worker.getAllTodo();
         boolean doesntContain = true;
         for (Todo todoClass : todoList) {
             if (todoClass.getId().equals(id))

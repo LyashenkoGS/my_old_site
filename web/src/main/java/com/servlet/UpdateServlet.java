@@ -26,7 +26,7 @@ public class UpdateServlet extends HttpServlet {
         worker.updateTODO(request.getParameter("id"),
                 request.getParameter("TODO"),
                 request.getParameter("name"));
-        List<Todo> todoMap = worker.getTODO();
+        List<Todo> todoMap = worker.getAllTodo();
         System.out.println(todoMap);
 
         request.setAttribute("todo", todoMap);

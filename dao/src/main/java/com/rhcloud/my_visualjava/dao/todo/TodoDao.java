@@ -6,8 +6,10 @@ import java.util.List;
 
 public interface TodoDao {
 
-    List<Todo> getTODO();
+    List<Todo> getAllTodo();
 
+    List<Todo> getAllActiveTodo();
+    List<Todo> getAllDoneTodo();
     void addTODO(String todo, String name);
 
     void deleteTODO(String key);

@@ -27,7 +27,7 @@ public class AddTodoServlet extends HttpServlet {
         TodoDaoImpl worker = new TodoDaoImpl();
 
         worker.addTODO(request.getParameter("TODO"), request.getParameter("name"));
-        List<Todo> todoMap = worker.getTODO();
+        List<Todo> todoMap = worker.getAllTodo();
         System.out.println(todoMap);
 
         request.setAttribute("todo", todoMap);

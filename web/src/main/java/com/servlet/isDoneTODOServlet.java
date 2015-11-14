@@ -23,7 +23,7 @@ public class isDoneTODOServlet extends HttpServlet {
 
         worker.isDoneTODO((String)request.getParameter("id"));
 
-        List<Todo> todoMap = worker.getTODO();
+        List<Todo> todoMap = worker.getAllTodo();
 
         request.setAttribute("todo", todoMap);
 

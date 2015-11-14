@@ -53,7 +53,7 @@ public class TodoDaoImplIntegrationTest {
 
     @Test
     public void testGetTodo() throws Exception {
-        List<Todo> todoList = worker.getTODO();
+        List<Todo> todoList = worker.getAllTodo();
         assertNotNull(todoList);
     }
 
@@ -69,7 +69,7 @@ public class TodoDaoImplIntegrationTest {
         //update
         String id = resultSet.getString("id");
         worker.updateTODO(id, "updatedTestTodo", "updatedTestName");
-        List<Todo> todoList = worker.getTODO();
+        List<Todo> todoList = worker.getAllTodo();
         boolean containUpdate = false;
         for (Todo todoClass : todoList) {
             if (todoClass.getName().equals("updatedTestName")) {
@@ -80,7 +80,7 @@ public class TodoDaoImplIntegrationTest {
         assertTrue(containUpdate);
         //delete
         worker.deleteTODO(id);
-        todoList = worker.getTODO();
+        todoList = worker.getAllTodo();
         boolean doesntContain = true;
         for (Todo todoClass : todoList) {
             if (todoClass.getId().equals(id))

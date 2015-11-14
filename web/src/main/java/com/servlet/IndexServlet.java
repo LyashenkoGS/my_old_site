@@ -22,10 +22,16 @@ public class IndexServlet extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
 
         TodoDaoImpl worker = new TodoDaoImpl();
-        List<Todo> todoMap = worker.getTODO();
-        System.out.println(todoMap);
+        List<Todo> allTodo = worker.getAllTodo();
+        List<Todo> allActiveTodo = worker.getAllActiveTodo();
+        List<Todo> allDoneTodo = worker.getAllDoneTodo();
+        
+        //TODO:add logging
+        System.out.println(allTodo);
 
-        request.setAttribute("todo", todoMap);
+        request.setAttribute("todo", allTodo);
+        request.setAttribute("allActiveTodo", allActiveTodo);
+        request.setAttribute("allDoneTodo",allDoneTodo);
 
         RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/home.jsp");
         rd.forward(request, response);
