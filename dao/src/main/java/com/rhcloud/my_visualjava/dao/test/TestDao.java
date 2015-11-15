@@ -22,7 +22,7 @@ public interface TestDao {
 
     void addTest(String name);
 
-    void addQuestion(String testName, String Question);
+    void addQuestion(String testName, String question);
 
     void addRightAnswer(String questionName, String rightAnswer);
 
@@ -30,12 +30,11 @@ public interface TestDao {
 
     void delTest(String name);
 
-    void delQuestion(String testName, String Question);
+    void delQuestion(String testName, String question);
 
-    void delRightAnswer(String questionName, String rightAnswer);
+    void delRightAnswer(String rightAnswer);
 
-    void delWrongAnswer(String questionName, String wrongAnswer);
-
+    void delWrongAnswer(String wrongAnswer);
 
 
 }

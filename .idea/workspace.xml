@@ -2,17 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="864e1f0f-b076-4692-bfd6-2ff69ef7866d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/com/servlet/AddTodoServlet.java" afterPath="$PROJECT_DIR$/web/src/main/java/com/servlet/AddTodoServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/com/servlet/IndexServlet.java" afterPath="$PROJECT_DIR$/web/src/main/java/com/servlet/IndexServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/todo/JdbcProductionConfiguration.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/todo/JdbcProductionConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/todo/TodoDao.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/todo/TodoDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/todo/TodoDaoImpl.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/todo/TodoDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/test/java/com/todo/TodoDaoImplIntegrationTest.java" afterPath="$PROJECT_DIR$/dao/src/test/java/com/todo/TodoDaoImplIntegrationTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/test/java/com/todo/TodoLocalIntegrationTest.java" afterPath="$PROJECT_DIR$/dao/src/test/java/com/todo/TodoLocalIntegrationTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/com/servlet/UpdateServlet.java" afterPath="$PROJECT_DIR$/web/src/main/java/com/servlet/UpdateServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/com/servlet/delTodo.java" afterPath="$PROJECT_DIR$/web/src/main/java/com/servlet/delTodo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/home.jsp" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/home.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/com/servlet/isDoneTODOServlet.java" afterPath="$PROJECT_DIR$/web/src/main/java/com/servlet/isDoneTODOServlet.java" />
+      <change type="DELETED" beforePath="C:\GIT\my\web\target\my-visualJava\META-INF\MANIFEST.MF" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/ROOT.war" afterPath="$PROJECT_DIR$/webapps/ROOT.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/classes/com/rhcloud/my_visualjava/dao/test/TestDao.class" afterPath="$PROJECT_DIR$/dao/target/classes/com/rhcloud/my_visualjava/dao/test/TestDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/classes/com/rhcloud/my_visualjava/dao/test/TestDaoImpl.class" afterPath="$PROJECT_DIR$/dao/target/classes/com/rhcloud/my_visualjava/dao/test/TestDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/test-classes/com/rhcloud/my_visualjava/dao/test/TestDaoImplTest.class" afterPath="$PROJECT_DIR$/dao/target/test-classes/com/rhcloud/my_visualjava/dao/test/TestDaoImplTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/my-visualJava/WEB-INF/lib/core-1.0.jar" afterPath="$PROJECT_DIR$/web/target/my-visualJava/WEB-INF/lib/core-1.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/my-visualJava/WEB-INF/lib/dao-1.0.jar" afterPath="$PROJECT_DIR$/web/target/my-visualJava/WEB-INF/lib/dao-1.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/target/my-visualJava.jar" afterPath="$PROJECT_DIR$/core/target/my-visualJava.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/my-visualJava.jar" afterPath="$PROJECT_DIR$/dao/target/my-visualJava.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/test/TestDao.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/test/TestDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/test/TestDaoImpl.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/test/TestDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/test/java/com/rhcloud/my_visualjava/dao/test/TestDaoImplTest.java" afterPath="$PROJECT_DIR$/dao/src/test/java/com/rhcloud/my_visualjava/dao/test/TestDaoImplTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/core/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/dao/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/web/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="my.iws" />
@@ -34,74 +38,90 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="TestDaoImplTest.java" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/dao/src/test/java/com/rhcloud/my_visualjava/dao/test/TestDaoImplTest.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="1.7626728">
+                    <caret line="100" column="36" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="my" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="home.jsp" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/home.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4121212">
-                  <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="TodoDaoImpl.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/todo/TodoDaoImpl.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="82" column="41" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
-                  <folding>
-                    <element signature="method#changeDefaultJdbcConfiguration#0;class#TodoDaoImpl#0" expanded="false" />
-                    <element signature="method#getAllTodo#0;class#TodoDaoImpl#0" expanded="false" />
-                    <element signature="method#getAllDoneTodo#0;class#TodoDaoImpl#0" expanded="false" />
-                    <element signature="method#addTODO#0;class#TodoDaoImpl#0" expanded="false" />
-                    <element signature="method#deleteTODO#0;class#TodoDaoImpl#0" expanded="false" />
-                    <element signature="method#updateTODO#0;class#TodoDaoImpl#0" expanded="false" />
-                    <element signature="method#isDoneTODO#0;class#TodoDaoImpl#0" expanded="false" />
-                    <marker date="1447522291754" expanded="false" signature="1253:1271" placeholder="select * fro..todo..." />
-                    <marker date="1447522291754" expanded="false" signature="2384:2422" placeholder="SELECT * FRO..todo..." />
-                    <marker date="1447522291754" expanded="false" signature="3534:3572" placeholder="SELECT * FRO..todo..." />
-                    <marker date="1447522291754" expanded="false" signature="5211:5257" placeholder="UPDATE todo ..." />
-                    <marker date="1447522291754" expanded="false" signature="5806:5843" placeholder="UPDATE todo ..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="TodoDao.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/todo/TodoDao.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="IndexServlet.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/web/src/main/java/com/servlet/IndexServlet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.33146068">
-                  <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="34" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="TestDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/test/TestDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
+              <folding>
+                <element signature="method#changeDefaultJdbcConfiguration#0;class#TestDaoImpl#0" expanded="false" />
+                <element signature="method#getAllTests#0;class#TestDaoImpl#0" expanded="false" />
+                <element signature="method#getRightAnswer#0;class#TestDaoImpl#0" expanded="false" />
+                <element signature="method#getQuestions#0;class#TestDaoImpl#0" expanded="false" />
+                <element signature="method#getTestNames#0;class#TestDaoImpl#0" expanded="false" />
+                <element signature="method#addQuestion#0;class#TestDaoImpl#0" expanded="false" />
+                <element signature="method#addRightAnswer#0;class#TestDaoImpl#0" expanded="false" />
+                <element signature="method#addWrongAnswer#0;class#TestDaoImpl#0" expanded="false" />
+                <element signature="method#delTest#0;class#TestDaoImpl#0" expanded="false" />
+                <element signature="method#delQuestion#0;class#TestDaoImpl#0" expanded="false" />
+                <element signature="method#delRightAnswer#0;class#TestDaoImpl#0" expanded="false" />
+                <element signature="method#delWrongAnswer#0;class#TestDaoImpl#0" expanded="false" />
+                <marker date="1447583257650" expanded="false" signature="2239:2322" placeholder="SELECT name ..right_answer..." />
+                <marker date="1447583257650" expanded="false" signature="2891:3003" placeholder="SELECT name ..wrong_answer..." />
+                <marker date="1447583257650" expanded="false" signature="3623:3671" placeholder="SELECT name ..question..." />
+                <marker date="1447583257650" expanded="false" signature="3623:3688" placeholder="SELECT name ..question..." />
+                <marker date="1447583257650" expanded="false" signature="4622:4648" placeholder="SELECT name ..test..." />
+                <marker date="1447583257650" expanded="false" signature="5171:5259" placeholder="INSERT INTO ..." />
+                <marker date="1447583257650" expanded="false" signature="5811:5862" placeholder="insert into ..." />
+                <marker date="1447583257650" expanded="false" signature="5811:5878" placeholder="insert into ..." />
+                <marker date="1447583257650" expanded="false" signature="5811:5879" placeholder="insert into ..." />
+                <marker date="1447583257650" expanded="false" signature="5811:5881" placeholder="insert into ..." />
+                <marker date="1447583257650" expanded="false" signature="5811:5899" placeholder="insert into ..." />
+                <marker date="1447583257650" expanded="false" signature="5811:5900" placeholder="insert into ..." />
+                <marker date="1447583257650" expanded="false" signature="5811:5903" placeholder="insert into ..." />
+                <marker date="1447583257650" expanded="false" signature="6461:6522" placeholder="insert into ..." />
+                <marker date="1447583257650" expanded="false" signature="6461:6545" placeholder="insert into ..." />
+                <marker date="1447583257650" expanded="false" signature="6461:6567" placeholder="insert into ..." />
+                <marker date="1447583257650" expanded="false" signature="6461:6570" placeholder="insert into ..." />
+                <marker date="1447583257650" expanded="false" signature="7128:7213" placeholder="insert into ..." />
+                <marker date="1447583257650" expanded="false" signature="7128:7235" placeholder="insert into ..." />
+                <marker date="1447583257650" expanded="false" signature="7128:7257" placeholder="insert into ..." />
+                <marker date="1447583257650" expanded="false" signature="7783:7869" placeholder="DELETE FROM ..." />
+                <marker date="1447583257650" expanded="false" signature="8421:8515" placeholder="DELETE FROM ..." />
+                <marker date="1447583257650" expanded="false" signature="9056:9157" placeholder="DELETE FROM ..." />
+                <marker date="1447583257650" expanded="false" signature="9698:9799" placeholder="DELETE FROM ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestDao.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/test/TestDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.42696628">
+              <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -143,15 +163,15 @@
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/test.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/servlet/AnswerServlet.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/answer.jsp" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/test/TestDao.java" />
-        <option value="$PROJECT_DIR$/dao/src/test/java/com/rhcloud/my_visualjava/dao/test/TestDaoImplTest.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/test/TestDaoImpl.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/servlet/TestsServlet.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/todo/JdbcProductionConfiguration.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/todo/TodoDao.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/todo/TodoDaoImpl.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/servlet/IndexServlet.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/home.jsp" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/todo/TodoDaoImpl.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/test/TestDaoImpl.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/test/TestDao.java" />
+        <option value="$PROJECT_DIR$/dao/src/test/java/com/rhcloud/my_visualjava/dao/test/TestDaoImplTest.java" />
       </list>
     </option>
   </component>
@@ -574,32 +594,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="TodoLocalIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.todo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="dao" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.todo" />
-      <option name="MAIN_CLASS_NAME" value="com.todo.TodoLocalIntegrationTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="TestDaoImplTest.testGetAllTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -665,6 +659,32 @@
       <option name="PACKAGE_NAME" value="com.rhcloud.my_visualjava.dao.test" />
       <option name="MAIN_CLASS_NAME" value="com.rhcloud.my_visualjava.dao.test.TestDaoImplTest" />
       <option name="METHOD_NAME" value="addTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestDaoImplTest.CRUDonTestEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.rhcloud.my_visualjava.dao.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="dao" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.rhcloud.my_visualjava.dao.test" />
+      <option name="MAIN_CLASS_NAME" value="com.rhcloud.my_visualjava.dao.test.TestDaoImplTest" />
+      <option name="METHOD_NAME" value="CRUDonTestEntity" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1063,18 +1083,18 @@
       <item index="0" class="java.lang.String" itemvalue="JUnit.TestDaoImpl" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.TodoDaoImplIntegrationTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TodoLocalIntegrationTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestDaoImplTest.testGetAllTests" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.TestDaoImplTest" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.TestDaoImplTest.addTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestDaoImplTest.testGetAllTests" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestDaoImplTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.TestDaoImplTest.addTest" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.TestDaoImplTest.CRUDonTestEntity" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestDaoImplTest.addTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestDaoImplTest.CRUDonTestEntity" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.TestDaoImplTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestDaoImplTest.testGetAllTests" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TodoDaoImplIntegrationTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TodoLocalIntegrationTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestDaoImplTest.addTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestDaoImplTest.testGetAllTests" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TodoDaoImplIntegrationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1100,11 +1120,15 @@
       <workItem from="1447511733282" duration="514000" />
       <workItem from="1447519304174" duration="13000" />
       <workItem from="1447519374581" duration="3364000" />
+      <workItem from="1447566873742" duration="807000" />
+      <workItem from="1447568331597" duration="5597000" />
+      <workItem from="1447578524958" duration="113000" />
+      <workItem from="1447578677199" duration="4029000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41978000" />
+    <option name="totallyTimeSpent" value="52524000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="728" extended-state="0" />
@@ -1117,7 +1141,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24203338" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24196018" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3557047" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3137584" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1129,7 +1153,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36241612" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5738255" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1154,7 +1178,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1163,41 +1187,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/test/TestDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-          <folding>
-            <element signature="method#changeDefaultJdbcConfiguration#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#getAllTests#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#getRightAnswer#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#getWrongAnswers#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#getQuestions#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#getTestNames#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#addQuestion#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#addRightAnswer#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#addWrongAnswer#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#delQuestion#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#delRightAnswer#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#delWrongAnswer#0;class#TestDaoImpl#0" expanded="false" />
-            <marker date="1447511603382" expanded="false" signature="-1:-1" placeholder="SELECT name ..right_answer..." />
-            <marker date="1447511603382" expanded="false" signature="-1:-1" placeholder="SELECT name ..wrong_answer..." />
-            <marker date="1447511603382" expanded="false" signature="-1:-1" placeholder="SELECT name ..question..." />
-            <marker date="1447511603382" expanded="false" signature="-1:-1" placeholder="SELECT name ..test..." />
-            <marker date="1447511603382" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1447511603382" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1447511603382" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/test/java/com/rhcloud/my_visualjava/dao/test/TestDaoImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dao/src/test/java/com/todo/TodoLocalIntegrationTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1227,22 +1216,39 @@
             <element signature="method#changeDefaultJdbcConfiguration#0;class#TestDaoImpl#0" expanded="false" />
             <element signature="method#getAllTests#0;class#TestDaoImpl#0" expanded="false" />
             <element signature="method#getRightAnswer#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#getWrongAnswers#0;class#TestDaoImpl#0" expanded="false" />
             <element signature="method#getQuestions#0;class#TestDaoImpl#0" expanded="false" />
             <element signature="method#getTestNames#0;class#TestDaoImpl#0" expanded="false" />
             <element signature="method#addQuestion#0;class#TestDaoImpl#0" expanded="false" />
             <element signature="method#addRightAnswer#0;class#TestDaoImpl#0" expanded="false" />
             <element signature="method#addWrongAnswer#0;class#TestDaoImpl#0" expanded="false" />
+            <element signature="method#delTest#0;class#TestDaoImpl#0" expanded="false" />
             <element signature="method#delQuestion#0;class#TestDaoImpl#0" expanded="false" />
             <element signature="method#delRightAnswer#0;class#TestDaoImpl#0" expanded="false" />
             <element signature="method#delWrongAnswer#0;class#TestDaoImpl#0" expanded="false" />
-            <marker date="1447511603382" expanded="false" signature="-1:-1" placeholder="SELECT name ..right_answer..." />
-            <marker date="1447511603382" expanded="false" signature="-1:-1" placeholder="SELECT name ..wrong_answer..." />
-            <marker date="1447511603382" expanded="false" signature="-1:-1" placeholder="SELECT name ..question..." />
-            <marker date="1447511603382" expanded="false" signature="-1:-1" placeholder="SELECT name ..test..." />
-            <marker date="1447511603382" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1447511603382" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1447511603382" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1447583257650" expanded="false" signature="2239:2322" placeholder="SELECT name ..right_answer..." />
+            <marker date="1447583257650" expanded="false" signature="2891:3003" placeholder="SELECT name ..wrong_answer..." />
+            <marker date="1447583257650" expanded="false" signature="3623:3671" placeholder="SELECT name ..question..." />
+            <marker date="1447583257650" expanded="false" signature="3623:3688" placeholder="SELECT name ..question..." />
+            <marker date="1447583257650" expanded="false" signature="4622:4648" placeholder="SELECT name ..test..." />
+            <marker date="1447583257650" expanded="false" signature="5171:5259" placeholder="INSERT INTO ..." />
+            <marker date="1447583257650" expanded="false" signature="5811:5862" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="5811:5878" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="5811:5879" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="5811:5881" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="5811:5899" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="5811:5900" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="5811:5903" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="6461:6522" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="6461:6545" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="6461:6567" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="6461:6570" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="7128:7213" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="7128:7235" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="7128:7257" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="7783:7869" placeholder="DELETE FROM ..." />
+            <marker date="1447583257650" expanded="false" signature="8421:8515" placeholder="DELETE FROM ..." />
+            <marker date="1447583257650" expanded="false" signature="9056:9157" placeholder="DELETE FROM ..." />
+            <marker date="1447583257650" expanded="false" signature="9698:9799" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -1409,13 +1415,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dao/initTest.sql">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/HashSet.java">
@@ -1495,20 +1501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/test/TestDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33146068">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/test/java/com/rhcloud/my_visualjava/dao/test/TestDaoImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="94" column="5" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/servlet/AnswerServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24146982">
@@ -1531,75 +1523,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/test/TestDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.847769">
-          <caret line="138" column="5" selection-start-line="138" selection-start-column="5" selection-end-line="138" selection-end-column="5" />
-          <folding>
-            <element signature="method#changeDefaultJdbcConfiguration#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#getAllTests#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#getRightAnswer#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#getWrongAnswers#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#getQuestions#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#getTestNames#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#addQuestion#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#addRightAnswer#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#addWrongAnswer#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#delQuestion#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#delRightAnswer#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#delWrongAnswer#0;class#TestDaoImpl#0" expanded="false" />
-            <marker date="1447511603382" expanded="false" signature="-1:-1" placeholder="SELECT name ..right_answer..." />
-            <marker date="1447511603382" expanded="false" signature="-1:-1" placeholder="SELECT name ..wrong_answer..." />
-            <marker date="1447511603382" expanded="false" signature="-1:-1" placeholder="SELECT name ..question..." />
-            <marker date="1447511603382" expanded="false" signature="-1:-1" placeholder="SELECT name ..test..." />
-            <marker date="1447511603382" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1447511603382" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1447511603382" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/todo/TodoDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/todo/TodoDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="41" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
-          <folding>
-            <element signature="method#changeDefaultJdbcConfiguration#0;class#TodoDaoImpl#0" expanded="false" />
-            <element signature="method#getAllTodo#0;class#TodoDaoImpl#0" expanded="false" />
-            <element signature="method#getAllDoneTodo#0;class#TodoDaoImpl#0" expanded="false" />
-            <element signature="method#addTODO#0;class#TodoDaoImpl#0" expanded="false" />
-            <element signature="method#deleteTODO#0;class#TodoDaoImpl#0" expanded="false" />
-            <element signature="method#updateTODO#0;class#TodoDaoImpl#0" expanded="false" />
-            <element signature="method#isDoneTODO#0;class#TodoDaoImpl#0" expanded="false" />
-            <marker date="1447522291754" expanded="false" signature="1253:1271" placeholder="select * fro..todo..." />
-            <marker date="1447522291754" expanded="false" signature="2384:2422" placeholder="SELECT * FRO..todo..." />
-            <marker date="1447522291754" expanded="false" signature="3534:3572" placeholder="SELECT * FRO..todo..." />
-            <marker date="1447522291754" expanded="false" signature="5211:5257" placeholder="UPDATE todo ..." />
-            <marker date="1447522291754" expanded="false" signature="5806:5843" placeholder="UPDATE todo ..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/servlet/IndexServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33146068">
+        <state vertical-scroll-proportion="0.62147886">
           <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4121212">
+        <state vertical-scroll-proportion="0.0">
           <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/todo/TodoDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.85955054">
+          <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/Assert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3318584">
+          <caret line="116" column="17" selection-start-line="116" selection-start-column="17" selection-end-line="116" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/test/java/com/rhcloud/my_visualjava/dao/test/TestDaoImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7626728">
+          <caret line="100" column="36" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/test/TestDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
+          <folding>
+            <element signature="method#changeDefaultJdbcConfiguration#0;class#TestDaoImpl#0" expanded="false" />
+            <element signature="method#getAllTests#0;class#TestDaoImpl#0" expanded="false" />
+            <element signature="method#getRightAnswer#0;class#TestDaoImpl#0" expanded="false" />
+            <element signature="method#getQuestions#0;class#TestDaoImpl#0" expanded="false" />
+            <element signature="method#getTestNames#0;class#TestDaoImpl#0" expanded="false" />
+            <element signature="method#addQuestion#0;class#TestDaoImpl#0" expanded="false" />
+            <element signature="method#addRightAnswer#0;class#TestDaoImpl#0" expanded="false" />
+            <element signature="method#addWrongAnswer#0;class#TestDaoImpl#0" expanded="false" />
+            <element signature="method#delTest#0;class#TestDaoImpl#0" expanded="false" />
+            <element signature="method#delQuestion#0;class#TestDaoImpl#0" expanded="false" />
+            <element signature="method#delRightAnswer#0;class#TestDaoImpl#0" expanded="false" />
+            <element signature="method#delWrongAnswer#0;class#TestDaoImpl#0" expanded="false" />
+            <marker date="1447583257650" expanded="false" signature="2239:2322" placeholder="SELECT name ..right_answer..." />
+            <marker date="1447583257650" expanded="false" signature="2891:3003" placeholder="SELECT name ..wrong_answer..." />
+            <marker date="1447583257650" expanded="false" signature="3623:3671" placeholder="SELECT name ..question..." />
+            <marker date="1447583257650" expanded="false" signature="3623:3688" placeholder="SELECT name ..question..." />
+            <marker date="1447583257650" expanded="false" signature="4622:4648" placeholder="SELECT name ..test..." />
+            <marker date="1447583257650" expanded="false" signature="5171:5259" placeholder="INSERT INTO ..." />
+            <marker date="1447583257650" expanded="false" signature="5811:5862" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="5811:5878" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="5811:5879" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="5811:5881" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="5811:5899" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="5811:5900" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="5811:5903" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="6461:6522" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="6461:6545" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="6461:6567" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="6461:6570" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="7128:7213" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="7128:7235" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="7128:7257" placeholder="insert into ..." />
+            <marker date="1447583257650" expanded="false" signature="7783:7869" placeholder="DELETE FROM ..." />
+            <marker date="1447583257650" expanded="false" signature="8421:8515" placeholder="DELETE FROM ..." />
+            <marker date="1447583257650" expanded="false" signature="9056:9157" placeholder="DELETE FROM ..." />
+            <marker date="1447583257650" expanded="false" signature="9698:9799" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/test/TestDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42696628">
+          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
           <folding />
         </state>
       </provider>

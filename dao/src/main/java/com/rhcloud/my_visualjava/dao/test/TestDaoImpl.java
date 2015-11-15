@@ -33,9 +33,9 @@ public class TestDaoImpl implements TestDao {
 
     @Override
     public Set<TestEntity> getAllTests() {
-Set<TestEntity> allTests = new HashSet<>();
+        Set<TestEntity> allTests = new HashSet<>();
         Set<String> testsNames = new HashSet<>();
-        testsNames=this.getTestNames();
+        testsNames = this.getTestNames();
         for (String testName : testsNames) {
             TestEntity tempTestEntity = new TestEntity();
             tempTestEntity.setName(testName);
@@ -43,8 +43,8 @@ Set<TestEntity> allTests = new HashSet<>();
             /*
             add questions
              */
-            Map<String,Question> questionMap = new HashMap<>();
-            questionMap=getQuestions(tempTestEntity);
+            Map<String, Question> questionMap = new HashMap<>();
+            questionMap = getQuestions(tempTestEntity);
 
             for (Question question : questionMap.values()) {
                 question.setRightAnswer(getRightAnswer(question));
@@ -96,11 +96,12 @@ Set<TestEntity> allTests = new HashSet<>();
     }
 
     @Override
-    public Map<String,Question> getQuestions(TestEntity test) {
+    public Map<String, Question> getQuestions(TestEntity test) {
         Set<Question> questions = new HashSet<>();
+        String testName = test.getName();
         try (Connection connection = getConnection(url, username, password);
              Statement statement = connection.createStatement(); ResultSet resultSet =
-                     statement.executeQuery("SELECT name FROM test.question where test_name='my_test';")) {
+                     statement.executeQuery("SELECT name FROM test.question where test_name='" + testName + "';")) {
 
             while (resultSet.next()) {
                 Question tempQuestion = new Question();
@@ -111,12 +112,12 @@ Set<TestEntity> allTests = new HashSet<>();
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        Map<String,Question> questionMap= new HashMap<>();
+        Map<String, Question> questionMap = new HashMap<>();
         /*
         parse Set<Question> to Map<String, Question> where key is question name
          */
         for (Question question : questions) {
-         questionMap.put(question.getName(),question);
+            questionMap.put(question.getName(), question);
         }
         return questionMap;
     }
@@ -142,48 +143,150 @@ Set<TestEntity> allTests = new HashSet<>();
     public void addTest(String name) {
         try (Connection connection = getConnection(url, username, password);
              Statement statement = connection.createStatement();
-                    ) {
+        ) {
+            connection.setAutoCommit(false);
             statement.executeUpdate("INSERT INTO test.test (name)\n" +
-                    "VALUES ("+"'"+name+"'"+");");
+                    "VALUES (" + "'" + name + "'" + ");");
+            try {
+                connection.commit();
+            } catch (SQLException e) {
+                connection.rollback();
+            }
 
-                    } catch (SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
     @Override
-    public void addQuestion(String testName, String Question) {
+    public void addQuestion(String testName, String question) {
+        try (Connection connection = getConnection(url, username, password);
+             Statement statement = connection.createStatement();
+        ) {
+            connection.setAutoCommit(false);
+            statement.executeUpdate("insert into test.question (name,test_name) values('" + question + "','" + testName + "') ");
+            try {
+                connection.commit();
+            } catch (SQLException e) {
+                connection.rollback();
+            }
 
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void addRightAnswer(String questionName, String rightAnswer) {
+        try (Connection connection = getConnection(url, username, password);
+             Statement statement = connection.createStatement();
+        ) {
+            connection.setAutoCommit(false);
+            statement.executeUpdate("insert into test.right_answer  (name,question_name) values( '" + rightAnswer + "', '" + questionName + "')");
+            try {
+                connection.commit();
+            } catch (SQLException e) {
+                connection.rollback();
+            }
 
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void addWrongAnswer(String questionName, String wrongAnswer) {
+        try (Connection connection = getConnection(url, username, password);
+             Statement statement = connection.createStatement();
+        ) {
+            connection.setAutoCommit(false);
+            statement.executeUpdate("insert into test.wrong_answer\n" +
+                    "(name,question_name) values('" + wrongAnswer + "','" + questionName + "')");
+            try {
+                connection.commit();
+            } catch (SQLException e) {
+                connection.rollback();
+            }
 
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void delTest(String name) {
+        try (Connection connection = getConnection(url, username, password);
+             Statement statement = connection.createStatement();
+        ) {
+            connection.setAutoCommit(false);
+            statement.executeUpdate("DELETE FROM test.test\n" +
+                    "where name= (" + "'" + name + "'" + ");");
+            try {
+                connection.commit();
+            } catch (SQLException e) {
+                connection.rollback();
+            }
 
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
-    public void delQuestion(String testName, String Question) {
+    public void delQuestion(String testName, String question) {
+        try (Connection connection = getConnection(url, username, password);
+             Statement statement = connection.createStatement();
+        ) {
+            connection.setAutoCommit(false);
+            statement.executeUpdate("DELETE FROM test.question\n" +
+                    "where name= (" + "'" + question + "'" + ");");
+            try {
+                connection.commit();
+            } catch (SQLException e) {
+                connection.rollback();
+            }
 
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
-    public void delRightAnswer(String questionName, String rightAnswer) {
+    public void delRightAnswer(String rightAnswer) {
+        try (Connection connection = getConnection(url, username, password);
+             Statement statement = connection.createStatement();
+        ) {
+            connection.setAutoCommit(false);
+            statement.executeUpdate("DELETE FROM test.right_answer\n" +
+                    "where name= (" + "'" + rightAnswer + "'" + ");");
+            try {
+                connection.commit();
+            } catch (SQLException e) {
+                connection.rollback();
+            }
 
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
-    public void delWrongAnswer(String questionName, String wrongAnswer) {
+    public void delWrongAnswer(String wrongAnswer) {
+        try (Connection connection = getConnection(url, username, password);
+             Statement statement = connection.createStatement();
+        ) {
+            connection.setAutoCommit(false);
+            statement.executeUpdate("DELETE FROM test.wrong_answer\n" +
+                    "where name= (" + "'" + wrongAnswer + "'" + ");");
+            try {
+                connection.commit();
+            } catch (SQLException e) {
+                connection.rollback();
+            }
 
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
 

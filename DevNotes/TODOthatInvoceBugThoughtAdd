@@ -1,0 +1,1 @@
+explicitly call  connection.commit() and in case of troubles connection.reliase().  Implementation of method connection.close() is "implementation-defined".
