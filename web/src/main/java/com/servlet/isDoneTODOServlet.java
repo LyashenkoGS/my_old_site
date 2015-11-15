@@ -27,8 +27,7 @@ public class isDoneTODOServlet extends HttpServlet {
 
         request.setAttribute("todo", todoMap);
 
-        RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/home.jsp");
-        rd.forward(request, response);
+        response.sendRedirect("/index");
     }
 
 }
