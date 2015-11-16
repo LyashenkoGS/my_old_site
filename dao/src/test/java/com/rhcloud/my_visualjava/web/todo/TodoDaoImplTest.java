@@ -1,6 +1,6 @@
 package com.rhcloud.my_visualjava.web.todo;
 
-import com.rhcloud.my_visualjava.test.com.rhcloud.my_visualjava.todo.Todo;
+import com.rhcloud.my_visualjava.core.todo.Todo;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

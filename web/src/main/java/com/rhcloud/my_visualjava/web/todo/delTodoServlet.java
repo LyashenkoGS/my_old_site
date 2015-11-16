@@ -1,6 +1,7 @@
 package com.rhcloud.my_visualjava.web.todo;
 
-import com.rhcloud.my_visualjava.test.com.rhcloud.my_visualjava.todo.Todo;
+
+import com.rhcloud.my_visualjava.core.todo.Todo;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,10 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
-
-/**
- * Created by LyashenkoGS on 9/16/2015.
- */
 
 @WebServlet(name = "DelTodoServlet",
             value="/DelTodoServlet")

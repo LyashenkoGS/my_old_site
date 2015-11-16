@@ -1,6 +1,6 @@
 package com.rhcloud.my_visualjava.web;
 
-import com.rhcloud.my_visualjava.test.com.rhcloud.my_visualjava.todo.Todo;
+import com.rhcloud.my_visualjava.core.todo.Todo;
 import com.rhcloud.my_visualjava.web.todo.TodoDaoImpl;
 
 import javax.servlet.RequestDispatcher;

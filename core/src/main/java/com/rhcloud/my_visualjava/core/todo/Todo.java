@@ -1,4 +1,4 @@
-package com.rhcloud.my_visualjava.test.com.rhcloud.my_visualjava.todo;
+package com.rhcloud.my_visualjava.core.todo;
 
 public class Todo {
 
