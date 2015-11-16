@@ -11,9 +11,7 @@
 <form action="answer" method="post">
     <div>${test.name}</div>
     <ol>
-
         <li>
-
             <c:forEach var="question" items="${test.questions}">
                 <div>${question.key}</div>
                 <ul>
@@ -27,11 +25,8 @@
                         </li>
                     </c:forEach>
                 </ul>
-
             </c:forEach>
         </li>
-
-
     </ol>
     </c:forEach>
     <input type="submit">
@@ -51,13 +46,13 @@
         <input type="submit" value="addQuestion" >
     </form>
 
-    <form action="addRightAnswer">
+    <form action="addRightAnswer" method="post">
         <input type="text" name="questionName" placeholder="questionName">
         <input type="text" name="rightAnswer" placeholder="rightAnswer">
         <input type="submit" value="addRightAnswer" >
     </form>
 
-    <form action="addWrongAnswer">
+    <form action="addWrongAnswer" method="post">
         <input type="text" name="questionName" placeholder="questionName">
         <input type="text" name="wrongAnswer" placeholder="wrongAnswer">
         <input type="submit" value="addWrongAnswer" >
