@@ -7,55 +7,56 @@
 </head>
 <body>
 <div id="test">
-<c:forEach var="test" items="${allTests}">
-<form action="answer" method="post">
-    <div>${test.name}</div>
-    <ol>
-        <li>
+    <c:forEach var="test" items="${allTests}">
+    <form action="answer" method="post">
+        <div>${test.name}</div>
+        <ol>
             <c:forEach var="question" items="${test.questions}">
-                <div>${question.key}</div>
-                <ul>
-                    <li>
-                        <input name="${question.key}" type="radio"
-                               value="${question.value.rightAnswer}">${question.value.rightAnswer}
-                    </li>
-                    <c:forEach var="wrong_answer" items="${question.value.answers}">
+                <li>
+                        ${question.key}
+                    <ul>
                         <li>
-                            <input name="${question.key}" type="radio" value="${wrong_answer}"> ${wrong_answer}
+                            <input name="${question.key}" type="radio"
+                                   value="${question.value.rightAnswer}">${question.value.rightAnswer}
                         </li>
-                    </c:forEach>
-                </ul>
+                        <c:forEach var="wrong_answer" items="${question.value.answers}">
+                            <li>
+                                <input name="${question.key}" type="radio" value="${wrong_answer}"> ${wrong_answer}
+                            </li>
+                        </c:forEach>
+                    </ul>
+
+                </li>
             </c:forEach>
-        </li>
-    </ol>
-    </c:forEach>
-    <input type="submit">
-</form>
+        </ol>
+        </c:forEach>
+        <input type="submit">
+    </form>
 
 </div>
 <div id="manager">
     TestManager
-    <form action="addTest">
+    <form action="addTest" method="POST">
         <input type="text" name="name" placeholder="name">
         <input type="submit" value="addTest">
     </form>
 
-    <form action="addQuestion">
+    <form action="addQuestion" method="POST">
         <input type="text" name="testName" placeholder="testName">
         <input type="text" name="question" placeholder="question">
-        <input type="submit" value="addQuestion" >
+        <input type="submit" value="addQuestion">
     </form>
 
     <form action="addRightAnswer" method="post">
         <input type="text" name="questionName" placeholder="questionName">
         <input type="text" name="rightAnswer" placeholder="rightAnswer">
-        <input type="submit" value="addRightAnswer" >
+        <input type="submit" value="addRightAnswer">
     </form>
 
     <form action="addWrongAnswer" method="post">
         <input type="text" name="questionName" placeholder="questionName">
         <input type="text" name="wrongAnswer" placeholder="wrongAnswer">
-        <input type="submit" value="addWrongAnswer" >
+        <input type="submit" value="addWrongAnswer">
     </form>
 
 </div>
