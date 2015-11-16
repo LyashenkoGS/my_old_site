@@ -19,8 +19,8 @@ public class AddTestServlet extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
 
         ConfigurableApplicationContext context =
-                new ClassPathXmlApplicationContext(new String[] {"applicationContext.xml"});
-        TestDao testDao = (TestDao)context.getBean("testDao");
+                new ClassPathXmlApplicationContext(new String[]{"applicationContext.xml"});
+        TestDao testDao = (TestDao) context.getBean("testDao");
         //TODO: enable switch between local and production DB via web interface in runtime
 
         testDao.addTest(request.getParameter("name"));

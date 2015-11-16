@@ -9,7 +9,9 @@ public interface TodoDao {
     List<Todo> getAllTodo();
 
     List<Todo> getAllActiveTodo();
+
     List<Todo> getAllDoneTodo();
+
     void addTODO(String todo, String name);
 
     void deleteTODO(String key);

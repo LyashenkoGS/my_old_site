@@ -3,7 +3,6 @@ package com.rhcloud.my_visualjava.dao.test;
 import com.rhcloud.my_visualjava.test.Question;
 import com.rhcloud.my_visualjava.test.TestEntity;
 
-import java.sql.SQLException;
 import java.util.Map;
 import java.util.Set;
 

@@ -1,10 +1,9 @@
 package com.rhcloud.my_visualjava.dao.test;
 
-
-import com.rhcloud.my_visualjava.web.todo.JdbcLocalhostConfiguration;
-import com.rhcloud.my_visualjava.web.todo.JdbcProductionConfiguration;
 import com.rhcloud.my_visualjava.test.Question;
 import com.rhcloud.my_visualjava.test.TestEntity;
+import com.rhcloud.my_visualjava.web.todo.JdbcLocalhostConfiguration;
+import com.rhcloud.my_visualjava.web.todo.JdbcProductionConfiguration;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -29,12 +28,10 @@ public class TestDaoImpl implements TestDao {
         this.password = JdbcLocalhostConfiguration.PASSWORD;
     }
 
-
     @Override
     public Set<TestEntity> getAllTests() {
         Set<TestEntity> allTests = new HashSet<>();
-        Set<String> testsNames = new HashSet<>();
-        testsNames = this.getTestNames();
+        Set<String> testsNames = this.getTestNames();
         for (String testName : testsNames) {
             TestEntity tempTestEntity = new TestEntity();
             tempTestEntity.setName(testName);
@@ -42,8 +39,8 @@ public class TestDaoImpl implements TestDao {
             /*
             add questions
              */
-            Map<String, Question> questionMap = new HashMap<>();
-            questionMap = getQuestions(tempTestEntity);
+
+            Map<String, Question> questionMap = getQuestions(tempTestEntity);
 
             for (Question question : questionMap.values()) {
                 question.setRightAnswer(getRightAnswer(question));
@@ -141,7 +138,7 @@ public class TestDaoImpl implements TestDao {
     @Override
     public void addTest(String name) {
         try (Connection connection = getConnection(url, username, password);
-             Statement statement = connection.createStatement();
+             Statement statement = connection.createStatement()
         ) {
             connection.setAutoCommit(false);
             statement.executeUpdate("INSERT INTO test.test (name)\n" +
@@ -160,7 +157,7 @@ public class TestDaoImpl implements TestDao {
     @Override
     public void addQuestion(String testName, String question) {
         try (Connection connection = getConnection(url, username, password);
-             Statement statement = connection.createStatement();
+             Statement statement = connection.createStatement()
         ) {
             connection.setAutoCommit(false);
             statement.executeUpdate("insert into test.question (name,test_name) values('" + question + "','" + testName + "') ");
@@ -178,7 +175,7 @@ public class TestDaoImpl implements TestDao {
     @Override
     public void addRightAnswer(String questionName, String rightAnswer) {
         try (Connection connection = getConnection(url, username, password);
-             Statement statement = connection.createStatement();
+             Statement statement = connection.createStatement()
         ) {
             connection.setAutoCommit(false);
             statement.executeUpdate("insert into test.right_answer  (name,question_name) values( '" + rightAnswer + "', '" + questionName + "')");
@@ -196,7 +193,7 @@ public class TestDaoImpl implements TestDao {
     @Override
     public void addWrongAnswer(String questionName, String wrongAnswer) {
         try (Connection connection = getConnection(url, username, password);
-             Statement statement = connection.createStatement();
+             Statement statement = connection.createStatement()
         ) {
             connection.setAutoCommit(false);
             statement.executeUpdate("insert into test.wrong_answer\n" +
@@ -215,7 +212,7 @@ public class TestDaoImpl implements TestDao {
     @Override
     public void delTest(String name) {
         try (Connection connection = getConnection(url, username, password);
-             Statement statement = connection.createStatement();
+             Statement statement = connection.createStatement()
         ) {
             connection.setAutoCommit(false);
             statement.executeUpdate("DELETE FROM test.test\n" +
@@ -234,7 +231,7 @@ public class TestDaoImpl implements TestDao {
     @Override
     public void delQuestion(String testName, String question) {
         try (Connection connection = getConnection(url, username, password);
-             Statement statement = connection.createStatement();
+             Statement statement = connection.createStatement()
         ) {
             connection.setAutoCommit(false);
             statement.executeUpdate("DELETE FROM test.question\n" +
@@ -253,7 +250,7 @@ public class TestDaoImpl implements TestDao {
     @Override
     public void delRightAnswer(String rightAnswer) {
         try (Connection connection = getConnection(url, username, password);
-             Statement statement = connection.createStatement();
+             Statement statement = connection.createStatement()
         ) {
             connection.setAutoCommit(false);
             statement.executeUpdate("DELETE FROM test.right_answer\n" +
@@ -272,7 +269,7 @@ public class TestDaoImpl implements TestDao {
     @Override
     public void delWrongAnswer(String wrongAnswer) {
         try (Connection connection = getConnection(url, username, password);
-             Statement statement = connection.createStatement();
+             Statement statement = connection.createStatement()
         ) {
             connection.setAutoCommit(false);
             statement.executeUpdate("DELETE FROM test.wrong_answer\n" +
@@ -287,6 +284,4 @@ public class TestDaoImpl implements TestDao {
             e.printStackTrace();
         }
     }
-
-
 }

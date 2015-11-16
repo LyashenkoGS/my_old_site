@@ -21,7 +21,8 @@ public class TodoDaoImpl implements TodoDao {
         this.password = JdbcLocalhostConfiguration.PASSWORD;
 
     }
-        @Override
+
+    @Override
     public List<Todo> getAllTodo() {
 
         List<Todo> todoClass = new ArrayList<>();
@@ -67,8 +68,6 @@ public class TodoDaoImpl implements TodoDao {
         }
 
 
-
-
         try (Connection connection = getConnection(url, username, password);
              Statement statement = connection.createStatement()) {
             statement.executeQuery("SET NAMES 'UTF8'");
@@ -103,8 +102,6 @@ public class TodoDaoImpl implements TodoDao {
         }
 
 
-
-
         try (Connection connection = getConnection(url, username, password);
              Statement statement = connection.createStatement()) {
             statement.executeQuery("SET NAMES 'UTF8'");
@@ -130,7 +127,7 @@ public class TodoDaoImpl implements TodoDao {
 
     @Override
     public void addTODO(String todo, String name) {
-        try (Connection connection = getConnection(url,  username, password);
+        try (Connection connection = getConnection(url, username, password);
              PreparedStatement preparedStatement = connection.prepareStatement(JdbcProductionConfiguration.INSERT_NEW)) {
 
             preparedStatement.setString(1, todo);
@@ -147,7 +144,7 @@ public class TodoDaoImpl implements TodoDao {
 
     @Override
     public void deleteTODO(String id) {
-        try (Connection connection = getConnection(url,  username, password);
+        try (Connection connection = getConnection(url, username, password);
              PreparedStatement preparedStatement = connection.prepareStatement(JdbcProductionConfiguration.DEL)) {
 
             preparedStatement.setString(1, id);
@@ -164,7 +161,7 @@ public class TodoDaoImpl implements TodoDao {
 
         String update = "UPDATE todo SET todo = ?, name = ? WHERE id = " + id + "";
 
-        try (Connection connection = getConnection(url,  username, password);
+        try (Connection connection = getConnection(url, username, password);
              PreparedStatement preparedStatement = connection.prepareStatement(update)) {
 
             preparedStatement.setString(1, todo);
@@ -183,7 +180,7 @@ public class TodoDaoImpl implements TodoDao {
     public void isDoneTODO(String id) {
         String update = "UPDATE todo SET isdone = ? WHERE id =" + id + "";
 
-        try (Connection connection = getConnection(url,  username, password);
+        try (Connection connection = getConnection(url, username, password);
              PreparedStatement preparedStatement = connection.prepareStatement(update)) {
 
             preparedStatement.setBoolean(1, true);

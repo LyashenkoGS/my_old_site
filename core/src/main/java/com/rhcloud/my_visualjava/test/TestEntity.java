@@ -14,16 +14,16 @@ public class TestEntity {
         return questions;
     }
 
+    public void setQuestions(Map<String, Question> questions) {
+        this.questions = questions;
+    }
+
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public void setQuestions(Map<String, Question> questions) {
-        this.questions = questions;
     }
     /*
 Iterate over all the inputed answered questions looking a matched

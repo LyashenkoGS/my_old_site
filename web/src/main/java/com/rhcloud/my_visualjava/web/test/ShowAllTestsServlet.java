@@ -17,15 +17,15 @@ import java.io.IOException;
 import java.util.Set;
 
 @WebServlet(name = "tests", value = "/tests")
-                          public class ShowAllTestsServlet extends HttpServlet {
+public class ShowAllTestsServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
 
         ConfigurableApplicationContext context =
-                new ClassPathXmlApplicationContext(new String[] {"applicationContext.xml"});
-        TestDao testDao = (TestDao)context.getBean("testDao");
-       //TODO: enable switch between local and production DB via web interface in runtime
+                new ClassPathXmlApplicationContext(new String[]{"applicationContext.xml"});
+        TestDao testDao = (TestDao) context.getBean("testDao");
+        //TODO: enable switch between local and production DB via web interface in runtime
 
         Set<TestEntity> allTests = testDao.getAllTests();
         HttpSession session = request.getSession();

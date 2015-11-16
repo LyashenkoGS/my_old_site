@@ -6,8 +6,8 @@ import java.util.Set;
 
 public class Question {
     private String name;
-   private Set<String> answers= new HashSet<>();
-    private boolean answeredRight=false;
+    private Set<String> answers = new HashSet<>();
+    private boolean answeredRight = false;
     private String rightAnswer;
 
     public boolean isAnsweredRight() {
@@ -18,7 +18,6 @@ public class Question {
         this.answeredRight = answeredRight;
     }
 
-
     public String getRightAnswer() {
         return rightAnswer;
     }
@@ -26,7 +25,6 @@ public class Question {
     public void setRightAnswer(String rightAnswer) {
         this.rightAnswer = rightAnswer;
     }
-
 
     public Set<String> getAnswers() {
         return answers;
