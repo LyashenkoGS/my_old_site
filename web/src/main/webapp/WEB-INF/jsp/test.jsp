@@ -12,11 +12,12 @@
     <div>${test.name}</div>
     <ol>
 
-        <li>
+
 
             <c:forEach var="question" items="${test.questions}">
-                <div>${question.key}</div>
-                <ul>
+                <li>
+            ${question.key}
+                    <ul>
                     <li>
                         <input name="${question.key}" type="radio"
                                value="${question.value.rightAnswer}">${question.value.rightAnswer}
@@ -27,9 +28,9 @@
                         </li>
                     </c:forEach>
                 </ul>
-
+                </li>
             </c:forEach>
-        </li>
+
 
 
     </ol>
@@ -40,12 +41,12 @@
 </div>
 <div id="manager">
     TestManager
-    <form action="addTest">
+    <form action="addTest" method="POST">
         <input type="text" name="name" placeholder="name">
         <input type="submit" value="addTest">
     </form>
 
-    <form action="addQuestion">
+    <form action="addQuestion" method="POST">
         <input type="text" name="testName" placeholder="testName">
         <input type="text" name="question" placeholder="question">
         <input type="submit" value="addQuestion" >

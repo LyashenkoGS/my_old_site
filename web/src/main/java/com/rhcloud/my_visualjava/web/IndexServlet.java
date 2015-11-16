@@ -1,7 +1,10 @@
 package com.rhcloud.my_visualjava.web;
 
 import com.rhcloud.my_visualjava.core.todo.Todo;
+import com.rhcloud.my_visualjava.web.todo.TodoDao;
 import com.rhcloud.my_visualjava.web.todo.TodoDaoImpl;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -20,11 +23,12 @@ public class IndexServlet extends HttpServlet {
 
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
-
-        TodoDaoImpl worker = new TodoDaoImpl();
-        List<Todo> allTodo = worker.getAllTodo();
-        List<Todo> allActiveTodo = worker.getAllActiveTodo();
-        List<Todo> allDoneTodo = worker.getAllDoneTodo();
+        ConfigurableApplicationContext context =
+                new ClassPathXmlApplicationContext(new String[] {"applicationContext.xml"});
+        TodoDao todoDao =(TodoDao)context.getBean("todoDao");
+        List<Todo> allTodo = todoDao.getAllTodo();
+        List<Todo> allActiveTodo = todoDao.getAllActiveTodo();
+        List<Todo> allDoneTodo = todoDao.getAllDoneTodo();
         
         //TODO:add logging
         System.out.println(allTodo);
