@@ -1,6 +1,6 @@
 package com.rhcloud.my_visualjava.dao.test;
 
-import com.rhcloud.my_visualjava.dao.todo.JdbcLocalhostConfiguration;
+import com.rhcloud.my_visualjava.web.todo.JdbcLocalhostConfiguration;
 import com.rhcloud.my_visualjava.test.Question;
 import com.rhcloud.my_visualjava.test.TestEntity;
 import org.junit.After;

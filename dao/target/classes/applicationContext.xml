@@ -11,7 +11,7 @@
       <!--    init-method="changeDefaultJdbcConfiguration"-->
               </bean>
     <bean id="todoDao"
-          class="com.rhcloud.my_visualjava.dao.todo.TodoDaoImpl"
+          class="com.rhcloud.my_visualjava.web.todo.TodoDaoImpl"
             >
       <!-- init-method="changeDefaultJdbcConfiguration"-->
     </bean>
