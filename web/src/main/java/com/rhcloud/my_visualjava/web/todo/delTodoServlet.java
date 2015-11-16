@@ -12,8 +12,8 @@ import java.io.IOException;
 import java.util.List;
 
 @WebServlet(name = "delTodoServlet",
-            value="/delTodoServlet")
-public class delTodoServlet extends HttpServlet {
+            value="/DelTodoServlet")
+public class DelTodoServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         request.setCharacterEncoding("UTF-8");
