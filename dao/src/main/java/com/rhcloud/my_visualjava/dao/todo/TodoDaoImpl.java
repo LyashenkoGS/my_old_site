@@ -14,14 +14,14 @@ public class TodoDaoImpl implements TodoDao {
     String username = JdbcProductionConfiguration.USERNAME;
     String password = JdbcProductionConfiguration.PASSWORD;
 
-@Override
- public void changeDefaultJdbcConfiguration(String url, String userName, String password){
-    this.url=url;
-    this.username=userName;
-    this.password=password;
-}
-
     @Override
+    public void changeDefaultJdbcConfiguration() {
+        this.url = JdbcLocalhostConfiguration.URL;
+        this.username = JdbcLocalhostConfiguration.USERNAME;
+        this.password = JdbcLocalhostConfiguration.PASSWORD;
+
+    }
+        @Override
     public List<Todo> getAllTodo() {
 
         List<Todo> todoClass = new ArrayList<>();
@@ -32,9 +32,6 @@ public class TodoDaoImpl implements TodoDao {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-
-
-
 
         try (Connection connection = getConnection(url, username, password);
              Statement statement = connection.createStatement()) {

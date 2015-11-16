@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>testName</title>
+	<link href="./test.css" rel="stylesheet">
 </head>
 
 <body>
-<div>
+
+<div id="test">
+
     <form action="answer" method="post">
         <ol>
             <li>
@@ -53,6 +56,35 @@
             </li></ol>
         <input type="submit">
     </form>
+</div>
+
+<div id="manager">
+TestManager
+<form action="addTest">
+<input type="text" name="name" placeholder="name">
+<input type="submit" value="addTest">
+</form>
+
+<form action="addQuestion">
+<input type="text" name="testName" placeholder="testName">
+<input type="text" name="question" placeholder="question">
+<input type="submit" value="addQuestion" >
+</form>
+
+<form action="addRightAnswer">
+<input type="text" name="questionName" placeholder="questionName">
+<input type="text" name="rightAnswer" placeholder="rightAnswer">
+<input type="submit" value="addRightAnswer" >
+</form>
+
+<form action="addWrongAnswer">
+<input type="text" name="questionName" placeholder="questionName">
+<input type="text" name="wrongAnswer" placeholder="wrongAnswer">
+<input type="submit" value="addWrongAnswer" >
+</form>
+
+</form>
+
 </div>
 </body>
 </html>

@@ -6,6 +6,8 @@ import com.rhcloud.my_visualjava.test.TestEntity;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.Map;
 import java.util.Set;
@@ -19,18 +21,21 @@ public class TestDaoImplTest {
     final String URL = JdbcLocalhostConfiguration.URL;
     final String USERNAME = JdbcLocalhostConfiguration.USERNAME;
     final String PASSWORD = JdbcLocalhostConfiguration.PASSWORD;
+    ConfigurableApplicationContext context =
+            new ClassPathXmlApplicationContext(new String[] {"applicationContext.xml"});
 
     TestDao testDao;
 
     @Before
     public void setUp() throws Exception {
-        testDao = new TestDaoImpl();
-        testDao.changeDefaultJdbcConfiguration(URL, USERNAME, PASSWORD);
+
+
+        testDao =(TestDao)context.getBean("testDao");
     }
 
     @After
     public void tearDown() throws Exception {
-
+        context.close();
     }
 
     @Test

@@ -18,5 +18,5 @@ public interface TodoDao {
 
     void isDoneTODO(String id);
 
-    void changeDefaultJdbcConfiguration(String url, String userName, String password);
+    void changeDefaultJdbcConfiguration();
 }

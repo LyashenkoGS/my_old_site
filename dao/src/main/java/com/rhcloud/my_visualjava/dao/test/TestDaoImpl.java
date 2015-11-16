@@ -24,10 +24,10 @@ public class TestDaoImpl implements TestDao {
     String password = JdbcProductionConfiguration.PASSWORD;
 
     @Override
-    public void changeDefaultJdbcConfiguration(String url, String userName, String password) {
-        this.url = url;
-        this.username = userName;
-        this.password = password;
+    public void changeDefaultJdbcConfiguration() {
+        this.url = JdbcLocalhostConfiguration.URL;
+        this.username = JdbcLocalhostConfiguration.USERNAME;
+        this.password = JdbcLocalhostConfiguration.PASSWORD;
     }
 
 

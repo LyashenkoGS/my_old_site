@@ -26,31 +26,33 @@ Integration tests for production MySql database and TodoDao
  */
 public class TodoDaoImplTest {
 
-    TodoDao todoDao ;
+    TodoDao todoDao;
 
     ConfigurableApplicationContext context =
-            new ClassPathXmlApplicationContext(new String[] {"applicationContext.xml"});
+            new ClassPathXmlApplicationContext(new String[]{"applicationContext.xml"});
 
 
     @Before
     public void setUp() throws Exception {
-todoDao=(TodoDao)context.getBean("todoDao");
+        todoDao = (TodoDao) context.getBean("todoDao");
     }
-
-
 
 
     @Test
     public void testTodoCrudOperations() throws Exception {
-        String todoName = "todoName";
+        String todoText = "todoText";
         String developerName = "developerName";
-        //todoDao.addTODO(todoName, developerName);
-        List<Todo> allTodo=todoDao.getAllTodo();
-        boolean containAddedTodo=false;
-        for (Todo todo :allTodo) {
-
-        }
-        assertTrue(containAddedTodo);
+        todoDao.addTODO(todoText, developerName);
+        List<Todo> allTodo = todoDao.getAllTodo();
+        boolean addTodoSucess = false;
+        for (Todo todo : allTodo)
+            if (todo.getTodo().equals(todoText)) addTodoSucess = true;
+        assertTrue(addTodoSucess);
+        todoDao.deleteTODO(todoText);
+        boolean deleteTodoSucess  = false;
+        for (Todo todo : allTodo)
+            if (todo.getTodo().equals(todoText)) deleteTodoSucess = true;
+        assertTrue(deleteTodoSucess);
     }
 }
 

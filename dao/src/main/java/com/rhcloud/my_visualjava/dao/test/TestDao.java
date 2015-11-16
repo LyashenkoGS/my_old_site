@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Set;
 
 public interface TestDao {
-    void changeDefaultJdbcConfiguration(String url, String userName, String password);
+    void changeDefaultJdbcConfiguration();
 
     Set<TestEntity> getAllTests();
 

@@ -5,6 +5,8 @@ import com.rhcloud.my_visualjava.dao.test.TestDao;
 import com.rhcloud.my_visualjava.dao.test.TestDaoImpl;
 import com.rhcloud.my_visualjava.dao.todo.JdbcLocalhostConfiguration;
 import com.rhcloud.my_visualjava.test.TestEntity;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -22,11 +24,12 @@ import java.util.Set;
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
 
-        TestDao testDao = new TestDaoImpl();
+        ConfigurableApplicationContext context =
+                new ClassPathXmlApplicationContext(new String[] {"applicationContext.xml"});
+        TestDao testDao = (TestDao)context.getBean("testDao");
        //TODO: enable switch between local and production DB via web interface in runtime
-        // testDao.changeDefaultJdbcConfiguration(JdbcLocalhostConfiguration.URL,JdbcLocalhostConfiguration.USERNAME,JdbcLocalhostConfiguration.PASSWORD);
+
         Set<TestEntity> allTests = testDao.getAllTests();
-  //  request.setAttribute("allTests", allTests);
         HttpSession session = request.getSession();
         session.setAttribute("allTests", allTests);
         RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/test.jsp");
