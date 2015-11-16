@@ -2,43 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="864e1f0f-b076-4692-bfd6-2ff69ef7866d" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\GIT\my\dao\target\classes\com\rhcloud\my_visualjava\dao\todo\JdbcLocalhostConfiguration.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\my\dao\target\classes\com\rhcloud\my_visualjava\dao\todo\JdbcProductionConfiguration.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\my\dao\target\classes\com\rhcloud\my_visualjava\dao\todo\TodoDao.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\my\dao\target\classes\com\rhcloud\my_visualjava\dao\todo\TodoDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\my\dao\target\test-classes\com\rhcloud\my_visualjava\dao\todo\TodoDaoImplTest.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\my\web\src\main\java\com\servlet\IndexServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\my\web\target\classes\com\servlet\AddTodoServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\my\web\target\classes\com\servlet\AnswerServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\my\web\target\classes\com\servlet\IndexServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\my\web\target\classes\com\servlet\TestsServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\my\web\target\classes\com\servlet\UpdateServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\my\web\target\classes\com\servlet\delTodo.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\my\web\target\classes\com\servlet\isDoneTODOServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\my\web\target\my-visualJava\WEB-INF\classes\com\servlet\AddTodoServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\my\web\target\my-visualJava\WEB-INF\classes\com\servlet\AnswerServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\my\web\target\my-visualJava\WEB-INF\classes\com\servlet\IndexServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\my\web\target\my-visualJava\WEB-INF\classes\com\servlet\TestsServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\my\web\target\my-visualJava\WEB-INF\classes\com\servlet\UpdateServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\my\web\target\my-visualJava\WEB-INF\classes\com\servlet\delTodo.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\GIT\my\web\target\my-visualJava\WEB-INF\classes\com\servlet\isDoneTODOServlet.class" afterPath="" />
-      <change type="MOVED" beforePath="C:\GIT\my\dao\src\main\java\com\rhcloud\my_visualjava\dao\todo\JdbcLocalhostConfiguration.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/web/todo/JdbcLocalhostConfiguration.java" />
-      <change type="MOVED" beforePath="C:\GIT\my\dao\src\main\java\com\rhcloud\my_visualjava\dao\todo\JdbcProductionConfiguration.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/web/todo/JdbcProductionConfiguration.java" />
-      <change type="MOVED" beforePath="C:\GIT\my\dao\src\main\java\com\rhcloud\my_visualjava\dao\todo\TodoDao.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/web/todo/TodoDao.java" />
-      <change type="MOVED" beforePath="C:\GIT\my\dao\src\main\java\com\rhcloud\my_visualjava\dao\todo\TodoDaoImpl.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/web/todo/TodoDaoImpl.java" />
-      <change type="MOVED" beforePath="C:\GIT\my\dao\src\test\java\com\rhcloud\my_visualjava\dao\todo\TodoDaoImplTest.java" afterPath="$PROJECT_DIR$/dao/src/test/java/com/rhcloud/my_visualjava/web/todo/TodoDaoImplTest.java" />
-      <change type="MOVED" beforePath="C:\GIT\my\web\src\main\java\com\servlet\AddTodoServlet.java" afterPath="$PROJECT_DIR$/web/src/main/java/com/rhcloud/my_visualjava/web/todo/AddTodoServlet.java" />
-      <change type="MOVED" beforePath="C:\GIT\my\web\src\main\java\com\servlet\AnswerServlet.java" afterPath="$PROJECT_DIR$/web/src/main/java/com/rhcloud/my_visualjava/web/test/CheckTestAnswersServlet.java" />
-      <change type="MOVED" beforePath="C:\GIT\my\web\src\main\java\com\servlet\TestsServlet.java" afterPath="$PROJECT_DIR$/web/src/main/java/com/rhcloud/my_visualjava/web/test/ShowAllTestsServlet.java" />
-      <change type="MOVED" beforePath="C:\GIT\my\web\src\main\java\com\servlet\UpdateServlet.java" afterPath="$PROJECT_DIR$/web/src/main/java/com/rhcloud/my_visualjava/web/todo/UpdateTodoServlet.java" />
-      <change type="MOVED" beforePath="C:\GIT\my\web\src\main\java\com\servlet\delTodo.java" afterPath="$PROJECT_DIR$/web/src/main/java/com/rhcloud/my_visualjava/web/todo/DelTodoServlet.java" />
-      <change type="MOVED" beforePath="C:\GIT\my\web\src\main\java\com\servlet\isDoneTODOServlet.java" afterPath="$PROJECT_DIR$/web/src/main/java/com/rhcloud/my_visualjava/web/todo/IsDoneTodoServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/classes/com/rhcloud/my_visualjava/dao/test/TestDaoImpl.class" afterPath="$PROJECT_DIR$/dao/target/classes/com/rhcloud/my_visualjava/dao/test/TestDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/ROOT.war" afterPath="$PROJECT_DIR$/webapps/ROOT.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/my-visualJava/WEB-INF/lib/core-1.0.jar" afterPath="$PROJECT_DIR$/web/target/my-visualJava/WEB-INF/lib/core-1.0.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/my-visualJava/WEB-INF/lib/dao-1.0.jar" afterPath="$PROJECT_DIR$/web/target/my-visualJava/WEB-INF/lib/dao-1.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/test/TestDaoImpl.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/rhcloud/my_visualjava/dao/test/TestDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/test/java/com/rhcloud/my_visualjava/dao/test/TestDaoImplTest.java" afterPath="$PROJECT_DIR$/dao/src/test/java/com/rhcloud/my_visualjava/dao/test/TestDaoImplTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/dao/src/main/resources/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/dao/target/classes/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/target/my-visualJava.jar" afterPath="$PROJECT_DIR$/core/target/my-visualJava.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/my-visualJava.jar" afterPath="$PROJECT_DIR$/dao/target/my-visualJava.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/core/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/dao/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/web/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="my.iws" />
@@ -66,11 +37,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IndexServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IndexServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/com/rhcloud/my_visualjava/web/IndexServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4">
+            <state vertical-scroll-proportion="0.0">
               <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IsDoneTodoServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/rhcloud/my_visualjava/web/todo/IsDoneTodoServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -86,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DelTodoServlet.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DelTodoServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/com/rhcloud/my_visualjava/web/todo/DelTodoServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.7">
+              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -341,7 +322,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -489,6 +469,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1083,34 +1064,33 @@
       <workItem from="1447578524958" duration="113000" />
       <workItem from="1447578677199" duration="8599000" />
       <workItem from="1447610629904" duration="1488000" />
-      <workItem from="1447653896600" duration="16408000" />
+      <workItem from="1447653896600" duration="17100000" />
+      <workItem from="1447676446196" duration="86000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74990000" />
+    <option name="totallyTimeSpent" value="75768000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="728" extended-state="1" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32550335" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.07733537" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2588055" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38255033" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3137584" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31323284" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30398163" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30398163" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1122,8 +1102,10 @@
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32550335" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1162,6 +1144,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/rhcloud/my_visualjava/web/test/CheckTestAnswersServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dao/src/test/java/com/rhcloud/my_visualjava/web/todo/TodoDaoImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1344,15 +1334,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/rhcloud/my_visualjava/web/todo/IsDoneTodoServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1360,7 +1341,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1368,7 +1348,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1376,7 +1355,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="108" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1392,7 +1370,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3247863">
           <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1407,7 +1384,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="49.5" y="334.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="50.0" y="334.0" />
           <SelectedNodes />
           <Categories>
             <Category>Methods</Category>
@@ -1421,21 +1398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24216524">
           <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-          <folding>
-            <element signature="method#getAllTests#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#getRightAnswer#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#getWrongAnswers#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#getQuestions#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#getTestNames#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#addTest#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#addQuestion#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#addRightAnswer#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#addWrongAnswer#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#delTest#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#delQuestion#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#delRightAnswer#0;class#TestDaoImpl#0" expanded="false" />
-            <element signature="method#delWrongAnswer#0;class#TestDaoImpl#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1449,11 +1411,11 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-21.0" y="92.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-21.0" y="93.0" />
           <SelectedNodes />
           <Categories>
-            <Category>Methods</Category>
             <Category>Constructors</Category>
+            <Category>Methods</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
@@ -1464,21 +1426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-          <folding>
-            <element signature="method#changeDefaultJdbcConfiguration#0;class#TodoDaoImpl#0" expanded="false" />
-            <element signature="method#getAllTodo#0;class#TodoDaoImpl#0" expanded="false" />
-            <element signature="method#getAllActiveTodo#0;class#TodoDaoImpl#0" expanded="false" />
-            <element signature="method#getAllDoneTodo#0;class#TodoDaoImpl#0" expanded="false" />
-            <element signature="method#addTODO#0;class#TodoDaoImpl#0" expanded="false" />
-            <element signature="method#deleteTODO#0;class#TodoDaoImpl#0" expanded="false" />
-            <element signature="method#updateTODO#0;class#TodoDaoImpl#0" expanded="false" />
-            <element signature="method#isDoneTODO#0;class#TodoDaoImpl#0" expanded="false" />
-            <marker date="1447674762189" expanded="false" signature="-1:-1" placeholder="select * fro..todo..." />
-            <marker date="1447674762189" expanded="false" signature="-1:-1" placeholder="SELECT * FRO..todo..." />
-            <marker date="1447674762189" expanded="false" signature="-1:-1" placeholder="SELECT * FRO..todo..." />
-            <marker date="1447674762189" expanded="false" signature="-1:-1" placeholder="UPDATE todo ..." />
-            <marker date="1447674762189" expanded="false" signature="-1:-1" placeholder="UPDATE todo ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1486,7 +1433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1502,7 +1448,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.53543305">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1510,7 +1455,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.53543305">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1527,9 +1471,9 @@
         <state vertical-scroll-proportion="0.089238845">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#929#930#0" expanded="false" />
+            <element signature="e#960#961#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1538,7 +1482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8031496">
           <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1546,7 +1489,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22309712">
           <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1564,8 +1506,8 @@
           <settings layout="Hierarchic Group" zoom="1.0" x="-61.0" y="92.0" />
           <SelectedNodes />
           <Categories>
-            <Category>Methods</Category>
             <Category>Properties</Category>
+            <Category>Methods</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
@@ -1596,18 +1538,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/rhcloud/my_visualjava/web/todo/DelTodoServlet.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/rhcloud/my_visualjava/web/IndexServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/rhcloud/my_visualjava/web/IndexServlet.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/rhcloud/my_visualjava/web/todo/IsDoneTodoServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4">
-          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/rhcloud/my_visualjava/web/todo/DelTodoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
           <folding />
         </state>
       </provider>
