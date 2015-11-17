@@ -86,6 +86,7 @@
         </tr>
         </thead>
         </thead>
+
         <tbody>
         <tr class="active">
             <td class="column-1">
