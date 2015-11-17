@@ -96,17 +96,17 @@
     </form>
 
     <form action="deleteQuestion" method="POST">
-        <input type="text" name="question" placeholder="questionName">
+        <input type="text" name="name" placeholder="questionName">
         <input type="submit" value="deleteQuestion">
     </form>
 
     <form action="deleteRightAnswer" method="post">
-        <input type="text" name="rightAnswer" placeholder="rightAnswerName">
+        <input type="text" name="name" placeholder="rightAnswerName">
         <input type="submit" value="deleteRightAnswer">
     </form>
 
     <form action="deleteWrongAnswer" method="post">
-        <input type="text" name="wrongAnswer" placeholder="wrongAnswerName">
+        <input type="text" name="name" placeholder="wrongAnswerName">
         <input type="submit" value="deleteWrongAnswer">
     </form>
 

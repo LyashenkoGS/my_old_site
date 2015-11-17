@@ -110,7 +110,7 @@ public class TestDaoImplTest {
         Map<String, Question> questionMap = testDao.getQuestions(mockTestEntity);
 
         assertTrue(questionMap.containsKey(addQuestionTesting));
-        testDao.delQuestion(addTestTesting, addQuestionTesting);
+        testDao.delQuestion(addQuestionTesting);
 
         questionMap = testDao.getQuestions(mockTestEntity);
         assertFalse(questionMap.containsKey(addQuestionTesting));

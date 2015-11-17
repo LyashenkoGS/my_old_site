@@ -29,7 +29,7 @@ public interface TestDao {
 
     void delTest(String name);
 
-    void delQuestion(String testName, String question);
+    void delQuestion(String question);
 
     void delRightAnswer(String rightAnswer);
 

@@ -229,7 +229,7 @@ public class TestDaoImpl implements TestDao {
     }
 
     @Override
-    public void delQuestion(String testName, String question) {
+    public void delQuestion(String question) {
         try (Connection connection = getConnection(url, username, password);
              Statement statement = connection.createStatement()
         ) {
