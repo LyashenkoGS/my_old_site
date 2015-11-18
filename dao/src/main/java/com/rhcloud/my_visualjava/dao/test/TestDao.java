@@ -35,5 +35,13 @@ public interface TestDao {
 
     void delWrongAnswer(String wrongAnswer);
 
+    void updateTest(String oldName, String newName);
+
+    void updateQuestion(String oldName, String newName);
+
+    void updateRightAnswer(String oldName, String newName);
+
+    void updateWrongAnswer(String oldName, String newName);
+
 
 }

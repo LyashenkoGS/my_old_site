@@ -5,10 +5,7 @@ import com.rhcloud.my_visualjava.test.TestEntity;
 import com.rhcloud.my_visualjava.web.todo.JdbcLocalhostConfiguration;
 import com.rhcloud.my_visualjava.web.todo.JdbcProductionConfiguration;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -279,6 +276,78 @@ public class TestDaoImpl implements TestDao {
             } catch (SQLException e) {
                 connection.rollback();
             }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void updateTest(String oldName, String newName) {
+        String update = "UPDATE test.test SET name = ? WHERE name = '" + oldName + "';";
+
+        try (Connection connection = getConnection(url, username, password);
+             PreparedStatement preparedStatement = connection.prepareStatement(update)) {
+
+            preparedStatement.setString(1, newName);
+
+            preparedStatement.executeUpdate();
+
+            System.out.println("Update data base");
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void updateQuestion(String oldName, String newName) {
+        String update = "UPDATE test.question SET name = ? WHERE name = '" + oldName + "';";
+
+        try (Connection connection = getConnection(url, username, password);
+             PreparedStatement preparedStatement = connection.prepareStatement(update)) {
+
+            preparedStatement.setString(1, newName);
+
+            preparedStatement.executeUpdate();
+
+            System.out.println("Update data base");
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void updateRightAnswer(String oldName, String newName) {
+        String update = "UPDATE test.right_answer SET name = ? WHERE name = '" + oldName + "';";
+
+        try (Connection connection = getConnection(url, username, password);
+             PreparedStatement preparedStatement = connection.prepareStatement(update)) {
+
+            preparedStatement.setString(1, newName);
+
+            preparedStatement.executeUpdate();
+
+            System.out.println("Update data base");
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void updateWrongAnswer(String oldName, String newName) {
+        String update = "UPDATE test.wrong_answer SET name = ? WHERE name = '" + oldName + "';";
+
+        try (Connection connection = getConnection(url, username, password);
+             PreparedStatement preparedStatement = connection.prepareStatement(update)) {
+
+            preparedStatement.setString(1, newName);
+
+            preparedStatement.executeUpdate();
+
+            System.out.println("Update data base");
 
         } catch (SQLException e) {
             e.printStackTrace();
