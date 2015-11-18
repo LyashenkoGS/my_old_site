@@ -71,13 +71,13 @@
     </form>
 
     <form action="updateQuestion" method="POST">
-        <input type="text" name="oldTestName" placeholder="oldTestName">
+        <input type="text" name="oldQuestionName" placeholder="oldQuestionName">
         <input type="text" name="newQuestion" placeholder="newQuestion">
         <input type="submit" value="updateQuestion">
     </form>
 
     <form action="updateRightAnswer" method="post">
-        <input type="text" name="oldQuestionName" placeholder="oldQuestionName">
+        <input type="text" name="oldRightName" placeholder="oldRightName">
         <input type="text" name="newRightAnswer" placeholder="newRightAnswer">
         <input type="submit" value="updateRightAnswer">
     </form>
