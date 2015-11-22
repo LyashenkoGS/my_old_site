@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TestEntity {
+    private String id;
     private String name;
     private Map<String, Question> questions = new HashMap<>();
 
@@ -42,5 +43,12 @@ Iterate over all the inputed answered questions looking a matched
         }
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 }
 

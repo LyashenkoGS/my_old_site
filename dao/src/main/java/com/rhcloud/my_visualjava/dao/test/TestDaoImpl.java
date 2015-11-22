@@ -29,26 +29,23 @@ public class TestDaoImpl implements TestDao {
     public Set<TestEntity> getAllTests() {
         Set<TestEntity> allTests = new HashSet<>();
         Set<String> testsNames = this.getTestNames();
-        for (String testName : testsNames) {
-            TestEntity tempTestEntity = new TestEntity();
-            tempTestEntity.setName(testName);
+
+        Set<TestEntity> testEntitiesSet = getAllEmptyTests();
+        for (TestEntity testEntity : testEntitiesSet) {
 
             /*
             add questions
              */
 
-            Map<String, Question> questionMap = getQuestions(tempTestEntity);
+            Map<String, Question> questionMap = getQuestions(testEntity);
 
             for (Question question : questionMap.values()) {
                 question.setRightAnswer(getRightAnswer(question));
-                question.setAnswers(getWrongAnswers(question));
+                question.setWrongAnswers(getWrongAnswers(question));
             }
+            testEntity.setQuestions(questionMap);
 
-
-            tempTestEntity.setQuestions(questionMap);
-
-
-            allTests.add(tempTestEntity);
+            allTests.add(testEntity);
         }
         return allTests;
     }
@@ -58,8 +55,8 @@ public class TestDaoImpl implements TestDao {
         String rightAnswer = null;
         try (Connection connection = getConnection(url, username, password);
              Statement statement = connection.createStatement(); ResultSet resultSet =
-                     statement.executeQuery("SELECT name FROM test.right_answer where question_name='" + question.getName() + "';")) {
-
+                     statement.executeQuery("SELECT name FROM test.answer where question_id='" + question.getId() + "' " +
+                             "AND  answer_type_id=1;")) {
             while (resultSet.next()) {
                 rightAnswer = resultSet.getString("name");
             }
@@ -75,8 +72,8 @@ public class TestDaoImpl implements TestDao {
         Set<String> wrongAnswers = new HashSet<>();
         try (Connection connection = getConnection(url, username, password);
              Statement statement = connection.createStatement(); ResultSet resultSet =
-                     statement.executeQuery("SELECT name FROM test.wrong_answer where question_name='"
-                             + question.getName() + "';")) {
+                     statement.executeQuery("SELECT name FROM test.answer where question_id='"
+                             + question.getId() + "' AND  answer_type_id=2;")) {
 
             while (resultSet.next()) {
                 wrongAnswers.add(resultSet.getString("name"));
@@ -91,13 +88,13 @@ public class TestDaoImpl implements TestDao {
     @Override
     public Map<String, Question> getQuestions(TestEntity test) {
         Set<Question> questions = new HashSet<>();
-        String testName = test.getName();
         try (Connection connection = getConnection(url, username, password);
              Statement statement = connection.createStatement(); ResultSet resultSet =
-                     statement.executeQuery("SELECT name FROM test.question where test_name='" + testName + "';")) {
+                     statement.executeQuery("SELECT name,id FROM test.question where test_id='" + test.getId() + "';")) {
 
             while (resultSet.next()) {
                 Question tempQuestion = new Question();
+                tempQuestion.setId(resultSet.getString("id"));
                 tempQuestion.setName(resultSet.getString("name"));
                 questions.add(tempQuestion);
             }
@@ -133,6 +130,26 @@ public class TestDaoImpl implements TestDao {
     }
 
     @Override
+    public Set<TestEntity> getAllEmptyTests() {
+        Set<TestEntity> allEmptyTests = new HashSet<>();
+        try (Connection connection = getConnection(url, username, password);
+             Statement statement = connection.createStatement(); ResultSet resultSet =
+                     statement.executeQuery("SELECT id,name FROM test.test ;")) {
+
+            while (resultSet.next()) {
+                TestEntity tempTestEntity = new TestEntity();
+                tempTestEntity.setId(resultSet.getString("id"));
+                tempTestEntity.setName(resultSet.getString("name"));
+                allEmptyTests.add(tempTestEntity);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return allEmptyTests;
+    }
+
+    @Override
     public void addTest(String name) {
         try (Connection connection = getConnection(url, username, password);
              Statement statement = connection.createStatement()
@@ -152,12 +169,12 @@ public class TestDaoImpl implements TestDao {
     }
 
     @Override
-    public void addQuestion(String testName, String question) {
+    public void addQuestion(String testId, String question) {
         try (Connection connection = getConnection(url, username, password);
              Statement statement = connection.createStatement()
         ) {
             connection.setAutoCommit(false);
-            statement.executeUpdate("insert into test.question (name,test_name) values('" + question + "','" + testName + "') ");
+            statement.executeUpdate("insert into test.question (name,test_id) values('" + question + "','" + testId + "') ");
             try {
                 connection.commit();
             } catch (SQLException e) {
@@ -170,12 +187,12 @@ public class TestDaoImpl implements TestDao {
     }
 
     @Override
-    public void addRightAnswer(String questionName, String rightAnswer) {
+    public void addRightAnswer(String questionId, String rightAnswer) {
         try (Connection connection = getConnection(url, username, password);
              Statement statement = connection.createStatement()
         ) {
             connection.setAutoCommit(false);
-            statement.executeUpdate("insert into test.right_answer  (name,question_name) values( '" + rightAnswer + "', '" + questionName + "')");
+            statement.executeUpdate("insert into test.answer  (name,question_id,answer_type_id) values( '" + rightAnswer + "', '" + questionId + "',1)");
             try {
                 connection.commit();
             } catch (SQLException e) {
@@ -188,13 +205,13 @@ public class TestDaoImpl implements TestDao {
     }
 
     @Override
-    public void addWrongAnswer(String questionName, String wrongAnswer) {
+    public void addWrongAnswer(String questionId, String wrongAnswer) {
         try (Connection connection = getConnection(url, username, password);
              Statement statement = connection.createStatement()
         ) {
             connection.setAutoCommit(false);
-            statement.executeUpdate("insert into test.wrong_answer\n" +
-                    "(name,question_name) values('" + wrongAnswer + "','" + questionName + "')");
+            statement.executeUpdate("insert into test.answer\n" +
+                    "(name,question_id,answer_type_id) values('" + wrongAnswer + "','" + questionId + "',2)");
             try {
                 connection.commit();
             } catch (SQLException e) {
@@ -250,7 +267,7 @@ public class TestDaoImpl implements TestDao {
              Statement statement = connection.createStatement()
         ) {
             connection.setAutoCommit(false);
-            statement.executeUpdate("DELETE FROM test.right_answer\n" +
+            statement.executeUpdate("DELETE FROM test.answer\n" +
                     "where name= (" + "'" + rightAnswer + "'" + ");");
             try {
                 connection.commit();
@@ -269,7 +286,7 @@ public class TestDaoImpl implements TestDao {
              Statement statement = connection.createStatement()
         ) {
             connection.setAutoCommit(false);
-            statement.executeUpdate("DELETE FROM test.wrong_answer\n" +
+            statement.executeUpdate("DELETE FROM test.answer\n" +
                     "where name= (" + "'" + wrongAnswer + "'" + ");");
             try {
                 connection.commit();
@@ -284,16 +301,10 @@ public class TestDaoImpl implements TestDao {
 
     @Override
     public void updateTest(String oldName, String newName) {
-        String update = "UPDATE test.test SET name = ? WHERE name = '" + oldName + "';";
 
         try (Connection connection = getConnection(url, username, password);
-             PreparedStatement preparedStatement = connection.prepareStatement(update)) {
-
-            preparedStatement.setString(1, newName);
-
-            preparedStatement.executeUpdate();
-
-            System.out.println("Update data base");
+             Statement statement = connection.createStatement()) {
+           statement.executeUpdate("UPDATE test.test SET name = '"+newName+"' WHERE name = '" + oldName + "';");
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -302,16 +313,9 @@ public class TestDaoImpl implements TestDao {
 
     @Override
     public void updateQuestion(String oldName, String newName) {
-        String update = "UPDATE test.question SET name = ? WHERE name = '" + oldName + "';";
-
         try (Connection connection = getConnection(url, username, password);
-             PreparedStatement preparedStatement = connection.prepareStatement(update)) {
-
-            preparedStatement.setString(1, newName);
-
-            preparedStatement.executeUpdate();
-
-            System.out.println("Update data base");
+             Statement statement = connection.createStatement()) {
+            statement.executeUpdate("UPDATE test.question SET name = '" + newName + "' WHERE name = '" + oldName + "';");
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -320,16 +324,9 @@ public class TestDaoImpl implements TestDao {
 
     @Override
     public void updateRightAnswer(String oldName, String newName) {
-        String update = "UPDATE test.right_answer SET name = ? WHERE name = '" + oldName + "';";
-
         try (Connection connection = getConnection(url, username, password);
-             PreparedStatement preparedStatement = connection.prepareStatement(update)) {
-
-            preparedStatement.setString(1, newName);
-
-            preparedStatement.executeUpdate();
-
-            System.out.println("Update data base");
+             Statement statement = connection.createStatement()) {
+            statement.executeUpdate("UPDATE test.answer SET name = '" + newName + "' WHERE name = '" + oldName + "';");
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -338,16 +335,9 @@ public class TestDaoImpl implements TestDao {
 
     @Override
     public void updateWrongAnswer(String oldName, String newName) {
-        String update = "UPDATE test.wrong_answer SET name = ? WHERE name = '" + oldName + "';";
-
         try (Connection connection = getConnection(url, username, password);
-             PreparedStatement preparedStatement = connection.prepareStatement(update)) {
-
-            preparedStatement.setString(1, newName);
-
-            preparedStatement.executeUpdate();
-
-            System.out.println("Update data base");
+             Statement statement = connection.createStatement()) {
+            statement.executeUpdate("UPDATE test.test SET name = '" + newName + "' WHERE name = '" + oldName + "';");
 
         } catch (SQLException e) {
             e.printStackTrace();

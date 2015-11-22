@@ -14,9 +14,6 @@ import java.util.Set;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by Root on 11.11.2015.
- */
 public class TestDaoImplTest {
     final String URL = JdbcLocalhostConfiguration.URL;
     final String USERNAME = JdbcLocalhostConfiguration.USERNAME;
@@ -37,7 +34,6 @@ public class TestDaoImplTest {
     public void tearDown() throws Exception {
         context.close();
     }
-
     @Test
     public void testGetAllTests() throws Exception {
         Set<TestEntity> tests = testDao.getAllTests();
@@ -51,7 +47,7 @@ public class TestDaoImplTest {
             for (Question tempQuestion : testEntity.getQuestions().values()) {
                 assertNotNull(tempQuestion.getRightAnswer());
                 assertEquals(tempQuestion.getRightAnswer(), "right_answer");
-                assertFalse(tempQuestion.getAnswers().isEmpty());
+                assertFalse(tempQuestion.getWrongAnswers().isEmpty());
             }
         }
 
@@ -61,7 +57,7 @@ public class TestDaoImplTest {
     @Test
     public void getRightAnswerTest() throws Exception {
         Question mockQuestion = new Question();
-        mockQuestion.setName("my_question");
+        mockQuestion.setId("1");
         String rightAnswer = testDao.getRightAnswer(mockQuestion);
         assertNotNull(rightAnswer);
         assertEquals("right_answer", rightAnswer);
@@ -70,16 +66,15 @@ public class TestDaoImplTest {
     @Test
     public void getWrongAnswersTest() throws Exception {
         Question mockQuestion = new Question();
-        mockQuestion.setName("my_question");
+        mockQuestion.setId("1");
         Set<String> wrongAnswers = testDao.getWrongAnswers(mockQuestion);
         assertNotNull(wrongAnswers);
         assertEquals(wrongAnswers.size(), 2);
     }
-
-    @Test
+  @Test
     public void getQuestionsTest() throws Exception {
         TestEntity mockTest = new TestEntity();
-        mockTest.setName("my_test");
+        mockTest.setId("1");
         Map<String, Question> questions = testDao.getQuestions(mockTest);
         assertNotNull(questions);
         assertEquals(questions.size(), 1);
@@ -95,6 +90,15 @@ public class TestDaoImplTest {
 
 
     @Test
+            public void getAllEmptyTestesTest() {
+    Set<TestEntity> allEmptyTestes=testDao.getAllEmptyTests();
+        for (TestEntity emptyTest : allEmptyTestes) {
+        assertEquals(emptyTest.getName(),"my_test");
+        }
+    }
+/*
+//TODO find out how to write CRUD using id
+    @Test
     public void CRUDonTestEntity() {
         String addTestTesting = "addTestTesting";
         testDao.addTest(addTestTesting);
@@ -103,7 +107,9 @@ public class TestDaoImplTest {
 
         String addWrongAnswerTesting = "addWrongAnswerTesting";
 
-    /* assert that DB contains just added Question*/
+    */
+/* assert that DB contains just added Question*//*
+
 
         TestEntity mockTestEntity = new TestEntity();
         mockTestEntity.setName(addTestTesting);
@@ -134,8 +140,6 @@ public class TestDaoImplTest {
 
     }
 
+*/
 
-    @Test
-    public void CRUDonQuestionEntity() {
-    }
 }

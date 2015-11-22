@@ -18,22 +18,23 @@ public interface TestDao {
     Map<String, Question> getQuestions(TestEntity test);
 
     Set<String> getTestNames();
+    Set<TestEntity> getAllEmptyTests();
 
     void addTest(String name);
 
-    void addQuestion(String testName, String question);
+    void addQuestion(String testId, String question);
 
-    void addRightAnswer(String questionName, String rightAnswer);
+    void addRightAnswer(String questionId, String rightAnswer);
 
-    void addWrongAnswer(String questionName, String wrongAnswer);
+    void addWrongAnswer(String questionId, String wrongAnswer);
 
-    void delTest(String name);
+    void delTest(String testId);
 
-    void delQuestion(String question);
+    void delQuestion(String questionId);
 
-    void delRightAnswer(String rightAnswer);
+    void delRightAnswer(String rightAnswerId);
 
-    void delWrongAnswer(String wrongAnswer);
+    void delWrongAnswer(String wrongAnswerId);
 
     void updateTest(String oldName, String newName);
 

@@ -5,8 +5,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Question {
+    private String id;
     private String name;
-    private Set<String> answers = new HashSet<>();
+    private Set<String> wrongAnswers = new HashSet<>();
     private boolean answeredRight = false;
     private String rightAnswer;
 
@@ -26,13 +27,7 @@ public class Question {
         this.rightAnswer = rightAnswer;
     }
 
-    public Set<String> getAnswers() {
-        return answers;
-    }
 
-    public void setAnswers(Set<String> answers) {
-        this.answers = answers;
-    }
 
     public String getName() {
         return name;
@@ -40,5 +35,21 @@ public class Question {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public Set<String> getWrongAnswers() {
+        return wrongAnswers;
+    }
+
+    public void setWrongAnswers(Set<String> wrongAnswers) {
+        this.wrongAnswers = wrongAnswers;
     }
 }
