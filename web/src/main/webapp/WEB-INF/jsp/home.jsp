@@ -72,6 +72,10 @@
                 <input type="submit" value="TODO IS DONE">
             </form>
             </p>
+
+            <div><form action="changeTodoJdbcConfig" method="get" >
+                <input type="submit" value="changeTodoJdbcConfig">
+            </form></div>
         </div>
     </div>
 

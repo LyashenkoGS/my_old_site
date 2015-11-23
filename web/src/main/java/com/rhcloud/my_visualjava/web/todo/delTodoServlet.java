@@ -19,7 +19,7 @@ public class delTodoServlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
 
-        TodoDaoImpl worker = new TodoDaoImpl();
+        TodoDao worker = TodoDaoImpl.getInstance();
 
         worker.deleteTODO(request.getParameter("ID"));
         System.out.println(request.getParameter("ID"));

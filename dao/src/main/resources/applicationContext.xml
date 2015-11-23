@@ -6,8 +6,8 @@
 
     <bean id="testDao"
           class="com.rhcloud.my_visualjava.dao.test.TestDaoImpl"
+       init-method="changeDefaultJdbcConfiguration"
             >
-       <!--init-method="changeDefaultJdbcConfiguration"-->
               </bean>
     <bean id="todoDao"
           class="com.rhcloud.my_visualjava.web.todo.TodoDaoImpl"

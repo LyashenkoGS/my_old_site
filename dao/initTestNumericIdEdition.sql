@@ -1,6 +1,9 @@
-drop schema if exists test;
 create SCHEMA IF NOT EXISTS test;
 USE test;
+DROP  TABLE if EXISTS  answer;
+DROP  TABLE if EXISTS  answer_type;
+DROP  TABLE if EXISTS  question;
+DROP  TABLE if EXISTS  test;
 
 -- -----------------------------------------------------
 -- Table `test`.`test`

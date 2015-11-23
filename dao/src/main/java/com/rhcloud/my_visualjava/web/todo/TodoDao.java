@@ -21,4 +21,6 @@ public interface TodoDao {
     void isDoneTODO(String id);
 
     void changeDefaultJdbcConfiguration();
+
+  // static TodoDao getInstance();
 }

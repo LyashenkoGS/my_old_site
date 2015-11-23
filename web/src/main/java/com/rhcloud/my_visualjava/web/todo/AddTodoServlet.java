@@ -10,9 +10,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-/**
- * Created by LyashenkoGS on 9/16/2015.
- */
 
 @WebServlet(name = "addTodo",
             value="/addTodo")
@@ -22,7 +19,7 @@ public class AddTodoServlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
 
-        TodoDaoImpl worker = new TodoDaoImpl();
+        TodoDao worker = TodoDaoImpl.getInstance();
 
         worker.addTODO(request.getParameter("TODO"), request.getParameter("name"));
         List<Todo> todoMap = worker.getAllTodo();

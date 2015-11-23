@@ -10,15 +10,33 @@ import java.util.List;
 import static java.sql.DriverManager.getConnection;
 
 public class TodoDaoImpl implements TodoDao {
+    private static TodoDao singletonTodoDaoImpl = new TodoDaoImpl();
+
     String url = JdbcProductionConfiguration.URL;
     String username = JdbcProductionConfiguration.USERNAME;
     String password = JdbcProductionConfiguration.PASSWORD;
 
+  public static  TodoDao  getInstance(){
+        return singletonTodoDaoImpl;
+    }
+
+    private TodoDaoImpl(){
+
+    }
     @Override
     public void changeDefaultJdbcConfiguration() {
+        String tempURL=this.url;
+        switch (tempURL){
+            case JdbcProductionConfiguration.URL:
         this.url = JdbcLocalhostConfiguration.URL;
         this.username = JdbcLocalhostConfiguration.USERNAME;
         this.password = JdbcLocalhostConfiguration.PASSWORD;
+                break;
+            case  JdbcLocalhostConfiguration.URL:
+                this.url = JdbcProductionConfiguration.URL;
+                this.username = JdbcProductionConfiguration.USERNAME;
+                this.password = JdbcProductionConfiguration.PASSWORD;
+        }
 
     }
 

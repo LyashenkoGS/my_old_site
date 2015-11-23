@@ -2,6 +2,7 @@ package com.rhcloud.my_visualjava.web;
 
 import com.rhcloud.my_visualjava.core.todo.Todo;
 import com.rhcloud.my_visualjava.web.todo.TodoDao;
+import com.rhcloud.my_visualjava.web.todo.TodoDaoImpl;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -22,9 +23,9 @@ public class IndexServlet extends HttpServlet {
 
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
-        ConfigurableApplicationContext context =
-                new ClassPathXmlApplicationContext(new String[]{"applicationContext.xml"});
-        TodoDao todoDao = (TodoDao) context.getBean("todoDao");
+       /* ConfigurableApplicationContext context =
+                new ClassPathXmlApplicationContext(new String[]{"applicationContext.xml"});*/
+        TodoDao todoDao = TodoDaoImpl.getInstance();
         List<Todo> allTodo = todoDao.getAllTodo();
         List<Todo> allActiveTodo = todoDao.getAllActiveTodo();
         List<Todo> allDoneTodo = todoDao.getAllDoneTodo();

@@ -19,7 +19,7 @@ public class UpdateTodoServlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
 
-        TodoDaoImpl worker = new TodoDaoImpl();
+        TodoDao worker = TodoDaoImpl.getInstance();
 
         worker.updateTODO(request.getParameter("id"),
                 request.getParameter("TODO"),
