@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "delTodoServlet",
-            value="/DelTodoServlet")
+@WebServlet(name = "delTodo",
+            value="/delTodo")
 public class delTodoServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -21,8 +21,8 @@ public class delTodoServlet extends HttpServlet {
 
         TodoDao worker = TodoDaoImpl.getInstance();
 
-        worker.deleteTODO(request.getParameter("ID"));
-        System.out.println(request.getParameter("ID"));
+        worker.deleteTODO(request.getParameter("Id"));
+        System.out.println(request.getParameter("Id"));
         System.out.println("del todo servlet have been invoked");
         List<Todo> todoMap = worker.getAllTodo();
         System.out.println(todoMap);

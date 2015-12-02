@@ -62,7 +62,7 @@
 
 
             <form method="post" ACTION="delTodo">
-                <input type="text" name="ID" placeholder="Id">
+                <input type="text" name="Id" placeholder="Id">
                 <input type="submit" value="DEL TODO">
             </form>
 
