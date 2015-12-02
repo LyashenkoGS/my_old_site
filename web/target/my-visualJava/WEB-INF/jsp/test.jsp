@@ -10,6 +10,7 @@
     <c:forEach var="test" items="${allTests}">
     <form action="answer" method="post">
         <div>${test.name}:${test.id}</div>
+        <input name="testName" type="hidden" value="${test.name}">
         <ol>
             <c:forEach var="question" items="${test.questions}">
                 <li>
@@ -29,9 +30,10 @@
                 </li>
             </c:forEach>
         </ol>
-        </c:forEach>
         <input type="submit">
-    </form>
+        </form>
+        </c:forEach>
+
 
 </div>
 <div id="manager">

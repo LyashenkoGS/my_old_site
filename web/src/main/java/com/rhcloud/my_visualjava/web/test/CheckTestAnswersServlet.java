@@ -22,15 +22,17 @@ public class CheckTestAnswersServlet extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
 
         Map<String, String> answeredQuestions = new HashMap<>();
+        String testName = request.getParameter("testName");
         Map<String, String[]> parametersMap = request.getParameterMap();
-
+        parametersMap.remove("testName");
+        System.out.println(testName);
         for (Map.Entry entry : parametersMap.entrySet()) {
             String tempKey = (String) entry.getKey();
             String[] values = (String[]) entry.getValue();
             String truncatedValue = values[0];
             //TODO: implement logging
-            System.out.print(tempKey + ":");
-            System.out.println(truncatedValue);
+         /*   System.out.print(tempKey + ":");
+            System.out.println(truncatedValue);*/
             answeredQuestions.put(tempKey, truncatedValue);
         }
 
@@ -38,8 +40,13 @@ public class CheckTestAnswersServlet extends HttpServlet {
         Set<TestEntity> allTests = (Set<TestEntity>) session.getAttribute("allTests");
 
         for (TestEntity test : allTests) {
-            test.checkAllQuestions(answeredQuestions);
+            if (test.getName().equals(testName)) {
+
+                test.checkAllQuestions(answeredQuestions);
+                request.setAttribute("checkedTest", test);
+            }
         }
+
 
         RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/answer.jsp");
         rd.forward(request, response);

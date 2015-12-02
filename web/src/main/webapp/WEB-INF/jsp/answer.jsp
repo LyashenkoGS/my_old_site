@@ -6,14 +6,14 @@
 
 </head>
 <body>
-<c:forEach var="test" items="${allTests}">
+<%--<c:forEach var="test" items="${allTests}">--%>
 <form action="answer" method="post">
-  <div>${test.name}</div>
+  <div>${checkedTest.name}</div>
   <ol>
 
     <li>
 
-      <c:forEach var="question" items="${test.questions}">
+      <c:forEach var="question" items="${checkedTest.questions}">
         <div>${question.key}</div>
         <ul>
 
@@ -28,7 +28,7 @@
 
 
   </ol>
-  </c:forEach>
+ <%-- </c:forEach>--%>
   <input type="submit">
 </form>
 

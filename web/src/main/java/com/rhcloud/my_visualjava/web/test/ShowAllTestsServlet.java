@@ -2,6 +2,7 @@ package com.rhcloud.my_visualjava.web.test;
 
 
 import com.rhcloud.my_visualjava.dao.test.TestDao;
+import com.rhcloud.my_visualjava.dao.test.TestDaoImpl;
 import com.rhcloud.my_visualjava.test.TestEntity;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -22,9 +23,9 @@ public class ShowAllTestsServlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
 
-        ConfigurableApplicationContext context =
-                new ClassPathXmlApplicationContext(new String[]{"applicationContext.xml"});
-        TestDao testDao = (TestDao) context.getBean("testDao");
+       /* ConfigurableApplicationContext context =
+                new ClassPathXmlApplicationContext(new String[]{"applicationContext.xml"});*/
+        TestDao testDao = TestDaoImpl.getInstance();
         //TODO: enable switch between local and production DB via web interface in runtime
 
         Set<TestEntity> allTests = testDao.getAllTests();

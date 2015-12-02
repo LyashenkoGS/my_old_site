@@ -17,14 +17,31 @@ public class TestDaoImpl implements TestDao {
     String url = JdbcProductionConfiguration.URL;
     String username = JdbcProductionConfiguration.USERNAME;
     String password = JdbcProductionConfiguration.PASSWORD;
+   private static TestDao singletonTestDaoImpl= new TestDaoImpl();
+
+
+
+    public static  TestDao  getInstance(){
+        return singletonTestDaoImpl;
+    }
+
 
     @Override
     public void changeDefaultJdbcConfiguration() {
-        this.url = JdbcLocalhostConfiguration.URL;
-        this.username = JdbcLocalhostConfiguration.USERNAME;
-        this.password = JdbcLocalhostConfiguration.PASSWORD;
-    }
+        String tempURL=this.url;
+        switch (tempURL){
+            case JdbcProductionConfiguration.URL:
+                this.url = JdbcLocalhostConfiguration.URL;
+                this.username = JdbcLocalhostConfiguration.USERNAME;
+                this.password = JdbcLocalhostConfiguration.PASSWORD;
+                break;
+            case  JdbcLocalhostConfiguration.URL:
+                this.url = JdbcProductionConfiguration.URL;
+                this.username = JdbcProductionConfiguration.USERNAME;
+                this.password = JdbcProductionConfiguration.PASSWORD;
+        }
 
+    }
     @Override
     public Set<TestEntity> getAllTests() {
         Set<TestEntity> allTests = new HashSet<>();

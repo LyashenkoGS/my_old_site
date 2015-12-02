@@ -73,8 +73,8 @@
             </form>
             </p>
 
-            <div><form action="changeTodoJdbcConfig" method="get" >
-                <input type="submit" value="changeTodoJdbcConfig">
+            <div><form action="switchJdbcConfig" method="get" >
+                <input type="submit" value="switchJdbcConfig">
             </form></div>
         </div>
     </div>
