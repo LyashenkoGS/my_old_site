@@ -3,6 +3,9 @@ package com.rhcloud.my_visualjava.test;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -33,5 +36,23 @@ public class TestTest {
 
         assertFalse(mockTest.getQuestions().get(simpleQuestion.getName()).isAnsweredRight());
         assertTrue(mockTest.getQuestions().get(simpleQuestion2.getName()).isAnsweredRight());
+    }
+
+    @Test
+    public void testJson(){
+        JSONParser parser = new JSONParser();
+        String s = "{\" To start the execution of a thread after you create it, you must\": \"Call the start() method\",\" What method in the Thread class do you call to make the current thread cease executing for a specified amount of time?:3\": \"stop()\",\" You designate a method as being synchronized by::4\": \"Placing a synchronized section of code within it\"}";
+
+        try{
+            Object obj = parser.parse("}") ;
+            JSONObject jsonObject = (JSONObject)obj;
+            String name = (String) jsonObject.get("To start the execution of a thread after you create it");
+            System.out.println(name);
+
+        }
+    catch (Exception e)
+    {
+
+    }
     }
 }
