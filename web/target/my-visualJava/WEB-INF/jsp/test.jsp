@@ -13,8 +13,8 @@
         <input name="testName" type="hidden" value="${test.name}">
         <ol>
             <c:forEach var="question" items="${test.questions}">
-                <li class="question">
-                       <div> ${question.key}:${question.value.id}</div>
+                <li>
+                        ${question.key}:${question.value.id}
                     <ul>
                         <li>
                             <input name="${question.key}" type="radio"
@@ -30,9 +30,7 @@
                 </li>
             </c:forEach>
         </ol>
-        <input id="json" type="hidden" name="json" value="">
-        <div onclick="createQuestionAnswerJSON(event)">form json</div>
-        <input type="submit" >
+        <input type="submit">
         </form>
         </c:forEach>
 
@@ -117,34 +115,4 @@
 </div>
 
 </body>
-<script>
-
-    function createQuestionAnswerJSON(event) {
-
-        var submitButton=event.target
-        var testName=submitButton.parentElement.firstElementChild.textContent
-        var questionsBlocks=submitButton.parentElement.getElementsByClassName('question')
-        var json='{'
-        for (i = 0; i < questionsBlocks.length; i++) {
-            json +='"'+questionsBlocks[i].firstElementChild.textContent+'"';
-            var answersBlocks=questionsBlocks[i].getElementsByTagName('input')
-
-            for(z = 0; z < answersBlocks.length; z++){
-                if(answersBlocks[z].checked){
-                    console.log(i!==questionsBlocks.length-1)
-                    if(i!==questionsBlocks.length-1){
-                        json+=': "'+answersBlocks[z].getAttribute('value')+'",'}
-                    else{
-                        json+=': "'+answersBlocks[z].getAttribute('value')+'"'
-                    }
-                }
-
-            }
-        }
-        json+='}'
-        console.log(json)
-        document.getElementById('json').value=json
-
-    }
-</script>
 </html>

@@ -1,10 +1,8 @@
 package com.rhcloud.my_visualjava.web.test;
 
 
-import org.json.simple.JSONObject;
-import org.json.simple.JSONArray;
-import org.json.simple.parser.ParseException;
-import org.json.simple.parser.JSONParser;
+import com.rhcloud.my_visualjava.test.TestEntity;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -23,29 +21,20 @@ public class CheckTestAnswersServlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
 
-
-        System.out.println(request.getParameter("json"));
-       JSONParser parser = new JSONParser();
-        String s = request.getParameter("json");
-
-       try{
-            Object obj = parser.parse(" {\n" +
-                    "\t\"age\":100,\n" +
-                    "\t\"name\":\"mkyong.com\",\n" +
-                    "\t\"messages\":[\"msg 1\",\"msg 2\",\"msg 3\"]\n" +
-                    "}") ;
-           JSONObject jsonObject = (JSONObject)obj;
-           String name = (String) jsonObject.get("name");
-           System.out.println(name);
-
-
-       }
-        catch (ParseException pe){
-
-            System.out.println("position: " + pe.getPosition());
-            System.out.println(pe);
+        Map<String, String> answeredQuestions = new HashMap<>();
+        String testName = request.getParameter("testName");
+        Map<String, String[]> parametersMap = request.getParameterMap();
+        parametersMap.remove("testName");
+        System.out.println(testName);
+        for (Map.Entry entry : parametersMap.entrySet()) {
+            String tempKey = (String) entry.getKey();
+            String[] values = (String[]) entry.getValue();
+            String truncatedValue = values[0];
+            //TODO: implement logging
+         /*   System.out.print(tempKey + ":");
+            System.out.println(truncatedValue);*/
+            answeredQuestions.put(tempKey, truncatedValue);
         }
-/*
 
         HttpSession session = request.getSession();
         Set<TestEntity> allTests = (Set<TestEntity>) session.getAttribute("allTests");
@@ -57,7 +46,6 @@ public class CheckTestAnswersServlet extends HttpServlet {
                 request.setAttribute("checkedTest", test);
             }
         }
-*/
 
 
         RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/answer.jsp");

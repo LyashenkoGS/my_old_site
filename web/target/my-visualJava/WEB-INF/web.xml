@@ -11,12 +11,4 @@
         <welcome-file>index</welcome-file>
     </welcome-file-list>
 
-    <servlet>
-        <servlet-name>gutnik</servlet-name>
-        <jsp-file>/WEB-INF/jsp/gutnik.jsp</jsp-file>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>gutnik</servlet-name>
-        <url-pattern>/gutnik</url-pattern>
-    </servlet-mapping>
 </web-app>
