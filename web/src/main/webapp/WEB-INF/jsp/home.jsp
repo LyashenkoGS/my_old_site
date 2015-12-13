@@ -43,9 +43,11 @@
                 </c:forEach>
             </table>
             <p>
-                <textarea form ="addTodo" name="TODO" cols="45" rows="3" wrap="soft" placeholder="new TODO text"></textarea>
+                <textarea form="addTodo" name="TODO" cols="45" rows="3" wrap="soft"
+                          placeholder="new TODO text"></textarea>
+
             <form method="post" ACTION="addTodo" id="addTodo">
-              <%--  <input type="text" name="TODO" placeholder="TODO"> --%>
+                <%--  <input type="text" name="TODO" placeholder="TODO"> --%>
                 <input type="text" name="name" placeholder="Исполнитель">
                 <input type="submit" value="ADD TODO">
             </form>
@@ -67,15 +69,18 @@
             </form>
 
             <p>
+
             <form method="post" ACTION="isdoneTodo">
                 <input type="int" name="id" placeholder="id">
                 <input type="submit" value="TODO IS DONE">
             </form>
             </p>
 
-            <div><form action="switchJdbcConfig" method="get" >
-                <input type="submit" value="switchJdbcConfig">
-            </form></div>
+            <div>
+                <form action="switchJdbcConfig" method="get">
+                    <input type="submit" value="switchJdbcConfig">
+                </form>
+            </div>
         </div>
     </div>
 
@@ -94,32 +99,38 @@
         <tbody>
         <tr class="active">
             <td class="column-1">
-                <div><a href=""><h1><img src="${pageContext.request.contextPath}/resources/img/17.jpg" width="40" height="40" align="left">Collection API
+                <div><a href=""><h1><img src="${pageContext.request.contextPath}/resources/img/17.jpg" width="40"
+                                         height="40" align="left">Collection API
                 </h1></a></div>
             </td>
             <td class="column-1">
-                <div><a></a><a href=""><h1><img src="${pageContext.request.contextPath}/resources/img/http.jpg" width="40" height="40" align="left">HTTP
+                <div><a></a><a href=""><h1><img src="${pageContext.request.contextPath}/resources/img/http.jpg"
+                                                width="40" height="40" align="left">HTTP
                     протокол</h1></a></div>
             </td>
             <td class="column-1">
                 <div><a href="">
-                    <h1><h1><img src="${pageContext.request.contextPath}/resources/img/hiber.png" width="40" height="40" align="left">Hibernate</h1>
+                    <h1><h1><img src="${pageContext.request.contextPath}/resources/img/hiber.png" width="40" height="40"
+                                 align="left">Hibernate</h1>
                 </a></div>
             </td>
         </tr>
         <tr class="active">
             <td class="column-1">
                 <h1>
-                    <div><a href=""><h1><img src="${pageContext.request.contextPath}/resources/img/jdbc.jpg" width="40" height="40" align="left">JDBC</h1>
+                    <div><a href=""><h1><img src="${pageContext.request.contextPath}/resources/img/jdbc.jpg" width="40"
+                                             height="40" align="left">JDBC</h1>
                     </a></div>
                 </h1>
             </td>
             <td class="column-1">
-                <div><a href=""><h1><img src="${pageContext.request.contextPath}/resources/img/html.png" width="40" height="40" align="left">HTML/CSS</h1>
+                <div><a href=""><h1><img src="${pageContext.request.contextPath}/resources/img/html.png" width="40"
+                                         height="40" align="left">HTML/CSS</h1>
                 </a></div>
             </td>
             <td class="column-1"><a href="">
-                <h1><h1><img src="${pageContext.request.contextPath}/resources/img/spring.png" width="40" height="40" align="left">Spring</h1>
+                <h1><h1><img src="${pageContext.request.contextPath}/resources/img/spring.png" width="40" height="40"
+                             align="left">Spring</h1>
             </a>
 </div>
 </td>
@@ -127,22 +138,26 @@
 <tr class="active">
     <td class="column-1">
         <h1>
-            <div><a><h1><img src="${pageContext.request.contextPath}/resources/img/17.jpg" width="40" height="40" align="left">String</h1></a></div>
+            <div><a><h1><img src="${pageContext.request.contextPath}/resources/img/17.jpg" width="40" height="40"
+                             align="left">String</h1></a></div>
         </h1>
     </td>
     <td class="column-1">
         <div><a href="">
-            <h1><h1><img src="${pageContext.request.contextPath}/resources/img/17.jpg" width="40" height="40" align="left">Servlet API</h1>
+            <h1><h1><img src="${pageContext.request.contextPath}/resources/img/17.jpg" width="40" height="40"
+                         align="left">Servlet API</h1>
         </a></div>
     </td>
     <td class="column-1">
         <div><a href="">
-            <h1><h1><img src="${pageContext.request.contextPath}/resources/img/junit.jpg" width="40" height="40" align="left">Junit</h1>
+            <h1><h1><img src="${pageContext.request.contextPath}/resources/img/junit.jpg" width="40" height="40"
+                         align="left">Junit</h1>
         </a></div>
     </td>
     <td class="column-1">
         <div><a href="/tests">
-            <h1><h1><img src="${pageContext.request.contextPath}/resources/img/junit.jpg" width="40" height="40" align="left">TestMock</h1>
+            <h1><h1><img src="${pageContext.request.contextPath}/resources/img/junit.jpg" width="40" height="40"
+                         align="left">TestMock</h1>
         </a></div>
     </td>
 </tr>
@@ -200,36 +215,35 @@
 
 <div class="panel panel-default">
     <div class="panel-body">
-        <h2> Концепция сайта -
-            простой open-source студенческий проект</h2>
+        <h2> Концепция сайта - простой open-source студенческий проект</h2>
+        <li>цель проекта :качественно освоить и визуализировать java core + enterpraise + БД + популярные
+            фреймворки,ООП , алгоритмы и структуры данных
+        </li>
+        <li>создать базу тестов по самым популярным вопросам на собеседованиях на java junior за основу взять <a
+                href="http://www.quizful.net/test">http://www.quizful.net/test</a></li>
+        <li>интерактивное отображение самых популярных алгоритмов и структур данных. За основу взят <a
+                href="http://visualgo.net/">http://visualgo.net/</a></li>
+        <li>сайт должен быть минималистичным, интуитивно понятным и подозрительно похожим на <a
+                href="http://www.google.com.ua/design/spec/material-design/introduction.html">http://www.google.com.ua/design/spec/material-design/introduction.html</a>
+        </li>
 
-        <>
-            <li>цель проекта :качественно освоить и визуализировать java core + enterpraise + БД + популярные
-                фреймворки,ООП , алгоритмы и структуры данных
-            </li>
-            <li>создать базу тестов по самым популярным вопросам на собеседованиях на java junior за основу взять <a
-                    href="http://www.quizful.net/test">http://www.quizful.net/test</a></li>
-            <li>интерактивное отображение самых популярных алгоритмов и структур данных. За основу взят <a
-                    href="http://visualgo.net/">http://visualgo.net/</a></li>
-            <li>сайт должен быть минималистичным, интуитивно понятным и подозрительно похожим на <a
-                    href="http://www.google.com.ua/design/spec/material-design/introduction.html">http://www.google.com.ua/design/spec/material-design/introduction.html</a>
-            </li>
+        <li> бекенд подозрительно похож на
+            <a href="https://github.com/spring-projects/spring-petclinic">https://github.com/spring-projects/spring-petclinic></a>
+        </li>
 
-            <li> бекенд подозрительно похож на
-                <a href="https://github.com/spring-projects/spring-petclinic">https://github.com/spring-projects/spring-petclinic></a>
-            </li>
-
-            <a href="http://www.google.com.ua/design/spec/material-design/introduction.html">http://www.google.com.ua/design/spec/material-design/introduction.html</a>
-            </li>
-            <li>кроме java освоить популярные web технологии и основы веб-дизайна\верстки</li>
-            <li>попробовать различные методологии разработки agile/scrum/xp и т.д</li>
-            <li>увеличить продуктивность обучения и работы каждого члена комманды</li>
-            <li>научиться писать и поддерживать "чистый код" покрытый тестами</li>
-            <li>получить первый практический опыт разработки</li>
-            <li>указать ссылку на проект в резюме</li>
-            <li>устроиться на java junior в кратчайшие сроки</li>
-            <li>just for fun</li>
-            <li><a href="${pageContext.request.contextPath}/shooter">игрушка на Javascript </a> </li>
+        <a href="http://www.google.com.ua/design/spec/material-design/introduction.html">http://www.google.com.ua/design/spec/material-design/introduction.html</a>
+        </li>
+        <li>кроме java освоить популярные web технологии и основы веб-дизайна\верстки</li>
+        <li>попробовать различные методологии разработки agile/scrum/xp и т.д</li>
+        <li>увеличить продуктивность обучения и работы каждого члена комманды</li>
+        <li>научиться писать и поддерживать "чистый код" покрытый тестами</li>
+        <li>получить первый практический опыт разработки</li>
+        <li>указать ссылку на проект в резюме</li>
+        <li>устроиться на java junior в кратчайшие сроки</li>
+        <li>just for fun</li>
+        <h3>Games</h3>
+        <li><a href="${pageContext.request.contextPath}/shooter">Shooter</a></li>
+        <li><a href="/Games/Cross-Zero/Cross-Zero.html">Cross-Zero</a></li>
         </ul>
     </div>
 </div>

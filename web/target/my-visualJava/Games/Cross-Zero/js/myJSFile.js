@@ -1,12 +1,14 @@
 var cell = new Array(9);
-for (var i = 0; i < 9; i++) cell[i] = 0;
+var numOfClicks = 0;
 
 var cross = new Image(64, 64);
 cross.src = "./images/cross.png";
 var zero = new Image(64, 64);
 zero.src = "./images/zero.png";
 
-var numOfClicks = 0;
+for (var i = 0; i < 9; i++) {
+    cell[i] = 0;
+}
 
 function Play(value) {
     if (cell[value] == 0) {
@@ -27,9 +29,6 @@ function Play(value) {
                 document.getElementById("newGame").style.display = 'block';
             }
         }
-    }
-    else{
-        document.getElementById("newGame").style.display = 'block';
     }
 }
 
@@ -64,6 +63,12 @@ function CheckVictoryCross() {
         && document.field5.src == cross.src) return true;
     if (document.field6.src == cross.src && document.field7.src == cross.src
         && document.field8.src == cross.src) return true;
+    if (document.field0.src == cross.src && document.field3.src == cross.src
+        && document.field6.src == cross.src) return true;
+    if (document.field1.src == cross.src && document.field4.src == cross.src
+        && document.field7.src == cross.src) return true;
+    if (document.field2.src == cross.src && document.field5.src == cross.src
+        && document.field8.src == cross.src) return true;
     if (document.field0.src == cross.src && document.field4.src == cross.src
         && document.field8.src == cross.src) return true;
     if (document.field2.src == cross.src && document.field4.src == cross.src
@@ -76,6 +81,12 @@ function CheckVictoryZero() {
     if (document.field3.src == zero.src && document.field4.src == zero.src
         && document.field5.src == zero.src) return true;
     if (document.field6.src == zero.src && document.field7.src == zero.src
+        && document.field8.src == zero.src) return true;
+    if (document.field0.src == zero.src && document.field3.src == zero.src
+        && document.field6.src == zero.src) return true;
+    if (document.field1.src == zero.src && document.field4.src == zero.src
+        && document.field7.src == zero.src) return true;
+    if (document.field2.src == zero.src && document.field5.src == zero.src
         && document.field8.src == zero.src) return true;
     if (document.field0.src == zero.src && document.field4.src == zero.src
         && document.field8.src == zero.src) return true;
