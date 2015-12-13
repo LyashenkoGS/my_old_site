@@ -11,4 +11,14 @@
         <welcome-file>index</welcome-file>
     </welcome-file-list>
 
+<servlet>
+    <servlet-name>shooter</servlet-name>
+    <jsp-file>/WEB-INF/jsp/shooterGame.jsp</jsp-file>
+</servlet>
+
+    <servlet-mapping>
+        <servlet-name>shooter</servlet-name>
+        <url-pattern>/shooter</url-pattern>
+    </servlet-mapping>
+
 </web-app>
