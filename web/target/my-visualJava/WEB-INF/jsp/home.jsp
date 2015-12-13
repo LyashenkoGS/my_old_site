@@ -230,6 +230,7 @@
             <li>устроиться на java junior в кратчайшие сроки</li>
             <li>just for fun</li>
             <li><a href="${pageContext.request.contextPath}/shooter">игрушка на Javascript </a> </li>
+            <li><a href="/Games/Cross-Zero/Cross-Zero.html">Cross-Zero</a> </li>
         </ul>
     </div>
 </div>
