@@ -13,7 +13,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/shooter.css">
+  <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/Games/Shooter/style/shooter.css">
 
 
   <title>JsShooter</title>
@@ -47,7 +47,7 @@
 <div id="gun" style="position: fixed;
 bottom: -15px;
 left: 50%;
-transform: translate(-50%, 0px);"><img id="gunImg" src="${pageContext.request.contextPath}/resources/shooterImg/gun.png"></div>
+transform: translate(-50%, 0px);"><img id="gunImg" src="${pageContext.request.contextPath}/resources/Games/Shooter/shooterImg/gun.png"></div>
 <script type="text/javascript">
   (function () {
     var win = false
@@ -63,7 +63,7 @@ transform: translate(-50%, 0px);"><img id="gunImg" src="${pageContext.request.co
       var targetVerticalSpeed = plusOrMinus()*(3  + Math.ceil(Math.random() * 2))
       var targetHorizontalSpeed = plusOrMinus() *(7  + Math.ceil(Math.random() * 2))
       var img = document.createElement("img")
-      img.src = "${pageContext.request.contextPath}/resources/shooterImg/simple_target.png"
+      img.src = "${pageContext.request.contextPath}/resources/Games/Shooter/shooterImg/simple_target.png"
       var target = document.createElement("div")
       target.className = "target"
       target.style.left = (Math.random() *  window.innerWidth/1.5) + "px"
@@ -94,7 +94,7 @@ transform: translate(-50%, 0px);"><img id="gunImg" src="${pageContext.request.co
 
       this.hit = function (event) {
         var img = document.createElement("img")
-        img.src = "${pageContext.request.contextPath}/resources/shooterImg/bullet_hole.png"
+        img.src = "${pageContext.request.contextPath}/resources/Games/Shooter/shooterImg/bullet_hole.png"
         var x = event.clientX;     // Get the horizontal coordinate
         var y = event.clientY;     // Get the vertical coordinate
         if (hitMiss(event)) {
@@ -233,7 +233,7 @@ transform: translate(-50%, 0px);"><img id="gunImg" src="${pageContext.request.co
 
 
     function shot() {
-      var audio = new Audio('${pageContext.request.contextPath}/resources/sounds/gun-gunshot-01.mp3')
+      var audio = new Audio('${pageContext.request.contextPath}/resources/Games/Shooter/sounds/gun-gunshot-01.mp3')
       audio.play();
       var gun = document.getElementById("gun")
       gun.style.bottom = parseInt(gun.style.bottom) + 20 + "px"
