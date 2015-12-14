@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>VirtualJava</title>
+    <link rel="shortcut icon" href="/resources/img/java-ico.ico">
     <%--ALL CSS, JS and OTHER RESOURCES--%>
     <jsp:include page="jspResources.jsp"/>
 
@@ -178,13 +179,10 @@
     <div class="panel-body">
         <h2 class="sub-title">Инструменты</h2>
         <ul>
-            <li>работаем только через Intellije Idea Ultimate 14!!
-            </li>
-            <li>jdk1.7.0_79
+                              <li>jdk1.7.0_79
                 <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html">http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html</a>
             </li>
-            <li>макеты - Photoshop 2014CC и Illustrator 2014CC
-            </li>
+                      </li>
             <li>CSS для Bootstrap отсюда
                 <a href="https://bootswatch.com/darkly/">https://bootswatch.com/darkly/</a>
             </li>
@@ -231,7 +229,7 @@
             <li>just for fun</li>
 			<h3>Games</h3>
             <li><a href="${pageContext.request.contextPath}/shooter">Shooter</a> </li>
-			<li><a href="/Games/Cross-Zero/Cross-Zero.html">Cross-Zero</a> </li>
+			<li><a href="${pageContext.request.contextPath}/Games/Cross-Zero/Cross-Zero.html">Cross-Zero</a> </li>
         </ul>
     </div>
 </div>

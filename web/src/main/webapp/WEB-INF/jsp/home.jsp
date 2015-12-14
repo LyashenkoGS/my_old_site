@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>VirtualJava</title>
+    <link rel="shortcut icon" href="/resources/img/java-logo.ico">
     <%--ALL CSS, JS and OTHER RESOURCES--%>
     <jsp:include page="jspResources.jsp"/>
 
