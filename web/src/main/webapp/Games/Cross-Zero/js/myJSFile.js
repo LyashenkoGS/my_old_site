@@ -20,7 +20,6 @@ function Play(value) {
             cell[value] = 1;
             if (CheckVictoryZero() == true) {
                 document.getElementById("zero").style.display = 'block';
-                document.getElementById("newGame").style.display = 'block';
             }
         } else if (numOfClicks % 2 == 0) {
             numOfClicks++;
@@ -28,10 +27,9 @@ function Play(value) {
             cell[value] = 1;
             if (CheckVictoryCross() == true) {
                 document.getElementById("cross").style.display = 'block';
-                document.getElementById("newGame").style.display = 'block';
             }
         }
-        DeadHead() == true;
+            DeadHead() == true;
     }
 }
 
@@ -42,7 +40,6 @@ function DeadHead() {
             check = true;
     if (check == false) {
         document.getElementById("deadHeat").style.display = 'block';
-        document.getElementById("newGame").style.display = 'block';
     }
 }
 

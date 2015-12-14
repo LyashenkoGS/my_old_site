@@ -1,10 +1,5 @@
-body{
+body {
     background-image: url("../images/background-image.jpg");
-}
-
-table{
-    background: coral;
-    border-spacing: 1px;
 }
 
 img.emptyImage {
@@ -13,19 +8,68 @@ img.emptyImage {
     height: 65px;
 }
 
-#gameName{
+#gameName {
+    text-shadow: -1px -1px #ff3b20,
+    0 1px 0 #49ff35;
+    color: #250017;
+    font-style: italic;
+    transition: all 1s;
     text-align: center;
-    color: #8fff44;
 }
+
+#gameName:hover{
+    text-shadow: -1px -1px #ffe70c,
+    0 1px 0 #444;
+    color: #1A1A1A;
+}
+
 #zero {
+    text-shadow: 1px 1px 0 orange,
+    1px -1px 0 orange,
+    -1px 1px 0 orange,
+    -1px -1px 0 orange;
+    color: white;
+    transition: all 1s;
     text-align: center;
-    color: red;
+    color: #2f33ff;
 }
+
+#zero:hover {
+    text-shadow: 1px 1px 0 yellowgreen,
+    1px -1px 0 yellowgreen,
+    -1px 1px 0 yellowgreen,
+    -1px -1px 0 yellowgreen;
+    color: white;
+}
+
 #cross {
+    text-shadow: 1px 1px 0 orange,
+    1px -1px 0 orange,
+    -1px 1px 0 orange,
+    -1px -1px 0 orange;
+    color: white;
+    transition: all 1s;
     text-align: center;
     color: red;
+    text-align: center;
 }
+
+#cross:hover {
+    text-shadow: 1px 1px 0 yellowgreen,
+    1px -1px 0 yellowgreen,
+    -1px 1px 0 yellowgreen,
+    -1px -1px 0 yellowgreen;
+    color: white;
+}
+
 #deadHeat {
+    text-shadow: 1px 1px 0 orange,
+    1px -1px 0 orange,
+    -1px 1px 0 orange,
+    -1px -1px 0 orange;
+    color: white;
+    transition: all 1s;
     text-align: center;
-    color: red;
+    color: #ffe70c;
+    text-align: center;
 }
