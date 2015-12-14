@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.rhcloud.my_visualjava.web.todo.TodoDaoImplTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE!
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.004 sec <<< FAILURE!
 testTodoCrudOperations(com.rhcloud.my_visualjava.web.todo.TodoDaoImplTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NullPointerException
 	at com.rhcloud.my_visualjava.web.todo.TodoDaoImplTest.setUp(TodoDaoImplTest.java:27)
@@ -36,7 +36,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testTodoCrudOperations(com.rhcloud.my_visualjava.web.todo.TodoDaoImplTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testTodoCrudOperations(com.rhcloud.my_visualjava.web.todo.TodoDaoImplTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NullPointerException
 	at com.rhcloud.my_visualjava.web.todo.TodoDaoImplTest.tearDown(TodoDaoImplTest.java:32)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)

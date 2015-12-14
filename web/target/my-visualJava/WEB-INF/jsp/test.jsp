@@ -3,38 +3,38 @@
 <html>
 <head>
     <title>tests</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <link href="${pageContext.request.contextPath}/resources/test.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div id="test">
     <c:forEach var="test" items="${allTests}">
-    <form action="answer" method="post">
-        <div>${test.name}:${test.id}</div>
-        <input name="testName" type="hidden" value="${test.name}">
-        <ol>
-            <c:forEach var="question" items="${test.questions}">
-                <li>
-                        ${question.key}:${question.value.id}
-                    <ul>
-                        <li>
-                            <input name="${question.key}" type="radio"
-                                   value="${question.value.rightAnswer}">${question.value.rightAnswer}
-                        </li>
-                        <c:forEach var="wrong_answer" items="${question.value.wrongAnswers}">
+        <form id="form" action="answer" method="post">
+            <div>${test.name}:${test.id}</div>
+            <input name="testName" type="hidden" value="${test.name}">
+            <ol>
+                <c:forEach var="question" items="${test.questions}">
+                    <li>
+                            ${question.key}:${question.value.id}
+                        <ul>
                             <li>
-                                <input name="${question.key}" type="radio" value="${wrong_answer}"> ${wrong_answer}
+                                <input name="${question.key}" type="radio"
+                                       value="${question.value.rightAnswer}">${question.value.rightAnswer}
                             </li>
-                        </c:forEach>
-                    </ul>
+                            <c:forEach var="wrong_answer" items="${question.value.wrongAnswers}">
+                                <li>
+                                    <input name="${question.key}" type="radio" value="${wrong_answer}"> ${wrong_answer}
+                                </li>
+                            </c:forEach>
+                        </ul>
 
-                </li>
-            </c:forEach>
-        </ol>
-        <input type="submit">
+                    </li>
+                </c:forEach>
+            </ol>
+            <input class="json" type="hidden" name="json" value=""/>
+            <input type="submit">
         </form>
-        </c:forEach>
-
-
+    </c:forEach>
 </div>
 <div id="manager">
     TestManager
@@ -113,6 +113,33 @@
     </form>
 
 </div>
+<div id="result"></div>
+<script type="text/javascript">
 
+    $.fn.serializeObject = function () {
+        var o = {};
+        var a = this.serializeArray();
+        $.each(a, function () {
+            if (o[this.name] !== undefined && this.name != "json") {
+                if (!o[this.name].push) {
+                    o[this.name] = [o[this.name]];
+                }
+                o[this.name].push(this.value || '');
+            } else if (this.name != "json") {
+                o[this.name] = this.value || '';
+            }
+        });
+        return o;
+    };
+
+    $(function () {
+        $('form').click(function () {
+            $(this).find(".json").val((JSON.stringify($(this).serializeObject())));
+          //uncomment to debug javascript
+            // return false
+        });
+    });
+
+</script>
 </body>
 </html>

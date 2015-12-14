@@ -2,6 +2,10 @@ package com.rhcloud.my_visualjava.web.test;
 
 
 import com.rhcloud.my_visualjava.test.TestEntity;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -12,6 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
@@ -21,33 +26,25 @@ public class CheckTestAnswersServlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
 
-        Map<String, String> answeredQuestions = new HashMap<>();
-        String testName = request.getParameter("testName");
-        Map<String, String[]> parametersMap = request.getParameterMap();
-        parametersMap.remove("testName");
-        System.out.println(testName);
-        for (Map.Entry entry : parametersMap.entrySet()) {
-            String tempKey = (String) entry.getKey();
-            String[] values = (String[]) entry.getValue();
-            String truncatedValue = values[0];
-            //TODO: implement logging
-         /*   System.out.print(tempKey + ":");
-            System.out.println(truncatedValue);*/
-            answeredQuestions.put(tempKey, truncatedValue);
-        }
+        JSONParser parser = new JSONParser();
+        try {
 
-        HttpSession session = request.getSession();
-        Set<TestEntity> allTests = (Set<TestEntity>) session.getAttribute("allTests");
+            Object obj = parser.parse(request.getParameter("json"));
 
-        for (TestEntity test : allTests) {
-            if (test.getName().equals(testName)) {
+            JSONObject jsonObject = (JSONObject) obj;
 
-                test.checkAllQuestions(answeredQuestions);
-                request.setAttribute("checkedTest", test);
+            String testName = (String) jsonObject.get("testName");
+
+
+            for(Iterator iterator = jsonObject.keySet().iterator(); iterator.hasNext();) {
+                String key = (String) iterator.next();
+                if(!key.equals("testName"))
+                System.out.println(jsonObject.get(key));
             }
+
+        } catch (ParseException e) {
+            e.printStackTrace();
         }
-
-
         RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/answer.jsp");
         rd.forward(request, response);
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="5" time="1.258" errors="0" skipped="0" tests="6" name="com.rhcloud.my_visualjava.dao.test.TestDaoImplTest">
+<testsuite failures="5" time="1.103" errors="0" skipped="0" tests="6" name="com.rhcloud.my_visualjava.dao.test.TestDaoImplTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_79\jre\bin"/>
@@ -29,7 +29,7 @@
     <property name="os.name" value="Windows 8.1"/>
     <property name="classworlds.conf" value="C:\Program Files\Apache Software Foundation\apache-maven-3.3.3\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_79\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.7.0_79\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files\Apache Software Foundation\apache-maven-3.3.3/bin;C:\Program Files\Apache Software Foundation\Tomcat 7.0/bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_79\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.7.0_79\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files\Apache Software Foundation\apache-maven-3.3.3/bin;C:\Program Files\Apache Software Foundation\Tomcat 7.0/bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="51.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,7 +61,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="0.46" classname="com.rhcloud.my_visualjava.dao.test.TestDaoImplTest" name="getQuestionsTest">
+  <testcase time="0.448" classname="com.rhcloud.my_visualjava.dao.test.TestDaoImplTest" name="getQuestionsTest">
     <failure message="expected:&lt;0&gt; but was:&lt;1&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;0&gt; but was:&lt;1&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -100,12 +100,12 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-err>ноя 23, 2015 3:35:31 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4b962cfa: startup date [Mon Nov 23 15:35:31 MSK 2015]; root of context hierarchy
-ноя 23, 2015 3:35:31 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+    <system-err>дек 14, 2015 8:46:40 AM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@717e42da: startup date [Mon Dec 14 08:46:40 MSK 2015]; root of context hierarchy
+дек 14, 2015 8:46:40 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [applicationContext.xml]
-ноя 23, 2015 3:35:31 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
-INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@649b2dac: defining beans [testDao,todoDao]; root of factory hierarchy
+дек 14, 2015 8:46:41 AM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5972be65: defining beans [testDao,todoDao]; root of factory hierarchy
 java.sql.SQLException: Access denied for user &apos;adminiwG1ZaB&apos;@&apos;localhost&apos; (using password: YES)
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1078)
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4187)
@@ -127,7 +127,7 @@ java.sql.SQLException: Access denied for user &apos;adminiwG1ZaB&apos;@&apos;loc
 	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:346)
 	at java.sql.DriverManager.getConnection(DriverManager.java:571)
 	at java.sql.DriverManager.getConnection(DriverManager.java:215)
-	at com.rhcloud.my_visualjava.dao.test.TestDaoImpl.getQuestions(TestDaoImpl.java:91)
+	at com.rhcloud.my_visualjava.dao.test.TestDaoImpl.getQuestions(TestDaoImpl.java:108)
 	at com.rhcloud.my_visualjava.dao.test.TestDaoImplTest.getQuestionsTest(TestDaoImplTest.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
@@ -160,13 +160,13 @@ java.sql.SQLException: Access denied for user &apos;adminiwG1ZaB&apos;@&apos;loc
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-ноя 23, 2015 3:35:32 PM org.springframework.context.support.AbstractApplicationContext doClose
-INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@4b962cfa: startup date [Mon Nov 23 15:35:31 MSK 2015]; root of context hierarchy
-ноя 23, 2015 3:35:32 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
-INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@649b2dac: defining beans [testDao,todoDao]; root of factory hierarchy
+дек 14, 2015 8:46:41 AM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@717e42da: startup date [Mon Dec 14 08:46:40 MSK 2015]; root of context hierarchy
+дек 14, 2015 8:46:41 AM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5972be65: defining beans [testDao,todoDao]; root of factory hierarchy
 </system-err>
   </testcase>
-  <testcase time="0.337" classname="com.rhcloud.my_visualjava.dao.test.TestDaoImplTest" name="getTestNames">
+  <testcase time="0.271" classname="com.rhcloud.my_visualjava.dao.test.TestDaoImplTest" name="getTestNames">
     <failure message="expected:&lt;0&gt; but was:&lt;1&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;0&gt; but was:&lt;1&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -205,12 +205,12 @@ INFO: Destroying singletons in org.springframework.beans.factory.support.Default
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-err>ноя 23, 2015 3:35:32 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@22e1cbe4: startup date [Mon Nov 23 15:35:32 MSK 2015]; root of context hierarchy
-ноя 23, 2015 3:35:32 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+    <system-err>дек 14, 2015 8:46:41 AM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@48a3068b: startup date [Mon Dec 14 08:46:41 MSK 2015]; root of context hierarchy
+дек 14, 2015 8:46:41 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [applicationContext.xml]
-ноя 23, 2015 3:35:32 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
-INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7ab84fb1: defining beans [testDao,todoDao]; root of factory hierarchy
+дек 14, 2015 8:46:42 AM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@18d293b7: defining beans [testDao,todoDao]; root of factory hierarchy
 java.sql.SQLException: Access denied for user &apos;adminiwG1ZaB&apos;@&apos;localhost&apos; (using password: YES)
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1078)
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4187)
@@ -232,7 +232,7 @@ java.sql.SQLException: Access denied for user &apos;adminiwG1ZaB&apos;@&apos;loc
 	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:346)
 	at java.sql.DriverManager.getConnection(DriverManager.java:571)
 	at java.sql.DriverManager.getConnection(DriverManager.java:215)
-	at com.rhcloud.my_visualjava.dao.test.TestDaoImpl.getTestNames(TestDaoImpl.java:118)
+	at com.rhcloud.my_visualjava.dao.test.TestDaoImpl.getTestNames(TestDaoImpl.java:135)
 	at com.rhcloud.my_visualjava.dao.test.TestDaoImplTest.getTestNames(TestDaoImplTest.java:86)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
@@ -265,13 +265,13 @@ java.sql.SQLException: Access denied for user &apos;adminiwG1ZaB&apos;@&apos;loc
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-ноя 23, 2015 3:35:32 PM org.springframework.context.support.AbstractApplicationContext doClose
-INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@22e1cbe4: startup date [Mon Nov 23 15:35:32 MSK 2015]; root of context hierarchy
-ноя 23, 2015 3:35:32 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
-INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7ab84fb1: defining beans [testDao,todoDao]; root of factory hierarchy
+дек 14, 2015 8:46:42 AM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@48a3068b: startup date [Mon Dec 14 08:46:41 MSK 2015]; root of context hierarchy
+дек 14, 2015 8:46:42 AM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@18d293b7: defining beans [testDao,todoDao]; root of factory hierarchy
 </system-err>
   </testcase>
-  <testcase time="0.084" classname="com.rhcloud.my_visualjava.dao.test.TestDaoImplTest" name="testGetAllTests">
+  <testcase time="0.334" classname="com.rhcloud.my_visualjava.dao.test.TestDaoImplTest" name="testGetAllTests">
     <failure message="expected:&lt;0&gt; but was:&lt;1&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;0&gt; but was:&lt;1&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -310,12 +310,12 @@ INFO: Destroying singletons in org.springframework.beans.factory.support.Default
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-err>ноя 23, 2015 3:35:32 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1007ce08: startup date [Mon Nov 23 15:35:32 MSK 2015]; root of context hierarchy
-ноя 23, 2015 3:35:32 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+    <system-err>дек 14, 2015 8:46:42 AM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5050b77c: startup date [Mon Dec 14 08:46:42 MSK 2015]; root of context hierarchy
+дек 14, 2015 8:46:42 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [applicationContext.xml]
-ноя 23, 2015 3:35:32 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
-INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@17958ed5: defining beans [testDao,todoDao]; root of factory hierarchy
+дек 14, 2015 8:46:42 AM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5a62681b: defining beans [testDao,todoDao]; root of factory hierarchy
 java.sql.SQLException: Access denied for user &apos;adminiwG1ZaB&apos;@&apos;localhost&apos; (using password: YES)
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1078)
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4187)
@@ -337,8 +337,8 @@ java.sql.SQLException: Access denied for user &apos;adminiwG1ZaB&apos;@&apos;loc
 	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:346)
 	at java.sql.DriverManager.getConnection(DriverManager.java:571)
 	at java.sql.DriverManager.getConnection(DriverManager.java:215)
-	at com.rhcloud.my_visualjava.dao.test.TestDaoImpl.getTestNames(TestDaoImpl.java:118)
-	at com.rhcloud.my_visualjava.dao.test.TestDaoImpl.getAllTests(TestDaoImpl.java:31)
+	at com.rhcloud.my_visualjava.dao.test.TestDaoImpl.getTestNames(TestDaoImpl.java:135)
+	at com.rhcloud.my_visualjava.dao.test.TestDaoImpl.getAllTests(TestDaoImpl.java:48)
 	at com.rhcloud.my_visualjava.dao.test.TestDaoImplTest.testGetAllTests(TestDaoImplTest.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
@@ -392,8 +392,8 @@ java.sql.SQLException: Access denied for user &apos;adminiwG1ZaB&apos;@&apos;loc
 	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:346)
 	at java.sql.DriverManager.getConnection(DriverManager.java:571)
 	at java.sql.DriverManager.getConnection(DriverManager.java:215)
-	at com.rhcloud.my_visualjava.dao.test.TestDaoImpl.getAllEmptyTests(TestDaoImpl.java:135)
-	at com.rhcloud.my_visualjava.dao.test.TestDaoImpl.getAllTests(TestDaoImpl.java:33)
+	at com.rhcloud.my_visualjava.dao.test.TestDaoImpl.getAllEmptyTests(TestDaoImpl.java:152)
+	at com.rhcloud.my_visualjava.dao.test.TestDaoImpl.getAllTests(TestDaoImpl.java:50)
 	at com.rhcloud.my_visualjava.dao.test.TestDaoImplTest.testGetAllTests(TestDaoImplTest.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
@@ -426,13 +426,13 @@ java.sql.SQLException: Access denied for user &apos;adminiwG1ZaB&apos;@&apos;loc
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-ноя 23, 2015 3:35:32 PM org.springframework.context.support.AbstractApplicationContext doClose
-INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@1007ce08: startup date [Mon Nov 23 15:35:32 MSK 2015]; root of context hierarchy
-ноя 23, 2015 3:35:32 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
-INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@17958ed5: defining beans [testDao,todoDao]; root of factory hierarchy
+дек 14, 2015 8:46:42 AM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@5050b77c: startup date [Mon Dec 14 08:46:42 MSK 2015]; root of context hierarchy
+дек 14, 2015 8:46:42 AM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5a62681b: defining beans [testDao,todoDao]; root of factory hierarchy
 </system-err>
   </testcase>
-  <testcase time="0.35" classname="com.rhcloud.my_visualjava.dao.test.TestDaoImplTest" name="getRightAnswerTest">
+  <testcase time="0.024" classname="com.rhcloud.my_visualjava.dao.test.TestDaoImplTest" name="getRightAnswerTest">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -471,12 +471,12 @@ INFO: Destroying singletons in org.springframework.beans.factory.support.Default
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-err>ноя 23, 2015 3:35:32 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5a62681b: startup date [Mon Nov 23 15:35:32 MSK 2015]; root of context hierarchy
-ноя 23, 2015 3:35:32 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+    <system-err>дек 14, 2015 8:46:42 AM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7b68d45: startup date [Mon Dec 14 08:46:42 MSK 2015]; root of context hierarchy
+дек 14, 2015 8:46:42 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [applicationContext.xml]
-ноя 23, 2015 3:35:32 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
-INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1426b13c: defining beans [testDao,todoDao]; root of factory hierarchy
+дек 14, 2015 8:46:42 AM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4b904653: defining beans [testDao,todoDao]; root of factory hierarchy
 java.sql.SQLException: Access denied for user &apos;adminiwG1ZaB&apos;@&apos;localhost&apos; (using password: YES)
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1078)
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4187)
@@ -498,7 +498,7 @@ java.sql.SQLException: Access denied for user &apos;adminiwG1ZaB&apos;@&apos;loc
 	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:346)
 	at java.sql.DriverManager.getConnection(DriverManager.java:571)
 	at java.sql.DriverManager.getConnection(DriverManager.java:215)
-	at com.rhcloud.my_visualjava.dao.test.TestDaoImpl.getRightAnswer(TestDaoImpl.java:56)
+	at com.rhcloud.my_visualjava.dao.test.TestDaoImpl.getRightAnswer(TestDaoImpl.java:73)
 	at com.rhcloud.my_visualjava.dao.test.TestDaoImplTest.getRightAnswerTest(TestDaoImplTest.java:61)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
@@ -531,14 +531,14 @@ java.sql.SQLException: Access denied for user &apos;adminiwG1ZaB&apos;@&apos;loc
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-ноя 23, 2015 3:35:32 PM org.springframework.context.support.AbstractApplicationContext doClose
-INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@5a62681b: startup date [Mon Nov 23 15:35:32 MSK 2015]; root of context hierarchy
-ноя 23, 2015 3:35:32 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
-INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1426b13c: defining beans [testDao,todoDao]; root of factory hierarchy
+дек 14, 2015 8:46:42 AM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@7b68d45: startup date [Mon Dec 14 08:46:42 MSK 2015]; root of context hierarchy
+дек 14, 2015 8:46:42 AM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4b904653: defining beans [testDao,todoDao]; root of factory hierarchy
 </system-err>
   </testcase>
-  <testcase time="0.015" classname="com.rhcloud.my_visualjava.dao.test.TestDaoImplTest" name="getAllEmptyTestesTest"/>
-  <testcase time="0.012" classname="com.rhcloud.my_visualjava.dao.test.TestDaoImplTest" name="getWrongAnswersTest">
+  <testcase time="0.009" classname="com.rhcloud.my_visualjava.dao.test.TestDaoImplTest" name="getAllEmptyTestesTest"/>
+  <testcase time="0.017" classname="com.rhcloud.my_visualjava.dao.test.TestDaoImplTest" name="getWrongAnswersTest">
     <failure message="expected:&lt;0&gt; but was:&lt;2&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;0&gt; but was:&lt;2&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -577,12 +577,12 @@ INFO: Destroying singletons in org.springframework.beans.factory.support.Default
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-err>ноя 23, 2015 3:35:33 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@12b520a: startup date [Mon Nov 23 15:35:33 MSK 2015]; root of context hierarchy
-ноя 23, 2015 3:35:33 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+    <system-err>дек 14, 2015 8:46:42 AM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@523225c9: startup date [Mon Dec 14 08:46:42 MSK 2015]; root of context hierarchy
+дек 14, 2015 8:46:42 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [applicationContext.xml]
-ноя 23, 2015 3:35:33 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
-INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3267178f: defining beans [testDao,todoDao]; root of factory hierarchy
+дек 14, 2015 8:46:42 AM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@66fd6dda: defining beans [testDao,todoDao]; root of factory hierarchy
 java.sql.SQLException: Access denied for user &apos;adminiwG1ZaB&apos;@&apos;localhost&apos; (using password: YES)
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1078)
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4187)
@@ -604,7 +604,7 @@ java.sql.SQLException: Access denied for user &apos;adminiwG1ZaB&apos;@&apos;loc
 	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:346)
 	at java.sql.DriverManager.getConnection(DriverManager.java:571)
 	at java.sql.DriverManager.getConnection(DriverManager.java:215)
-	at com.rhcloud.my_visualjava.dao.test.TestDaoImpl.getWrongAnswers(TestDaoImpl.java:73)
+	at com.rhcloud.my_visualjava.dao.test.TestDaoImpl.getWrongAnswers(TestDaoImpl.java:90)
 	at com.rhcloud.my_visualjava.dao.test.TestDaoImplTest.getWrongAnswersTest(TestDaoImplTest.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
@@ -637,10 +637,10 @@ java.sql.SQLException: Access denied for user &apos;adminiwG1ZaB&apos;@&apos;loc
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-ноя 23, 2015 3:35:33 PM org.springframework.context.support.AbstractApplicationContext doClose
-INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@12b520a: startup date [Mon Nov 23 15:35:33 MSK 2015]; root of context hierarchy
-ноя 23, 2015 3:35:33 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
-INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3267178f: defining beans [testDao,todoDao]; root of factory hierarchy
+дек 14, 2015 8:46:42 AM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@523225c9: startup date [Mon Dec 14 08:46:42 MSK 2015]; root of context hierarchy
+дек 14, 2015 8:46:42 AM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@66fd6dda: defining beans [testDao,todoDao]; root of factory hierarchy
 </system-err>
   </testcase>
 </testsuite>
