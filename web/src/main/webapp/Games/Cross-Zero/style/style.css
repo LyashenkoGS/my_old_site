@@ -1,5 +1,5 @@
 body {
-    background-image: url("../images/background-image.jpg");
+    background-image: url("../images/background-page.jpg");
 }
 
 img.emptyImage {
@@ -10,8 +10,8 @@ img.emptyImage {
 
 #gameName {
     text-shadow: -1px -1px #ff3b20,
-    0 1px 0 #49ff35;
-    color: #250017;
+    0 1px 0 #aaaaaa;
+    color: #f0fffc;
     font-style: italic;
     transition: all 1s;
     text-align: center;
@@ -20,7 +20,7 @@ img.emptyImage {
 #gameName:hover{
     text-shadow: -1px -1px #ffe70c,
     0 1px 0 #444;
-    color: #1A1A1A;
+    color: #ff3b20;
 }
 
 #zero {
