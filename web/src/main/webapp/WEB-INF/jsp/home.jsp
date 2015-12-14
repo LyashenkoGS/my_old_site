@@ -229,7 +229,9 @@
             <li>указать ссылку на проект в резюме</li>
             <li>устроиться на java junior в кратчайшие сроки</li>
             <li>just for fun</li>
-            <li><a href="${pageContext.request.contextPath}/shooter">игрушка на Javascript </a> </li>
+			<h3>Games</h3>
+            <li><a href="${pageContext.request.contextPath}/shooter">Shooter</a> </li>
+			<li><a href="/Games/Cross-Zero/Cross-Zero.html">Cross-Zero</a> </li>
         </ul>
     </div>
 </div>
