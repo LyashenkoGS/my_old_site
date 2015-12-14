@@ -20,6 +20,7 @@ function Play(value) {
             cell[value] = 1;
             if (CheckVictoryZero() == true) {
                 document.getElementById("zero").style.display = 'block';
+                document.getElementById("block").disabled = true;
             }
         } else if (numOfClicks % 2 == 0) {
             numOfClicks++;
@@ -27,19 +28,24 @@ function Play(value) {
             cell[value] = 1;
             if (CheckVictoryCross() == true) {
                 document.getElementById("cross").style.display = 'block';
+                document.getElementById("block").style.pointerEvents = false;
             }
         }
-            DeadHead() == true;
+        DeadHead();
     }
 }
 
 function DeadHead() {
     var check = false;
-    for (i = 0; i < 9; i++)
-        if (cell[i] == 0)
+    for (i = 0; i < 9; i++) {
+        if (cell[i] == 0) {
             check = true;
-    if (check == false) {
-        document.getElementById("deadHeat").style.display = 'block';
+        }
+        if (check == false) {
+            if (CheckVictoryCross() == false && CheckVictoryZero() == false) {
+                document.getElementById("deadHeat").style.display = 'block';
+            }
+        }
     }
 }
 
