@@ -29,20 +29,21 @@ function Play(value) {
                 document.getElementById("cross").style.display = 'block';
             }
         }
-            DeadHead() == true;
+        DeadHead();
     }
 }
 
 function DeadHead() {
     var check = false;
-    for (i = 0; i < 9; i++)
-        if (cell[i] == 0)
+    for (i = 0; i < 9; i++) {
+        if (cell[i] == 0) {
             check = true;
-    if (check == false) {
-        document.getElementById("deadHeat").style.display = 'block';
+        }
+        if (check == true) {
+            document.getElementById("deadHeat").style.display = 'block';
+        }
     }
 }
-
 
 function Cross(value) {
     if (value == 0) document.field0.src = cross.src;

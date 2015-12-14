@@ -31,24 +31,20 @@ function Play(value) {
                 document.getElementById("block").style.pointerEvents = false;
             }
         }
-        DeadHead();
+        DeadHead() == true;
     }
 }
 
 function DeadHead() {
     var check = false;
-    for (i = 0; i < 9; i++) {
-        if (cell[i] == 0) {
+    for (i = 0; i < 9; i++)
+        if (cell[i] == 0)
             check = true;
-        }
-        if (check == false) {
-            if (CheckVictoryCross() == false && CheckVictoryZero() == false) {
-                document.getElementById("deadHeat").style.display = 'block';
-            }
-        }
+    if (check == false && CheckVictoryCross() != true
+        && CheckVictoryZero() != true) {
+        document.getElementById("deadHeat").style.display = 'block';
     }
 }
-
 
 function Cross(value) {
     if (value == 0) document.field0.src = cross.src;
