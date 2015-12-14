@@ -1,13 +1,11 @@
-var cell = new Array(9);
 var numOfClicks = 0;
 
 var cross = new Image(64, 64);
-cross.src = "./images/cross.png";
+cross.src = "/resources/Games/Cross-Zero/images/cross.png";
 var zero = new Image(64, 64);
-zero.src = "./images/zero.png";
-var empty = new Image(64, 64);
-empty.scr = "./images/empty.png";
+zero.src = "/resources/Games/Cross-Zero/images/zero.png";
 
+var cell = new Array(9);
 for (var i = 0; i < 9; i++) {
     cell[i] = 0;
 }

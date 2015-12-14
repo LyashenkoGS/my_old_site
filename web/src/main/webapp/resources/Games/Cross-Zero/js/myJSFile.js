@@ -1,13 +1,11 @@
-var cell = new Array(9);
 var numOfClicks = 0;
 
 var cross = new Image(64, 64);
-cross.src = "./images/cross.png";
+cross.src = "/resources/Games/Cross-Zero/images/cross.png";
 var zero = new Image(64, 64);
-zero.src = "./images/zero.png";
-var empty = new Image(64, 64);
-empty.scr = "./images/empty.png";
+zero.src = "/resources/Games/Cross-Zero/images/zero.png";
 
+var cell = new Array(9);
 for (var i = 0; i < 9; i++) {
     cell[i] = 0;
 }
@@ -35,13 +33,12 @@ function Play(value) {
 
 function DeadHead() {
     var check = false;
-    for (i = 0; i < 9; i++) {
-        if (cell[i] == 0) {
+    for (i = 0; i < 9; i++)
+        if (cell[i] == 0)
             check = true;
-        }
-        if (check == true) {
-            document.getElementById("deadHeat").style.display = 'block';
-        }
+    if (check == false && CheckVictoryCross() != true
+        && CheckVictoryZero() != true) {
+        document.getElementById("deadHeat").style.display = 'block';
     }
 }
 

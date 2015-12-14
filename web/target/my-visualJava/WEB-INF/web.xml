@@ -1,8 +1,6 @@
-
 <web-app
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns="http://java.sun.com/xml/ns/javaee"
-        xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
         id="Your_WebApp_ID"
         version="2.5">
@@ -11,14 +9,24 @@
         <welcome-file>index</welcome-file>
     </welcome-file-list>
 
-<servlet>
-    <servlet-name>shooter</servlet-name>
-    <jsp-file>/WEB-INF/jsp/shooterGame.jsp</jsp-file>
-</servlet>
+    <servlet>
+        <servlet-name>shooter</servlet-name>
+        <jsp-file>/WEB-INF/jsp/shooterGame.jsp</jsp-file>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>shooter</servlet-name>
         <url-pattern>/shooter</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>cross-zero</servlet-name>
+        <jsp-file>/WEB-INF/jsp/cross-zero.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>cross-zero</servlet-name>
+        <url-pattern>/cross-zero</url-pattern>
     </servlet-mapping>
 
 </web-app>
