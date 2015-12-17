@@ -13,8 +13,8 @@
     <link rel="stylesheet" type="text/css" href="/resources/Games/Cross-Zero/style/bootstrap.css">
     <link rel="shortcut icon" href="/resources/Games/Cross-Zero/images/icon.png">
     <title>Cross-Zero</title>
-    <script type="text/javascript" src="/resources/Games/Cross-Zero/js/myJSFile.js">
-    </script>
+    <script src="/resources/Games/Cross-Zero/js/myJSFile.js"></script>
+    <script src="/resources/Games/Cross-Zero/js/jquery-2.1.4.js"></script>
 </head>
 
 <body>

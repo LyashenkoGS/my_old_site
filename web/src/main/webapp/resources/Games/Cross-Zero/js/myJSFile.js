@@ -17,17 +17,19 @@ function Play(value) {
             Zero(value);
             cell[value] = 1;
             if (CheckVictoryZero() == true) {
-                document.getElementById("zero").style.display = 'block';
+                $("#zero").show();
+                $("table").hide();
             }
         } else if (numOfClicks % 2 == 0) {
             numOfClicks++;
             Cross(value);
             cell[value] = 1;
             if (CheckVictoryCross() == true) {
-                document.getElementById("cross").style.display = 'block';
+                $("#cross").show();
+                $("table").hide();
             }
         }
-        DeadHead();
+        $(DeadHead());
     }
 }
 
@@ -38,9 +40,9 @@ function DeadHead() {
             check = true;
     if (check == false && CheckVictoryCross() != true
         && CheckVictoryZero() != true) {
-        document.getElementById("deadHeat").style.display = 'block';
+        $("#deadHeat").show();
     }
-}
+};
 
 function Cross(value) {
     if (value == 0) document.field0.src = cross.src;
