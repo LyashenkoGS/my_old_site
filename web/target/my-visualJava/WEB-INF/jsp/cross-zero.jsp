@@ -28,10 +28,11 @@
 
     <h1 id="deadHeat" hidden="false">Deadhead!!!</h1>
 
-    <div class="btn btn-default">
+    <div id="1" class="btn btn-default">
         <p><a href="cross-zero" class="btn btn-warning">New Game</a></p>
 
         <p><a href="http://my-visualjava.rhcloud.com/" class="btn btn-danger">Exit</a></p>
+        <div id="outerIdFromTable">
         <table id="block" class="table table-striped table-hover">
             <tr>
                 <td><img class="emptyImage" name="field0" onClick="Play(0)"></td>
@@ -49,6 +50,7 @@
                 <td><img class="emptyImage" name="field8" onClick="Play(8)"></td>
             </tr>
         </table>
+        </div>
     </div>
     <p>
 

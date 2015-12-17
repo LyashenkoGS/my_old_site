@@ -18,7 +18,7 @@ function Play(value) {
             cell[value] = 1;
             if (CheckVictoryZero() == true) {
                 $("#zero").show();
-                $("table").hide();
+                $("#outerIdFromTable").slideUp("slow");
             }
         } else if (numOfClicks % 2 == 0) {
             numOfClicks++;
@@ -26,7 +26,7 @@ function Play(value) {
             cell[value] = 1;
             if (CheckVictoryCross() == true) {
                 $("#cross").show();
-                $("table").hide();
+                $("#outerIdFromTable").slideUp("slow");
             }
         }
         $(DeadHead());
