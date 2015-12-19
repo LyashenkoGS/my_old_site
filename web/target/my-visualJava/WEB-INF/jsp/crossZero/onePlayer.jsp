@@ -34,7 +34,7 @@
 
         <p><a href="playFromComputer" class="btn btn-success">Play to compute</a></p>
 
-        <p><a href="http://my-visualjava.rhcloud.com/" class="btn btn-danger">Exit</a></p>
+        <p><a href="/" class="btn btn-danger">Exit</a></p>
 
         <div id="outerIdFromTable">
             <table id="block" class="table table-striped table-hover">

@@ -30,11 +30,11 @@
 
     <div id="1" class="btn btn-default">
 
-        <p><a href="vis-a-vis" class="btn btn-warning">New Game</a></p>
+        <p><a href="playFromComputer" class="btn btn-warning">New Game</a></p>
 
         <p><a href="vis-a-vis" class="btn btn-success">Vis-a-vis</a></p>
 
-        <p><a href="http://my-visualjava.rhcloud.com/" class="btn btn-danger">Exit</a></p>
+        <p><a href="/" class="btn btn-danger">Exit</a></p>
 
         <div id="outerIdFromTable">
             <table id="block" class="table table-striped table-hover">
