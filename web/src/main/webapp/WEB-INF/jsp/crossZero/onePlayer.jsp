@@ -29,27 +29,31 @@
     <h1 id="deadHeat" hidden="false">Deadhead!!!</h1>
 
     <div id="1" class="btn btn-default">
-        <p><a href="cross-zero" class="btn btn-warning">New Game</a></p>
+
+        <p><a href="vis-a-vis" class="btn btn-warning">New Game</a></p>
+
+        <p><a href="playFromComputer" class="btn btn-warning">Play to compute</a></p>
 
         <p><a href="http://my-visualjava.rhcloud.com/" class="btn btn-danger">Exit</a></p>
+
         <div id="outerIdFromTable">
-        <table id="block" class="table table-striped table-hover">
-            <tr>
-                <td><img class="emptyImage" name="field0" onClick="Play(0)"></td>
-                <td><img class="emptyImage" name="field1" onClick="Play(1)"></td>
-                <td><img class="emptyImage" name="field2" onClick="Play(2)"></td>
-            </tr>
-            <tr>
-                <td><img class="emptyImage" name="field3" onClick="Play(3)"></td>
-                <td><img class="emptyImage" name="field4" onClick="Play(4)"></td>
-                <td><img class="emptyImage" name="field5" onClick="Play(5)"></td>
-            </tr>
-            <tr>
-                <td><img class="emptyImage" name="field6" onClick="Play(6)"></td>
-                <td><img class="emptyImage" name="field7" onClick="Play(7)"></td>
-                <td><img class="emptyImage" name="field8" onClick="Play(8)"></td>
-            </tr>
-        </table>
+            <table id="block" class="table table-striped table-hover">
+                <tr>
+                    <td><img class="emptyImage" name="field0" onClick="Play(0)"></td>
+                    <td><img class="emptyImage" name="field1" onClick="Play(1)"></td>
+                    <td><img class="emptyImage" name="field2" onClick="Play(2)"></td>
+                </tr>
+                <tr>
+                    <td><img class="emptyImage" name="field3" onClick="Play(3)"></td>
+                    <td><img class="emptyImage" name="field4" onClick="Play(4)"></td>
+                    <td><img class="emptyImage" name="field5" onClick="Play(5)"></td>
+                </tr>
+                <tr>
+                    <td><img class="emptyImage" name="field6" onClick="Play(6)"></td>
+                    <td><img class="emptyImage" name="field7" onClick="Play(7)"></td>
+                    <td><img class="emptyImage" name="field8" onClick="Play(8)"></td>
+                </tr>
+            </table>
         </div>
     </div>
     <p>

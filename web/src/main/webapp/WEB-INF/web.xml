@@ -20,13 +20,23 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>cross-zero</servlet-name>
-        <jsp-file>/WEB-INF/jsp/cross-zero.jsp</jsp-file>
+        <servlet-name>cross-zero1</servlet-name>
+        <jsp-file>/WEB-INF/jsp/crossZero/onePlayer.jsp</jsp-file>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>cross-zero</servlet-name>
-        <url-pattern>/cross-zero</url-pattern>
+        <servlet-name>cross-zero1</servlet-name>
+        <url-pattern>/cross-zero/vis-a-vis</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>cross-zero2</servlet-name>
+        <jsp-file>/WEB-INF/jsp/crossZero/playerFromComp.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>cross-zero2</servlet-name>
+        <url-pattern>/cross-zero/playFromComputer</url-pattern>
     </servlet-mapping>
 
 </web-app>

@@ -33,6 +33,62 @@ function Play(value) {
     }
 }
 
+function PlayFromCompute(value) {
+    if (cell[value] == 0) {
+        Cross(value);
+        cell[value] = 1;
+        if (CheckVictoryCross() == true) {
+            $("#cross").show();
+            $("#outerIdFromTable").slideUp("slow");
+        }
+        else {
+            DeadHead();
+            CompTurn();
+            DeadHead();
+        }
+    }
+}
+
+function CompTurn() {
+    for (i = 0; i < 9; i++)
+        if (cell[i] == 0)
+            var putHere = i;
+    for (i = 0; i < 3; i++) {
+        if (cell[0] == cell[1] && cell[2] == 0 && cell[0] == i) putHere = 2;
+        if (cell[0] == cell[2] && cell[1] == 0 && cell[0] == i) putHere = 1;
+        if (cell[1] == cell[2] && cell[0] == 0 && cell[2] == i) putHere = 0;
+        if (cell[3] == cell[4] && cell[5] == 0 && cell[3] == i) putHere = 5;
+        if (cell[3] == cell[5] && cell[4] == 0 && cell[3] == i) putHere = 4;
+        if (cell[4] == cell[5] && cell[3] == 0 && cell[5] == i) putHere = 3;
+        if (cell[6] == cell[7] && cell[8] == 0 && cell[6] == i) putHere = 8;
+        if (cell[6] == cell[8] && cell[7] == 0 && cell[6] == i) putHere = 7;
+        if (cell[7] == cell[8] && cell[6] == 0 && cell[8] == i) putHere = 6;
+
+        if (cell[6] == cell[3] && cell[0] == 0 && cell[6] == i) putHere = 0;
+        if (cell[6] == cell[0] && cell[3] == 0 && cell[6] == i) putHere = 3;
+        if (cell[3] == cell[0] && cell[6] == 0 && cell[3] == i) putHere = 6;
+        if (cell[7] == cell[4] && cell[1] == 0 && cell[7] == i) putHere = 1;
+        if (cell[7] == cell[1] && cell[4] == 0 && cell[7] == i) putHere = 4;
+        if (cell[4] == cell[1] && cell[7] == 0 && cell[4] == i) putHere = 7;
+        if (cell[8] == cell[5] && cell[2] == 0 && cell[8] == i) putHere = 2;
+        if (cell[8] == cell[2] && cell[5] == 0 && cell[8] == i) putHere = 5;
+        if (cell[5] == cell[2] && cell[8] == 0 && cell[5] == i) putHere = 8;
+
+        if (cell[6] == cell[4] && cell[2] == 0 && cell[6] == i) putHere = 2;
+        if (cell[6] == cell[2] && cell[4] == 0 && cell[6] == i) putHere = 4;
+        if (cell[4] == cell[2] && cell[6] == 0 && cell[4] == i) putHere = 6;
+        if (cell[0] == cell[4] && cell[8] == 0 && cell[0] == i) putHere = 8;
+        if (cell[0] == cell[8] && cell[4] == 0 && cell[0] == i) putHere = 4;
+        if (cell[4] == cell[8] && cell[0] == 0 && cell[4] == i) putHere = 0;
+    }
+    Zero(putHere);
+    cell[putHere] = 2;
+    if (CheckVictoryZero() == true) {
+        $("#zero").show();
+        $("#outerIdFromTable").slideUp("slow");
+    }
+}
+
 function DeadHead() {
     var check = false;
     for (i = 0; i < 9; i++)
