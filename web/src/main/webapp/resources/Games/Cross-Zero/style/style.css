@@ -8,6 +8,12 @@ img.emptyImage {
     height: 65px;
 }
 
+#copyright img {
+    width: 20px;
+    height: 20px;
+    font-style: italic;
+}
+
 #gameName {
     text-shadow: -1px -1px #ff3b20,
     0 1px 0 #aaaaaa;
@@ -17,7 +23,7 @@ img.emptyImage {
     text-align: center;
 }
 
-#gameName:hover{
+#gameName:hover {
     text-shadow: -1px -1px #ffe70c,
     0 1px 0 #444;
     color: #ff3b20;

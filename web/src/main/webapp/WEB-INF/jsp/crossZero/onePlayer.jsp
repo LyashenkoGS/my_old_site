@@ -9,14 +9,7 @@
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <head>
-    <link rel="stylesheet" type="text/css"
-          href="${pageContext.request.contextPath}/resources/Games/Cross-Zero/style/style.css">
-    <link rel="stylesheet" type="text/css"
-          href="${pageContext.request.contextPath}/resources/Games/Cross-Zero/style/bootstrap.css">
-    <link rel="shortcut icon" href="${pageContext.request.contextPath}/resources/Games/Cross-Zero/images/icon.png">
-    <title>Cross-Zero</title>
-    <script src="${pageContext.request.contextPath}/resources/Games/Cross-Zero/js/myJSFile.js"></script>
-    <script src="${pageContext.request.contextPath}/resources/Games/Cross-Zero/js/jquery-2.1.4.js"></script>
+    <jsp:include page="/WEB-INF/jsp/crossZero/resources.jsp"></jsp:include>
 </head>
 
 <body>
@@ -60,9 +53,10 @@
     </div>
     <p>
 
-    <p style="font-style: italic">
-        <img src="${pageContext.request.contextPath}/resources/Games/Cross-Zero/images/copyright_c_symbol.png"
-             width="20" height="20"> By Zheka 2015
+    <p id="copyright">
+        <img src="${pageContext.request.contextPath}
+        /resources/Games/Cross-Zero/images/copyright_c_symbol.png">
+        By Zheka 2015
     </p>
 </div>
 </body>
