@@ -32,7 +32,7 @@
 
         <p><a href="vis-a-vis" class="btn btn-warning">New Game</a></p>
 
-        <p><a href="vis-a-vis" class="btn btn-warning">Vis-a-vis</a></p>
+        <p><a href="vis-a-vis" class="btn btn-success">Vis-a-vis</a></p>
 
         <p><a href="http://my-visualjava.rhcloud.com/" class="btn btn-danger">Exit</a></p>
 

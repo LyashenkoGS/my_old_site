@@ -229,7 +229,7 @@
             <li>just for fun</li>
 			<h3>Games</h3>
             <li><a href="${pageContext.request.contextPath}/shooter">Shooter</a> </li>
-			<li><a href="${pageContext.request.contextPath}/cross-zero">Cross-Zero</a> </li>
+			<li><a href="${pageContext.request.contextPath}/cross-zero/vis-a-vis">Cross-Zero</a> </li>
         </ul>
     </div>
 </div>
