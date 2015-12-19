@@ -1,20 +1,22 @@
 <%--
   Created by IntelliJ IDEA.
   User: Zheka
-  Date: 15.12.2015
-  Time: 0:47
+  Date: 19.12.2015
+  Time: 22:05
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <head>
-    <link rel="stylesheet" type="text/css" href="/resources/Games/Cross-Zero/style/style.css">
-    <link rel="stylesheet" type="text/css" href="/resources/Games/Cross-Zero/style/bootstrap.css">
-    <link rel="shortcut icon" href="/resources/Games/Cross-Zero/images/icon.png">
+    <link rel="stylesheet" type="text/css"
+          href="${pageContext.request.contextPath}/resources/Games/Cross-Zero/style/style.css">
+    <link rel="stylesheet" type="text/css"
+          href="${pageContext.request.contextPath}/resources/Games/Cross-Zero/style/bootstrap.css">
+    <link rel="shortcut icon" href="${pageContext.request.contextPath}/resources/Games/Cross-Zero/images/icon.png">
     <title>Cross-Zero</title>
-    <script src="/resources/Games/Cross-Zero/js/myJSFile.js"></script>
-    <script src="/resources/Games/Cross-Zero/js/jquery-2.1.4.js"></script>
+    <script src="${pageContext.request.contextPath}/resources/Games/Cross-Zero/js/myJSFile.js"></script>
+    <script src="${pageContext.request.contextPath}/resources/Games/Cross-Zero/js/jquery-2.1.4.js"></script>
 </head>
 
 <body>
@@ -59,7 +61,8 @@
     <p>
 
     <p style="font-style: italic">
-        <img src="/resources/Games/Cross-Zero/images/copyright_c_symbol.png" width="20" height="20"> By Zheka 2015
+        <img src="${pageContext.request.contextPath}/resources/Games/Cross-Zero/images/copyright_c_symbol.png"
+             width="20" height="20"> By Zheka 2015
     </p>
 </div>
 </body>
