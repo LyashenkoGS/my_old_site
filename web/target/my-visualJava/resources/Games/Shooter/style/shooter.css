@@ -39,13 +39,15 @@ body, html {
     display: inline-block;
 }
 .game_over{
+    font-size: 40px;
     color: red;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0px);
     display: none;
-}
+   }
 .win{
+    font-size: 40px;
     color: #fff236;
     position: absolute;
     left: 50%;
