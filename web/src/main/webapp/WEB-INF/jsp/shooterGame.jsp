@@ -22,12 +22,14 @@
 <body>
 
 <div id="info">
-    <div id="countdown"></div>
+    <div id="countdown">time finished</div>
     <ul id="scores">
-        <li>hit:<span id="hit"></span></li>
+        <li>hit:<span id="hit">101</span></li>
     </ul>
-    <input id="photo" type="file"></br>
+    <input id="photoUrl" type="text" placeholder="new target URL">
+    <br>
     <button id="changePhoto" style="float: right"> changePhoto</button>
+
 
 </div>
 <div class="game_over">
@@ -43,7 +45,7 @@
 <div id="canvas" style="height: 100%">
 
 </div>
-
+R
 <div id="gun" style="position: fixed;
 bottom: -15px;
 left: 50%;
@@ -52,6 +54,8 @@ transform: translate(-50%, 0px);"><img id="gunImg"
 </div>
 <script type="text/javascript">
     (function () {
+        var timer
+        var defaultPhoto="https://metrouk2.files.wordpress.com/2015/03/ad_161888246.jpg"
         var win = false
         var move = true
         var numOfHits = 0
@@ -66,7 +70,8 @@ transform: translate(-50%, 0px);"><img id="gunImg"
             var targetVerticalSpeed = plusOrMinus() * (3 + Math.ceil(Math.random() * 2))
             var targetHorizontalSpeed = plusOrMinus() * (7 + Math.ceil(Math.random() * 2))
             var img = document.createElement("img")
-            img.src = "${pageContext.request.contextPath}/resources/Games/Shooter/shooterImg/simple_target.png"
+            img.src = defaultPhoto
+            img.style.width="200px"
             var target = document.createElement("div")
             target.className = "target"
             target.style.left = (Math.random() * window.innerWidth / 1.5) + "px"
@@ -78,9 +83,9 @@ transform: translate(-50%, 0px);"><img id="gunImg"
             this.life = 100
 
             this.changePhoto = function () {
-                var photo = document.getElementById("photo")
-                var photoName = photo.value
-                img.src = photoName.slice(12)
+                var photo = document.getElementById("photoUrl")
+                img.src = photo.value
+                defaultPhoto=photo.value
             }
 
             this.move = function () {
@@ -142,7 +147,7 @@ transform: translate(-50%, 0px);"><img id="gunImg"
         document.addEventListener("keydown", function () {
             document.getElementsByClassName('game_over')[0].style.display = "none"
             document.getElementsByClassName('win')[0].style.display = "none"
-            if (event.keyCode == 82) {
+            if (event.keyCode == 82) {//82 = "r" button
                 document.getElementById("canvas").innerHTML = ""
                 for (var n = 0; n < 5; n++) {
                     targets[n] = new Target()
@@ -205,9 +210,13 @@ transform: translate(-50%, 0px);"><img id="gunImg"
         }
 
 
-        function timing() {
+       var timing= function() {
+           console.log(timer)
+           if(timer!=undefined){
+               clearInterval(timer)
+           }
             var t = 20
-            var timer = setInterval(function () {
+            timer = setInterval(function () {
                 var countdown = document.getElementById("countdown")
                 countdown.textContent = t + "s"
                 t -= 1
@@ -227,7 +236,7 @@ transform: translate(-50%, 0px);"><img id="gunImg"
             //lose
             if (!win) {
                 document.getElementsByClassName('game_over')[0].style.display = "block"
-            }
+                        }
             //win
             else {
                 document.getElementsByClassName('win')[0].style.display = "block"

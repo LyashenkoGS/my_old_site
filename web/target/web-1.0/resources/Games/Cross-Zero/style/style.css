@@ -1,0 +1,81 @@
+body {
+    background-image: url("../images/background-page.jpg");
+}
+
+img.emptyImage {
+    background-image: url("../images/empty.png");
+    width: 65px;
+    height: 65px;
+}
+
+#copyright img {
+    width: 20px;
+    height: 20px;
+    font-style: italic;
+}
+
+#gameName {
+    text-shadow: -1px -1px #ff3b20,
+    0 1px 0 #aaaaaa;
+    color: #f0fffc;
+    font-style: italic;
+    transition: all 1s;
+    text-align: center;
+}
+
+#gameName:hover {
+    text-shadow: -1px -1px #ffe70c,
+    0 1px 0 #444;
+    color: #ff3b20;
+}
+
+#zero {
+    text-shadow: 1px 1px 0 orange,
+    1px -1px 0 orange,
+    -1px 1px 0 orange,
+    -1px -1px 0 orange;
+    color: white;
+    transition: all 1s;
+    text-align: center;
+    color: #2f33ff;
+}
+
+#zero:hover {
+    text-shadow: 1px 1px 0 yellowgreen,
+    1px -1px 0 yellowgreen,
+    -1px 1px 0 yellowgreen,
+    -1px -1px 0 yellowgreen;
+    color: white;
+}
+
+#cross {
+    text-shadow: 1px 1px 0 orange,
+    1px -1px 0 orange,
+    -1px 1px 0 orange,
+    -1px -1px 0 orange;
+    color: white;
+    transition: all 1s;
+    text-align: center;
+    color: red;
+    text-align: center;
+}
+
+#cross:hover {
+    text-shadow: 1px 1px 0 yellowgreen,
+    1px -1px 0 yellowgreen,
+    -1px 1px 0 yellowgreen,
+    -1px -1px 0 yellowgreen;
+    color: white;
+}
+
+#deadHeat {
+    text-shadow: 1px 1px 0 orange,
+    1px -1px 0 orange,
+    -1px 1px 0 orange,
+    -1px -1px 0 orange;
+    color: white;
+    transition: all 1s;
+    text-align: center;
+    color: #ffe70c;
+    text-align: center;
+}
