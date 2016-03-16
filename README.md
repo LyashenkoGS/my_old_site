@@ -8,6 +8,6 @@ The first live web site with black-jack and 3 layer arhitecture. Created on 4th 
 -CRUD operations via JDBC
 -Spring IoC
 
-maby something else..
+maybe something also..
 
 
