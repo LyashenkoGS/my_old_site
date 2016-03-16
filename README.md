@@ -1,5 +1,6 @@
 
 The first live web site with black-jack and 3 layer arhitecture. Created on 4th course with classmates Evgeniy Sobolev,Oleg Soklakov. 
+
 -Servlet 3.0 (Annotation driven declaration)
 
 -JSP,JSTL
