@@ -5,9 +5,13 @@ The first live web site with black-jack and 3 layer arhitecture. Created on 4th 
 -JSP,JSTL
 
 -3 maven modules
+
 -openshift.com specific settings in pom.xml
+
 -JSON processing with SimpleJSON and JQuery
+
 -CRUD operations via JDBC
+
 -Spring IoC
 
 maybe something also..
